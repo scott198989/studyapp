@@ -1,0 +1,6642 @@
+[
+  {
+    "filename": "Screenshot 2026-03-18 054952.png",
+    "joined_text": "Question 1 (1 point)\nSaved\nFigure 16.4\nSee Figure 16.4. If E = 10 V \u226530\u00b0 and Is = 5 A \u226510\u00b0, what is the total impedance ZT?\nA) 1.88 Q + j0.68 Q\nB) 38.3 Q + j32.1 Q\nC) 0.47 Q - j0.17 Q\nD) 32.1 Q + j38.3 Q",
+    "lines": [
+      {
+        "text": "Question 1 (1 point)",
+        "score": 0.995757,
+        "box": [
+          [
+            17,
+            88
+          ],
+          [
+            215,
+            88
+          ],
+          [
+            215,
+            115
+          ],
+          [
+            17,
+            115
+          ]
+        ]
+      },
+      {
+        "text": "Saved",
+        "score": 0.998938,
+        "box": [
+          [
+            271,
+            91
+          ],
+          [
+            323,
+            91
+          ],
+          [
+            323,
+            110
+          ],
+          [
+            271,
+            110
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.4",
+        "score": 0.998934,
+        "box": [
+          [
+            379,
+            379
+          ],
+          [
+            492,
+            379
+          ],
+          [
+            492,
+            406
+          ],
+          [
+            379,
+            406
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.4. If E = 10 V \u226530\u00b0 and Is = 5 A \u226510\u00b0, what is the total impedance ZT?",
+        "score": 0.986787,
+        "box": [
+          [
+            32,
+            491
+          ],
+          [
+            815,
+            493
+          ],
+          [
+            815,
+            523
+          ],
+          [
+            32,
+            521
+          ]
+        ]
+      },
+      {
+        "text": "A) 1.88 Q + j0.68 Q",
+        "score": 0.97402,
+        "box": [
+          [
+            72,
+            556
+          ],
+          [
+            259,
+            566
+          ],
+          [
+            257,
+            599
+          ],
+          [
+            70,
+            589
+          ]
+        ]
+      },
+      {
+        "text": "B) 38.3 Q + j32.1 Q",
+        "score": 0.962409,
+        "box": [
+          [
+            72,
+            631
+          ],
+          [
+            259,
+            640
+          ],
+          [
+            258,
+            673
+          ],
+          [
+            70,
+            664
+          ]
+        ]
+      },
+      {
+        "text": "C) 0.47 Q - j0.17 Q",
+        "score": 0.977388,
+        "box": [
+          [
+            57,
+            704
+          ],
+          [
+            256,
+            715
+          ],
+          [
+            254,
+            750
+          ],
+          [
+            55,
+            738
+          ]
+        ]
+      },
+      {
+        "text": "D) 32.1 Q + j38.3 Q",
+        "score": 0.97671,
+        "box": [
+          [
+            71,
+            780
+          ],
+          [
+            262,
+            789
+          ],
+          [
+            261,
+            823
+          ],
+          [
+            69,
+            814
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 055022.png",
+    "joined_text": "Question 2 (1 point)\nThe formula to determine the total impedance of two parallel impedances is the\nsum of the impedances divided by the product of the impedances.\nTrue\nFalse\nQuestion 3 (1 point)\nThe use of a groumnd fault circuit interrupter does not mean a person will not receive\na shock, however it will shut off power quickly.\nTrue\nFalse",
+    "lines": [
+      {
+        "text": "Question 2 (1 point)",
+        "score": 0.986449,
+        "box": [
+          [
+            13,
+            29
+          ],
+          [
+            207,
+            29
+          ],
+          [
+            207,
+            52
+          ],
+          [
+            13,
+            52
+          ]
+        ]
+      },
+      {
+        "text": "The formula to determine the total impedance of two parallel impedances is the",
+        "score": 0.995089,
+        "box": [
+          [
+            29,
+            75
+          ],
+          [
+            784,
+            75
+          ],
+          [
+            784,
+            97
+          ],
+          [
+            29,
+            97
+          ]
+        ]
+      },
+      {
+        "text": "sum of the impedances divided by the product of the impedances.",
+        "score": 0.994317,
+        "box": [
+          [
+            29,
+            108
+          ],
+          [
+            657,
+            108
+          ],
+          [
+            657,
+            130
+          ],
+          [
+            29,
+            130
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999615,
+        "box": [
+          [
+            65,
+            157
+          ],
+          [
+            112,
+            157
+          ],
+          [
+            112,
+            180
+          ],
+          [
+            65,
+            180
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.999068,
+        "box": [
+          [
+            65,
+            194
+          ],
+          [
+            117,
+            194
+          ],
+          [
+            117,
+            218
+          ],
+          [
+            65,
+            218
+          ]
+        ]
+      },
+      {
+        "text": "Question 3 (1 point)",
+        "score": 0.982914,
+        "box": [
+          [
+            13,
+            266
+          ],
+          [
+            206,
+            266
+          ],
+          [
+            206,
+            287
+          ],
+          [
+            13,
+            287
+          ]
+        ]
+      },
+      {
+        "text": "The use of a groumnd fault circuit interrupter does not mean a person will not receive",
+        "score": 0.988233,
+        "box": [
+          [
+            28,
+            309
+          ],
+          [
+            826,
+            310
+          ],
+          [
+            826,
+            333
+          ],
+          [
+            28,
+            333
+          ]
+        ]
+      },
+      {
+        "text": "a shock, however it will shut off power quickly.",
+        "score": 0.975402,
+        "box": [
+          [
+            28,
+            341
+          ],
+          [
+            480,
+            344
+          ],
+          [
+            479,
+            368
+          ],
+          [
+            28,
+            364
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999181,
+        "box": [
+          [
+            65,
+            392
+          ],
+          [
+            112,
+            392
+          ],
+          [
+            112,
+            417
+          ],
+          [
+            65,
+            417
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.999378,
+        "box": [
+          [
+            65,
+            428
+          ],
+          [
+            117,
+            431
+          ],
+          [
+            116,
+            455
+          ],
+          [
+            63,
+            452
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 055116.png",
+    "joined_text": "Question 4 (1 point)\n10\u03a9\n100\nFigure 16.2\nSee Figure 16.2. What is the total impedance Zr for this circuit?\nA) 5 Q \u22650\u00b0\nB) 100 Q \u22650\u00b0\nC)0Q=0\u00b0\nD) infinity\nQuestion 5 (1 point)\nIn a series-parallel circuit, if e = 50 V 20\u00b0 and i = 25 A 20\u00b0, then the total\nimpedance Zr is purely resistive.\nTrue\nFalse",
+    "lines": [
+      {
+        "text": "Question 4 (1 point)",
+        "score": 0.998309,
+        "box": [
+          [
+            10,
+            17
+          ],
+          [
+            209,
+            19
+          ],
+          [
+            208,
+            46
+          ],
+          [
+            10,
+            44
+          ]
+        ]
+      },
+      {
+        "text": "10\u03a9",
+        "score": 0.72679,
+        "box": [
+          [
+            334,
+            127
+          ],
+          [
+            376,
+            127
+          ],
+          [
+            376,
+            150
+          ],
+          [
+            334,
+            150
+          ]
+        ]
+      },
+      {
+        "text": "100",
+        "score": 0.803011,
+        "box": [
+          [
+            461,
+            129
+          ],
+          [
+            521,
+            129
+          ],
+          [
+            521,
+            153
+          ],
+          [
+            461,
+            153
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.2",
+        "score": 0.998831,
+        "box": [
+          [
+            371,
+            236
+          ],
+          [
+            485,
+            236
+          ],
+          [
+            485,
+            266
+          ],
+          [
+            371,
+            266
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.2. What is the total impedance Zr for this circuit?",
+        "score": 0.984409,
+        "box": [
+          [
+            28,
+            353
+          ],
+          [
+            628,
+            353
+          ],
+          [
+            628,
+            379
+          ],
+          [
+            28,
+            379
+          ]
+        ]
+      },
+      {
+        "text": "A) 5 Q \u22650\u00b0",
+        "score": 0.938033,
+        "box": [
+          [
+            67,
+            414
+          ],
+          [
+            175,
+            423
+          ],
+          [
+            172,
+            454
+          ],
+          [
+            64,
+            445
+          ]
+        ]
+      },
+      {
+        "text": "B) 100 Q \u22650\u00b0",
+        "score": 0.958187,
+        "box": [
+          [
+            68,
+            490
+          ],
+          [
+            195,
+            498
+          ],
+          [
+            193,
+            529
+          ],
+          [
+            66,
+            521
+          ]
+        ]
+      },
+      {
+        "text": "C)0Q=0\u00b0",
+        "score": 0.597979,
+        "box": [
+          [
+            67,
+            565
+          ],
+          [
+            174,
+            573
+          ],
+          [
+            171,
+            604
+          ],
+          [
+            64,
+            595
+          ]
+        ]
+      },
+      {
+        "text": "D) infinity",
+        "score": 0.991111,
+        "box": [
+          [
+            67,
+            638
+          ],
+          [
+            175,
+            652
+          ],
+          [
+            171,
+            683
+          ],
+          [
+            63,
+            669
+          ]
+        ]
+      },
+      {
+        "text": "Question 5 (1 point)",
+        "score": 0.97879,
+        "box": [
+          [
+            11,
+            737
+          ],
+          [
+            207,
+            737
+          ],
+          [
+            207,
+            763
+          ],
+          [
+            11,
+            763
+          ]
+        ]
+      },
+      {
+        "text": "In a series-parallel circuit, if e = 50 V 20\u00b0 and i = 25 A 20\u00b0, then the total",
+        "score": 0.979233,
+        "box": [
+          [
+            26,
+            782
+          ],
+          [
+            738,
+            780
+          ],
+          [
+            738,
+            806
+          ],
+          [
+            26,
+            808
+          ]
+        ]
+      },
+      {
+        "text": "impedance Zr is purely resistive.",
+        "score": 0.995659,
+        "box": [
+          [
+            28,
+            816
+          ],
+          [
+            343,
+            816
+          ],
+          [
+            343,
+            842
+          ],
+          [
+            28,
+            842
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999604,
+        "box": [
+          [
+            66,
+            867
+          ],
+          [
+            114,
+            870
+          ],
+          [
+            113,
+            895
+          ],
+          [
+            65,
+            892
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.999211,
+        "box": [
+          [
+            65,
+            905
+          ],
+          [
+            118,
+            905
+          ],
+          [
+            118,
+            931
+          ],
+          [
+            65,
+            931
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 055205.png",
+    "joined_text": "Question 6 (1 point)\n10\u03a9\n10\u03a9\nFigure 16.2\nSee Figure 16.2. As the frequency increases, the total impedance Zr of this circuit\nA) becomes more capacitive.\nC) becomes more inductive.\nQuestion 7 (1 point)\nThe higher the frequency, the better the short-circuit approximation for X. for ac\nconditions.\nTrue\nFalse",
+    "lines": [
+      {
+        "text": "Question 6 (1 point)",
+        "score": 0.970811,
+        "box": [
+          [
+            4,
+            26
+          ],
+          [
+            201,
+            26
+          ],
+          [
+            201,
+            53
+          ],
+          [
+            4,
+            53
+          ]
+        ]
+      },
+      {
+        "text": "10\u03a9",
+        "score": 0.856244,
+        "box": [
+          [
+            327,
+            135
+          ],
+          [
+            371,
+            135
+          ],
+          [
+            371,
+            157
+          ],
+          [
+            327,
+            157
+          ]
+        ]
+      },
+      {
+        "text": "10\u03a9",
+        "score": 0.759474,
+        "box": [
+          [
+            446,
+            137
+          ],
+          [
+            514,
+            135
+          ],
+          [
+            515,
+            159
+          ],
+          [
+            447,
+            161
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.2",
+        "score": 0.999504,
+        "box": [
+          [
+            364,
+            243
+          ],
+          [
+            478,
+            243
+          ],
+          [
+            478,
+            273
+          ],
+          [
+            364,
+            273
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.2. As the frequency increases, the total impedance Zr of this circuit",
+        "score": 0.988145,
+        "box": [
+          [
+            21,
+            361
+          ],
+          [
+            789,
+            361
+          ],
+          [
+            789,
+            387
+          ],
+          [
+            21,
+            387
+          ]
+        ]
+      },
+      {
+        "text": "A) becomes more capacitive.",
+        "score": 0.999083,
+        "box": [
+          [
+            58,
+            423
+          ],
+          [
+            337,
+            434
+          ],
+          [
+            336,
+            468
+          ],
+          [
+            57,
+            457
+          ]
+        ]
+      },
+      {
+        "text": "C) becomes more inductive.",
+        "score": 0.9896,
+        "box": [
+          [
+            61,
+            575
+          ],
+          [
+            331,
+            584
+          ],
+          [
+            330,
+            614
+          ],
+          [
+            60,
+            605
+          ]
+        ]
+      },
+      {
+        "text": "Question 7 (1 point)",
+        "score": 0.952617,
+        "box": [
+          [
+            4,
+            745
+          ],
+          [
+            201,
+            745
+          ],
+          [
+            201,
+            771
+          ],
+          [
+            4,
+            771
+          ]
+        ]
+      },
+      {
+        "text": "The higher the frequency, the better the short-circuit approximation for X. for ac",
+        "score": 0.989423,
+        "box": [
+          [
+            21,
+            789
+          ],
+          [
+            788,
+            791
+          ],
+          [
+            788,
+            818
+          ],
+          [
+            21,
+            816
+          ]
+        ]
+      },
+      {
+        "text": "conditions.",
+        "score": 0.999891,
+        "box": [
+          [
+            20,
+            825
+          ],
+          [
+            130,
+            827
+          ],
+          [
+            129,
+            851
+          ],
+          [
+            20,
+            849
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999703,
+        "box": [
+          [
+            57,
+            876
+          ],
+          [
+            106,
+            876
+          ],
+          [
+            106,
+            901
+          ],
+          [
+            57,
+            901
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.99911,
+        "box": [
+          [
+            57,
+            913
+          ],
+          [
+            111,
+            913
+          ],
+          [
+            111,
+            938
+          ],
+          [
+            57,
+            938
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 055247.png",
+    "joined_text": "Question 8 (1 point)\nCombining the impedance of more than one element can be of value in determining\nthe total voltage across a series combination.\nTrue\nFalse\nQuestion 9 (1 point)\nFigure 16.4\nSee Figure 16.4. Which one of these statements is true?\nA) 14 = I6\nB) Is = I3\nC) 13 = I2 + 15\nD) 13 = I4 + I6",
+    "lines": [
+      {
+        "text": "Question 8 (1 point)",
+        "score": 0.985148,
+        "box": [
+          [
+            13,
+            14
+          ],
+          [
+            209,
+            14
+          ],
+          [
+            209,
+            40
+          ],
+          [
+            13,
+            40
+          ]
+        ]
+      },
+      {
+        "text": "Combining the impedance of more than one element can be of value in determining",
+        "score": 0.981917,
+        "box": [
+          [
+            29,
+            57
+          ],
+          [
+            827,
+            59
+          ],
+          [
+            827,
+            89
+          ],
+          [
+            29,
+            87
+          ]
+        ]
+      },
+      {
+        "text": "the total voltage across a series combination.",
+        "score": 0.997209,
+        "box": [
+          [
+            30,
+            93
+          ],
+          [
+            455,
+            93
+          ],
+          [
+            455,
+            119
+          ],
+          [
+            30,
+            119
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999712,
+        "box": [
+          [
+            67,
+            144
+          ],
+          [
+            114,
+            144
+          ],
+          [
+            114,
+            168
+          ],
+          [
+            67,
+            168
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.986189,
+        "box": [
+          [
+            66,
+            178
+          ],
+          [
+            121,
+            178
+          ],
+          [
+            121,
+            207
+          ],
+          [
+            66,
+            207
+          ]
+        ]
+      },
+      {
+        "text": "Question 9 (1 point)",
+        "score": 0.957938,
+        "box": [
+          [
+            13,
+            251
+          ],
+          [
+            211,
+            251
+          ],
+          [
+            211,
+            276
+          ],
+          [
+            13,
+            276
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.4",
+        "score": 0.999614,
+        "box": [
+          [
+            373,
+            538
+          ],
+          [
+            488,
+            538
+          ],
+          [
+            488,
+            568
+          ],
+          [
+            373,
+            568
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.4. Which one of these statements is true?",
+        "score": 0.992589,
+        "box": [
+          [
+            30,
+            655
+          ],
+          [
+            549,
+            655
+          ],
+          [
+            549,
+            681
+          ],
+          [
+            30,
+            681
+          ]
+        ]
+      },
+      {
+        "text": "A) 14 = I6",
+        "score": 0.852187,
+        "box": [
+          [
+            67,
+            716
+          ],
+          [
+            163,
+            725
+          ],
+          [
+            160,
+            756
+          ],
+          [
+            64,
+            746
+          ]
+        ]
+      },
+      {
+        "text": "B) Is = I3",
+        "score": 0.969178,
+        "box": [
+          [
+            68,
+            789
+          ],
+          [
+            164,
+            800
+          ],
+          [
+            160,
+            834
+          ],
+          [
+            64,
+            822
+          ]
+        ]
+      },
+      {
+        "text": "C) 13 = I2 + 15",
+        "score": 0.834978,
+        "box": [
+          [
+            69,
+            864
+          ],
+          [
+            203,
+            875
+          ],
+          [
+            200,
+            908
+          ],
+          [
+            67,
+            898
+          ]
+        ]
+      },
+      {
+        "text": "D) 13 = I4 + I6",
+        "score": 0.922485,
+        "box": [
+          [
+            71,
+            942
+          ],
+          [
+            202,
+            952
+          ],
+          [
+            200,
+            979
+          ],
+          [
+            69,
+            969
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 055333.png",
+    "joined_text": "Question 10 (1 point)\n10ohms\n173.240\u00b0volts\n20ohms\n\u2191-j11,55\u03a9\nFigure 16.9\nFor the circuit shown in Figure 16.9, the current flowing through the 1oo resistor is\nA) 5 L-30\u00b0\nB) 10 30\u00b0\nC) 173.2 20\u00b0\nD) 8.6660\u00b0",
+    "lines": [
+      {
+        "text": "Question 10 (1 point)",
+        "score": 0.965826,
+        "box": [
+          [
+            3,
+            13
+          ],
+          [
+            213,
+            13
+          ],
+          [
+            213,
+            39
+          ],
+          [
+            3,
+            39
+          ]
+        ]
+      },
+      {
+        "text": "10ohms",
+        "score": 0.985759,
+        "box": [
+          [
+            348,
+            56
+          ],
+          [
+            418,
+            59
+          ],
+          [
+            417,
+            80
+          ],
+          [
+            347,
+            77
+          ]
+        ]
+      },
+      {
+        "text": "173.240\u00b0volts",
+        "score": 0.880495,
+        "box": [
+          [
+            175,
+            150
+          ],
+          [
+            289,
+            147
+          ],
+          [
+            290,
+            174
+          ],
+          [
+            176,
+            177
+          ]
+        ]
+      },
+      {
+        "text": "20ohms",
+        "score": 0.988804,
+        "box": [
+          [
+            440,
+            147
+          ],
+          [
+            514,
+            147
+          ],
+          [
+            514,
+            168
+          ],
+          [
+            440,
+            168
+          ]
+        ]
+      },
+      {
+        "text": "\u2191-j11,55\u03a9",
+        "score": 0.782132,
+        "box": [
+          [
+            538,
+            146
+          ],
+          [
+            661,
+            142
+          ],
+          [
+            661,
+            166
+          ],
+          [
+            539,
+            170
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.9",
+        "score": 0.999554,
+        "box": [
+          [
+            363,
+            293
+          ],
+          [
+            477,
+            293
+          ],
+          [
+            477,
+            323
+          ],
+          [
+            363,
+            323
+          ]
+        ]
+      },
+      {
+        "text": "For the circuit shown in Figure 16.9, the current flowing through the 1oo resistor is",
+        "score": 0.985937,
+        "box": [
+          [
+            19,
+            408
+          ],
+          [
+            806,
+            408
+          ],
+          [
+            806,
+            434
+          ],
+          [
+            19,
+            434
+          ]
+        ]
+      },
+      {
+        "text": "A) 5 L-30\u00b0",
+        "score": 0.884748,
+        "box": [
+          [
+            59,
+            470
+          ],
+          [
+            167,
+            478
+          ],
+          [
+            165,
+            508
+          ],
+          [
+            56,
+            500
+          ]
+        ]
+      },
+      {
+        "text": "B) 10 30\u00b0",
+        "score": 0.972976,
+        "box": [
+          [
+            59,
+            543
+          ],
+          [
+            170,
+            553
+          ],
+          [
+            167,
+            584
+          ],
+          [
+            56,
+            574
+          ]
+        ]
+      },
+      {
+        "text": "C) 173.2 20\u00b0",
+        "score": 0.964452,
+        "box": [
+          [
+            58,
+            618
+          ],
+          [
+            186,
+            628
+          ],
+          [
+            183,
+            658
+          ],
+          [
+            56,
+            649
+          ]
+        ]
+      },
+      {
+        "text": "D) 8.6660\u00b0",
+        "score": 0.953286,
+        "box": [
+          [
+            59,
+            693
+          ],
+          [
+            187,
+            703
+          ],
+          [
+            184,
+            734
+          ],
+          [
+            56,
+            724
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 055417.png",
+    "joined_text": "Question 11 (1 point)\nFigure 16.3\nSee Figure 16.3. Which one equation describes source voltage E?\nA) E = Is \u00f7 ZT\nB) E = Is\u00b2ZT\nC) E = Zr \u00f7 Is\nD) E = IsZT\nQuestion 12 (1 point)\nThe advantage of ladder networks is that it is not necessary to know total\nimpedance to be able to determine total current.\nTrue\nFalse",
+    "lines": [
+      {
+        "text": "Question 11 (1 point)",
+        "score": 0.993545,
+        "box": [
+          [
+            7,
+            33
+          ],
+          [
+            217,
+            33
+          ],
+          [
+            217,
+            59
+          ],
+          [
+            7,
+            59
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.3",
+        "score": 0.998602,
+        "box": [
+          [
+            369,
+            315
+          ],
+          [
+            481,
+            315
+          ],
+          [
+            481,
+            342
+          ],
+          [
+            369,
+            342
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.3. Which one equation describes source voltage E?",
+        "score": 0.994967,
+        "box": [
+          [
+            24,
+            430
+          ],
+          [
+            634,
+            430
+          ],
+          [
+            634,
+            456
+          ],
+          [
+            24,
+            456
+          ]
+        ]
+      },
+      {
+        "text": "A) E = Is \u00f7 ZT",
+        "score": 0.877704,
+        "box": [
+          [
+            63,
+            490
+          ],
+          [
+            201,
+            501
+          ],
+          [
+            198,
+            532
+          ],
+          [
+            61,
+            521
+          ]
+        ]
+      },
+      {
+        "text": "B) E = Is\u00b2ZT",
+        "score": 0.864533,
+        "box": [
+          [
+            62,
+            563
+          ],
+          [
+            188,
+            574
+          ],
+          [
+            185,
+            608
+          ],
+          [
+            59,
+            597
+          ]
+        ]
+      },
+      {
+        "text": "C) E = Zr \u00f7 Is",
+        "score": 0.881425,
+        "box": [
+          [
+            64,
+            639
+          ],
+          [
+            201,
+            650
+          ],
+          [
+            199,
+            681
+          ],
+          [
+            62,
+            671
+          ]
+        ]
+      },
+      {
+        "text": "D) E = IsZT",
+        "score": 0.944052,
+        "box": [
+          [
+            64,
+            715
+          ],
+          [
+            179,
+            724
+          ],
+          [
+            177,
+            754
+          ],
+          [
+            62,
+            745
+          ]
+        ]
+      },
+      {
+        "text": "Question 12 (1 point)",
+        "score": 0.981173,
+        "box": [
+          [
+            8,
+            814
+          ],
+          [
+            216,
+            814
+          ],
+          [
+            216,
+            837
+          ],
+          [
+            8,
+            837
+          ]
+        ]
+      },
+      {
+        "text": "The advantage of ladder networks is that it is not necessary to know total",
+        "score": 0.989508,
+        "box": [
+          [
+            24,
+            858
+          ],
+          [
+            721,
+            858
+          ],
+          [
+            721,
+            884
+          ],
+          [
+            24,
+            884
+          ]
+        ]
+      },
+      {
+        "text": "impedance to be able to determine total current.",
+        "score": 0.98792,
+        "box": [
+          [
+            24,
+            892
+          ],
+          [
+            481,
+            892
+          ],
+          [
+            481,
+            915
+          ],
+          [
+            24,
+            915
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999597,
+        "box": [
+          [
+            62,
+            942
+          ],
+          [
+            108,
+            942
+          ],
+          [
+            108,
+            967
+          ],
+          [
+            62,
+            967
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.999159,
+        "box": [
+          [
+            59,
+            978
+          ],
+          [
+            114,
+            978
+          ],
+          [
+            114,
+            1004
+          ],
+          [
+            59,
+            1004
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 055536.png",
+    "joined_text": "Question 13 (1 point)\nThe equivalent circuit is used in determining the source current in series-parallel ac\nnetworks.\nTrue\nFalse\nQuestion 14 (1point)\n10ohms\n173.2/0\u00b0volts\n20ohms\n-j11,55\nFigure 16.9\nFor the circuit shown in Figure 16.9, the current flowing through the 2oo resistor is\nA) 173.2 20\u00b0\nB) 10 30\u00b0\nC) 5 -30\u00b0\nD) 8.66 260\u00b0",
+    "lines": [
+      {
+        "text": "Question 13 (1 point)",
+        "score": 0.973147,
+        "box": [
+          [
+            3,
+            15
+          ],
+          [
+            210,
+            15
+          ],
+          [
+            210,
+            38
+          ],
+          [
+            3,
+            38
+          ]
+        ]
+      },
+      {
+        "text": "The equivalent circuit is used in determining the source current in series-parallel ac",
+        "score": 0.99802,
+        "box": [
+          [
+            18,
+            58
+          ],
+          [
+            811,
+            59
+          ],
+          [
+            811,
+            83
+          ],
+          [
+            18,
+            82
+          ]
+        ]
+      },
+      {
+        "text": "networks.",
+        "score": 0.99983,
+        "box": [
+          [
+            15,
+            93
+          ],
+          [
+            115,
+            90
+          ],
+          [
+            116,
+            114
+          ],
+          [
+            15,
+            117
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999701,
+        "box": [
+          [
+            54,
+            143
+          ],
+          [
+            102,
+            143
+          ],
+          [
+            102,
+            168
+          ],
+          [
+            54,
+            168
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.999354,
+        "box": [
+          [
+            54,
+            177
+          ],
+          [
+            108,
+            179
+          ],
+          [
+            107,
+            205
+          ],
+          [
+            53,
+            203
+          ]
+        ]
+      },
+      {
+        "text": "Question 14 (1point)",
+        "score": 0.947251,
+        "box": [
+          [
+            1,
+            246
+          ],
+          [
+            212,
+            248
+          ],
+          [
+            211,
+            274
+          ],
+          [
+            1,
+            272
+          ]
+        ]
+      },
+      {
+        "text": "10ohms",
+        "score": 0.963321,
+        "box": [
+          [
+            345,
+            293
+          ],
+          [
+            414,
+            293
+          ],
+          [
+            414,
+            315
+          ],
+          [
+            345,
+            315
+          ]
+        ]
+      },
+      {
+        "text": "173.2/0\u00b0volts",
+        "score": 0.898928,
+        "box": [
+          [
+            174,
+            385
+          ],
+          [
+            287,
+            383
+          ],
+          [
+            288,
+            410
+          ],
+          [
+            174,
+            412
+          ]
+        ]
+      },
+      {
+        "text": "20ohms",
+        "score": 0.974462,
+        "box": [
+          [
+            437,
+            380
+          ],
+          [
+            513,
+            382
+          ],
+          [
+            513,
+            405
+          ],
+          [
+            436,
+            403
+          ]
+        ]
+      },
+      {
+        "text": "-j11,55",
+        "score": 0.921305,
+        "box": [
+          [
+            536,
+            381
+          ],
+          [
+            659,
+            378
+          ],
+          [
+            660,
+            402
+          ],
+          [
+            536,
+            405
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.9",
+        "score": 0.999787,
+        "box": [
+          [
+            362,
+            530
+          ],
+          [
+            474,
+            527
+          ],
+          [
+            475,
+            556
+          ],
+          [
+            362,
+            558
+          ]
+        ]
+      },
+      {
+        "text": "For the circuit shown in Figure 16.9, the current flowing through the 2oo resistor is",
+        "score": 0.983667,
+        "box": [
+          [
+            19,
+            645
+          ],
+          [
+            804,
+            645
+          ],
+          [
+            804,
+            671
+          ],
+          [
+            19,
+            671
+          ]
+        ]
+      },
+      {
+        "text": "A) 173.2 20\u00b0",
+        "score": 0.863421,
+        "box": [
+          [
+            57,
+            705
+          ],
+          [
+            183,
+            715
+          ],
+          [
+            180,
+            746
+          ],
+          [
+            55,
+            735
+          ]
+        ]
+      },
+      {
+        "text": "B) 10 30\u00b0",
+        "score": 0.977388,
+        "box": [
+          [
+            57,
+            780
+          ],
+          [
+            167,
+            789
+          ],
+          [
+            165,
+            820
+          ],
+          [
+            55,
+            811
+          ]
+        ]
+      },
+      {
+        "text": "C) 5 -30\u00b0",
+        "score": 0.969136,
+        "box": [
+          [
+            54,
+            855
+          ],
+          [
+            164,
+            863
+          ],
+          [
+            162,
+            893
+          ],
+          [
+            52,
+            885
+          ]
+        ]
+      },
+      {
+        "text": "D) 8.66 260\u00b0",
+        "score": 0.936655,
+        "box": [
+          [
+            58,
+            930
+          ],
+          [
+            186,
+            938
+          ],
+          [
+            184,
+            969
+          ],
+          [
+            56,
+            961
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 055622.png",
+    "joined_text": "Question 15 (1 point)\n60\nR=10\u03a9\n4Q\nFigure 16.1\nA 1 kHz signal E is applied in the circuit shown in Figure 16.1. What is the value of\ninductor L?\nA)1047 \u03bcH\nHm sS6 (8\nC) 26.5 \u03bcH\nD)1910 \u03bcH",
+    "lines": [
+      {
+        "text": "Question 15 (1 point)",
+        "score": 0.994479,
+        "box": [
+          [
+            2,
+            25
+          ],
+          [
+            211,
+            25
+          ],
+          [
+            211,
+            52
+          ],
+          [
+            2,
+            52
+          ]
+        ]
+      },
+      {
+        "text": "60",
+        "score": 0.602948,
+        "box": [
+          [
+            480,
+            66
+          ],
+          [
+            518,
+            66
+          ],
+          [
+            518,
+            88
+          ],
+          [
+            480,
+            88
+          ]
+        ]
+      },
+      {
+        "text": "R=10\u03a9",
+        "score": 0.917636,
+        "box": [
+          [
+            340,
+            92
+          ],
+          [
+            414,
+            92
+          ],
+          [
+            414,
+            113
+          ],
+          [
+            340,
+            113
+          ]
+        ]
+      },
+      {
+        "text": "4Q",
+        "score": 0.744651,
+        "box": [
+          [
+            486,
+            113
+          ],
+          [
+            523,
+            113
+          ],
+          [
+            523,
+            135
+          ],
+          [
+            486,
+            135
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.1",
+        "score": 0.966135,
+        "box": [
+          [
+            361,
+            328
+          ],
+          [
+            475,
+            326
+          ],
+          [
+            476,
+            354
+          ],
+          [
+            361,
+            356
+          ]
+        ]
+      },
+      {
+        "text": "A 1 kHz signal E is applied in the circuit shown in Figure 16.1. What is the value of",
+        "score": 0.996675,
+        "box": [
+          [
+            19,
+            443
+          ],
+          [
+            809,
+            443
+          ],
+          [
+            809,
+            469
+          ],
+          [
+            19,
+            469
+          ]
+        ]
+      },
+      {
+        "text": "inductor L?",
+        "score": 0.996238,
+        "box": [
+          [
+            17,
+            476
+          ],
+          [
+            132,
+            476
+          ],
+          [
+            132,
+            500
+          ],
+          [
+            17,
+            500
+          ]
+        ]
+      },
+      {
+        "text": "A)1047 \u03bcH",
+        "score": 0.950326,
+        "box": [
+          [
+            56,
+            536
+          ],
+          [
+            174,
+            545
+          ],
+          [
+            171,
+            576
+          ],
+          [
+            54,
+            566
+          ]
+        ]
+      },
+      {
+        "text": "Hm sS6 (8",
+        "score": 0.738237,
+        "box": [
+          [
+            58,
+            611
+          ],
+          [
+            162,
+            620
+          ],
+          [
+            159,
+            651
+          ],
+          [
+            55,
+            642
+          ]
+        ]
+      },
+      {
+        "text": "C) 26.5 \u03bcH",
+        "score": 0.943234,
+        "box": [
+          [
+            54,
+            684
+          ],
+          [
+            168,
+            694
+          ],
+          [
+            165,
+            726
+          ],
+          [
+            52,
+            716
+          ]
+        ]
+      },
+      {
+        "text": "D)1910 \u03bcH",
+        "score": 0.994078,
+        "box": [
+          [
+            57,
+            760
+          ],
+          [
+            176,
+            770
+          ],
+          [
+            173,
+            801
+          ],
+          [
+            54,
+            791
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 055710.png",
+    "joined_text": "Question 16 (1 point)\n60\nR=10\u03a9\nmmm\n4Q\nE\nFigure 16.1\nSee Figure 16.1. The current divider rule can be applied to determine the current\nthrough the capacitor.\nTrue\nFalse",
+    "lines": [
+      {
+        "text": "Question 16 (1 point)",
+        "score": 0.999616,
+        "box": [
+          [
+            13,
+            39
+          ],
+          [
+            218,
+            39
+          ],
+          [
+            218,
+            62
+          ],
+          [
+            13,
+            62
+          ]
+        ]
+      },
+      {
+        "text": "60",
+        "score": 0.603097,
+        "box": [
+          [
+            491,
+            77
+          ],
+          [
+            528,
+            77
+          ],
+          [
+            528,
+            99
+          ],
+          [
+            491,
+            99
+          ]
+        ]
+      },
+      {
+        "text": "R=10\u03a9",
+        "score": 0.917883,
+        "box": [
+          [
+            349,
+            103
+          ],
+          [
+            424,
+            103
+          ],
+          [
+            424,
+            125
+          ],
+          [
+            349,
+            125
+          ]
+        ]
+      },
+      {
+        "text": "mmm",
+        "score": 0.650952,
+        "box": [
+          [
+            487,
+            98
+          ],
+          [
+            529,
+            98
+          ],
+          [
+            529,
+            113
+          ],
+          [
+            487,
+            113
+          ]
+        ]
+      },
+      {
+        "text": "4Q",
+        "score": 0.708684,
+        "box": [
+          [
+            496,
+            125
+          ],
+          [
+            533,
+            125
+          ],
+          [
+            533,
+            147
+          ],
+          [
+            496,
+            147
+          ]
+        ]
+      },
+      {
+        "text": "E",
+        "score": 0.995013,
+        "box": [
+          [
+            260,
+            201
+          ],
+          [
+            270,
+            201
+          ],
+          [
+            270,
+            213
+          ],
+          [
+            260,
+            213
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.1",
+        "score": 0.965828,
+        "box": [
+          [
+            371,
+            338
+          ],
+          [
+            483,
+            336
+          ],
+          [
+            484,
+            365
+          ],
+          [
+            372,
+            367
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.1. The current divider rule can be applied to determine the current",
+        "score": 0.987654,
+        "box": [
+          [
+            29,
+            455
+          ],
+          [
+            793,
+            455
+          ],
+          [
+            793,
+            481
+          ],
+          [
+            29,
+            481
+          ]
+        ]
+      },
+      {
+        "text": "through the capacitor.",
+        "score": 0.999784,
+        "box": [
+          [
+            30,
+            489
+          ],
+          [
+            239,
+            489
+          ],
+          [
+            239,
+            512
+          ],
+          [
+            30,
+            512
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999672,
+        "box": [
+          [
+            63,
+            538
+          ],
+          [
+            112,
+            538
+          ],
+          [
+            112,
+            563
+          ],
+          [
+            63,
+            563
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.9993,
+        "box": [
+          [
+            63,
+            574
+          ],
+          [
+            118,
+            574
+          ],
+          [
+            118,
+            601
+          ],
+          [
+            63,
+            601
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 055813.png",
+    "joined_text": "Question 17 (1 point)\n60\nR=10Q\n4\u03a9\nE\nFigure 16.1\nSee Figure 16.1. Is may be found by dividing E by ZT.\nTrue\nFalse",
+    "lines": [
+      {
+        "text": "Question 17 (1 point)",
+        "score": 0.977848,
+        "box": [
+          [
+            8,
+            12
+          ],
+          [
+            214,
+            12
+          ],
+          [
+            214,
+            35
+          ],
+          [
+            8,
+            35
+          ]
+        ]
+      },
+      {
+        "text": "60",
+        "score": 0.601494,
+        "box": [
+          [
+            488,
+            51
+          ],
+          [
+            522,
+            51
+          ],
+          [
+            522,
+            71
+          ],
+          [
+            488,
+            71
+          ]
+        ]
+      },
+      {
+        "text": "R=10Q",
+        "score": 0.908699,
+        "box": [
+          [
+            345,
+            76
+          ],
+          [
+            419,
+            76
+          ],
+          [
+            419,
+            97
+          ],
+          [
+            345,
+            97
+          ]
+        ]
+      },
+      {
+        "text": "4\u03a9",
+        "score": 0.742182,
+        "box": [
+          [
+            491,
+            98
+          ],
+          [
+            528,
+            98
+          ],
+          [
+            528,
+            118
+          ],
+          [
+            491,
+            118
+          ]
+        ]
+      },
+      {
+        "text": "E",
+        "score": 0.997948,
+        "box": [
+          [
+            252,
+            171
+          ],
+          [
+            268,
+            171
+          ],
+          [
+            268,
+            188
+          ],
+          [
+            252,
+            188
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.1",
+        "score": 0.996698,
+        "box": [
+          [
+            367,
+            312
+          ],
+          [
+            478,
+            310
+          ],
+          [
+            479,
+            339
+          ],
+          [
+            367,
+            341
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.1. Is may be found by dividing E by ZT.",
+        "score": 0.981136,
+        "box": [
+          [
+            23,
+            426
+          ],
+          [
+            530,
+            428
+          ],
+          [
+            530,
+            457
+          ],
+          [
+            23,
+            454
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999703,
+        "box": [
+          [
+            59,
+            480
+          ],
+          [
+            107,
+            480
+          ],
+          [
+            107,
+            505
+          ],
+          [
+            59,
+            505
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.99911,
+        "box": [
+          [
+            59,
+            518
+          ],
+          [
+            113,
+            518
+          ],
+          [
+            113,
+            543
+          ],
+          [
+            59,
+            543
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 055830.png",
+    "joined_text": "Question 18 (1 point)\n10ohms\nV\n173.20\u00b0volts\n20ohms\n-j11,55\u03a9\nFigure 16.9\nFor the circuit shown in Figure 16.9, the current flowing through the 11.5 Q\ncapacitor is\nA) 173.2 <0\u00b0\nB) 8.66 60\u00b0\nC) 10 30\u00b0\nD) 5 -30\u00b0",
+    "lines": [
+      {
+        "text": "Question 18 (1 point)",
+        "score": 0.982205,
+        "box": [
+          [
+            10,
+            14
+          ],
+          [
+            220,
+            14
+          ],
+          [
+            220,
+            41
+          ],
+          [
+            10,
+            41
+          ]
+        ]
+      },
+      {
+        "text": "10ohms",
+        "score": 0.965412,
+        "box": [
+          [
+            353,
+            57
+          ],
+          [
+            425,
+            60
+          ],
+          [
+            424,
+            82
+          ],
+          [
+            352,
+            78
+          ]
+        ]
+      },
+      {
+        "text": "V",
+        "score": 0.868735,
+        "box": [
+          [
+            448,
+            67
+          ],
+          [
+            464,
+            67
+          ],
+          [
+            464,
+            80
+          ],
+          [
+            448,
+            80
+          ]
+        ]
+      },
+      {
+        "text": "173.20\u00b0volts",
+        "score": 0.94853,
+        "box": [
+          [
+            182,
+            150
+          ],
+          [
+            296,
+            148
+          ],
+          [
+            297,
+            176
+          ],
+          [
+            183,
+            178
+          ]
+        ]
+      },
+      {
+        "text": "20ohms",
+        "score": 0.977553,
+        "box": [
+          [
+            447,
+            144
+          ],
+          [
+            522,
+            148
+          ],
+          [
+            521,
+            172
+          ],
+          [
+            446,
+            168
+          ]
+        ]
+      },
+      {
+        "text": "-j11,55\u03a9",
+        "score": 0.858724,
+        "box": [
+          [
+            544,
+            148
+          ],
+          [
+            669,
+            143
+          ],
+          [
+            670,
+            167
+          ],
+          [
+            545,
+            172
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.9",
+        "score": 0.999771,
+        "box": [
+          [
+            369,
+            295
+          ],
+          [
+            485,
+            292
+          ],
+          [
+            485,
+            324
+          ],
+          [
+            369,
+            326
+          ]
+        ]
+      },
+      {
+        "text": "For the circuit shown in Figure 16.9, the current flowing through the 11.5 Q",
+        "score": 0.990982,
+        "box": [
+          [
+            26,
+            409
+          ],
+          [
+            743,
+            410
+          ],
+          [
+            743,
+            438
+          ],
+          [
+            25,
+            437
+          ]
+        ]
+      },
+      {
+        "text": "capacitor is",
+        "score": 0.999136,
+        "box": [
+          [
+            26,
+            447
+          ],
+          [
+            140,
+            445
+          ],
+          [
+            141,
+            469
+          ],
+          [
+            27,
+            471
+          ]
+        ]
+      },
+      {
+        "text": "A) 173.2 <0\u00b0",
+        "score": 0.884308,
+        "box": [
+          [
+            66,
+            504
+          ],
+          [
+            193,
+            512
+          ],
+          [
+            191,
+            543
+          ],
+          [
+            64,
+            535
+          ]
+        ]
+      },
+      {
+        "text": "B) 8.66 60\u00b0",
+        "score": 0.970214,
+        "box": [
+          [
+            65,
+            579
+          ],
+          [
+            193,
+            587
+          ],
+          [
+            191,
+            617
+          ],
+          [
+            64,
+            610
+          ]
+        ]
+      },
+      {
+        "text": "C) 10 30\u00b0",
+        "score": 0.974064,
+        "box": [
+          [
+            68,
+            654
+          ],
+          [
+            176,
+            663
+          ],
+          [
+            174,
+            691
+          ],
+          [
+            66,
+            683
+          ]
+        ]
+      },
+      {
+        "text": "D) 5 -30\u00b0",
+        "score": 0.96779,
+        "box": [
+          [
+            67,
+            728
+          ],
+          [
+            175,
+            737
+          ],
+          [
+            173,
+            768
+          ],
+          [
+            64,
+            759
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 055908.png",
+    "joined_text": "Question 19 (1 point)\n60\nR=10\u03a9\nmmm\n4\nFigure 16.1\nSee Figure 16.1. ZT = R = Xc = XL-\nTrue\nFalse\nQuestion 20 (1 point)\nIf the total impedance has a negative phase angle the network is capacitive in\nnature.\nTrue\nFalse",
+    "lines": [
+      {
+        "text": "Question 19 (1 point)",
+        "score": 0.993665,
+        "box": [
+          [
+            11,
+            22
+          ],
+          [
+            220,
+            22
+          ],
+          [
+            220,
+            47
+          ],
+          [
+            11,
+            47
+          ]
+        ]
+      },
+      {
+        "text": "60",
+        "score": 0.595573,
+        "box": [
+          [
+            491,
+            62
+          ],
+          [
+            529,
+            62
+          ],
+          [
+            529,
+            84
+          ],
+          [
+            491,
+            84
+          ]
+        ]
+      },
+      {
+        "text": "R=10\u03a9",
+        "score": 0.917291,
+        "box": [
+          [
+            350,
+            88
+          ],
+          [
+            424,
+            88
+          ],
+          [
+            424,
+            109
+          ],
+          [
+            350,
+            109
+          ]
+        ]
+      },
+      {
+        "text": "mmm",
+        "score": 0.550981,
+        "box": [
+          [
+            488,
+            84
+          ],
+          [
+            527,
+            84
+          ],
+          [
+            527,
+            98
+          ],
+          [
+            488,
+            98
+          ]
+        ]
+      },
+      {
+        "text": "4",
+        "score": 0.991588,
+        "box": [
+          [
+            498,
+            111
+          ],
+          [
+            533,
+            111
+          ],
+          [
+            533,
+            129
+          ],
+          [
+            498,
+            129
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.1",
+        "score": 0.999736,
+        "box": [
+          [
+            371,
+            323
+          ],
+          [
+            486,
+            323
+          ],
+          [
+            486,
+            352
+          ],
+          [
+            371,
+            352
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.1. ZT = R = Xc = XL-",
+        "score": 0.919524,
+        "box": [
+          [
+            26,
+            437
+          ],
+          [
+            338,
+            439
+          ],
+          [
+            338,
+            468
+          ],
+          [
+            26,
+            466
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999726,
+        "box": [
+          [
+            65,
+            492
+          ],
+          [
+            113,
+            492
+          ],
+          [
+            113,
+            518
+          ],
+          [
+            65,
+            518
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.999131,
+        "box": [
+          [
+            63,
+            526
+          ],
+          [
+            119,
+            529
+          ],
+          [
+            118,
+            557
+          ],
+          [
+            62,
+            555
+          ]
+        ]
+      },
+      {
+        "text": "Question 20 (1 point)",
+        "score": 0.978956,
+        "box": [
+          [
+            10,
+            597
+          ],
+          [
+            222,
+            599
+          ],
+          [
+            221,
+            626
+          ],
+          [
+            10,
+            624
+          ]
+        ]
+      },
+      {
+        "text": "If the total impedance has a negative phase angle the network is capacitive in",
+        "score": 0.994713,
+        "box": [
+          [
+            25,
+            643
+          ],
+          [
+            762,
+            644
+          ],
+          [
+            762,
+            671
+          ],
+          [
+            25,
+            670
+          ]
+        ]
+      },
+      {
+        "text": "nature.",
+        "score": 0.998276,
+        "box": [
+          [
+            26,
+            681
+          ],
+          [
+            99,
+            681
+          ],
+          [
+            99,
+            701
+          ],
+          [
+            26,
+            701
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999662,
+        "box": [
+          [
+            66,
+            729
+          ],
+          [
+            113,
+            729
+          ],
+          [
+            113,
+            753
+          ],
+          [
+            66,
+            753
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.999685,
+        "box": [
+          [
+            64,
+            766
+          ],
+          [
+            117,
+            766
+          ],
+          [
+            117,
+            790
+          ],
+          [
+            64,
+            790
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 055944.png",
+    "joined_text": "Question 21 (1 point)\n60\nR=10\u03a9\n4\u03a9\nFigure 16.1\nSee Figure 16.1. What is the total impedance Zr of this circuit?\nA) 10 Q -j12 Q\nB) 10 Q + j12 Q\nC) 10 Q - j2.4 Q\nD) 10 Q - j2 Q",
+    "lines": [
+      {
+        "text": "Question 21 (1 point)",
+        "score": 0.979308,
+        "box": [
+          [
+            16,
+            21
+          ],
+          [
+            226,
+            21
+          ],
+          [
+            226,
+            47
+          ],
+          [
+            16,
+            47
+          ]
+        ]
+      },
+      {
+        "text": "60",
+        "score": 0.620764,
+        "box": [
+          [
+            497,
+            63
+          ],
+          [
+            531,
+            63
+          ],
+          [
+            531,
+            82
+          ],
+          [
+            497,
+            82
+          ]
+        ]
+      },
+      {
+        "text": "R=10\u03a9",
+        "score": 0.949724,
+        "box": [
+          [
+            354,
+            86
+          ],
+          [
+            428,
+            86
+          ],
+          [
+            428,
+            107
+          ],
+          [
+            354,
+            107
+          ]
+        ]
+      },
+      {
+        "text": "4\u03a9",
+        "score": 0.76126,
+        "box": [
+          [
+            503,
+            109
+          ],
+          [
+            537,
+            109
+          ],
+          [
+            537,
+            128
+          ],
+          [
+            503,
+            128
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.1",
+        "score": 0.999733,
+        "box": [
+          [
+            377,
+            321
+          ],
+          [
+            490,
+            321
+          ],
+          [
+            490,
+            351
+          ],
+          [
+            377,
+            351
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.1. What is the total impedance Zr of this circuit?",
+        "score": 0.98394,
+        "box": [
+          [
+            32,
+            437
+          ],
+          [
+            625,
+            438
+          ],
+          [
+            625,
+            465
+          ],
+          [
+            32,
+            464
+          ]
+        ]
+      },
+      {
+        "text": "A) 10 Q -j12 Q",
+        "score": 0.981587,
+        "box": [
+          [
+            70,
+            499
+          ],
+          [
+            223,
+            508
+          ],
+          [
+            220,
+            542
+          ],
+          [
+            68,
+            533
+          ]
+        ]
+      },
+      {
+        "text": "B) 10 Q + j12 Q",
+        "score": 0.947863,
+        "box": [
+          [
+            70,
+            574
+          ],
+          [
+            227,
+            583
+          ],
+          [
+            225,
+            617
+          ],
+          [
+            68,
+            608
+          ]
+        ]
+      },
+      {
+        "text": "C) 10 Q - j2.4 Q",
+        "score": 0.934768,
+        "box": [
+          [
+            69,
+            649
+          ],
+          [
+            229,
+            659
+          ],
+          [
+            226,
+            693
+          ],
+          [
+            67,
+            682
+          ]
+        ]
+      },
+      {
+        "text": "D) 10 Q - j2 Q",
+        "score": 0.948787,
+        "box": [
+          [
+            72,
+            724
+          ],
+          [
+            214,
+            735
+          ],
+          [
+            211,
+            766
+          ],
+          [
+            70,
+            755
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 060049.png",
+    "joined_text": "Question 22 (1 point)\nE=\n20\u03a9\n50V\nL\n\u4e0b50\u03a9\nL300\n30\u03a9\nFigure 16.5\nSee Figure 16.5. What is the total admittance Yr of this circuit?\nA) 63.73 S Z11.3\nB) 0.016 S -11.3\nC) 0.028 S -56.3\u00b0\nD) 0.02 S 90\u00b0",
+    "lines": [
+      {
+        "text": "Question 22 (1 point)",
+        "score": 0.960775,
+        "box": [
+          [
+            7,
+            24
+          ],
+          [
+            217,
+            24
+          ],
+          [
+            217,
+            49
+          ],
+          [
+            7,
+            49
+          ]
+        ]
+      },
+      {
+        "text": "E=",
+        "score": 0.995168,
+        "box": [
+          [
+            249,
+            140
+          ],
+          [
+            285,
+            140
+          ],
+          [
+            285,
+            163
+          ],
+          [
+            249,
+            163
+          ]
+        ]
+      },
+      {
+        "text": "20\u03a9",
+        "score": 0.903484,
+        "box": [
+          [
+            446,
+            140
+          ],
+          [
+            492,
+            140
+          ],
+          [
+            492,
+            162
+          ],
+          [
+            446,
+            162
+          ]
+        ]
+      },
+      {
+        "text": "50V",
+        "score": 0.986574,
+        "box": [
+          [
+            250,
+            162
+          ],
+          [
+            291,
+            162
+          ],
+          [
+            291,
+            185
+          ],
+          [
+            250,
+            185
+          ]
+        ]
+      },
+      {
+        "text": "L",
+        "score": 0.593482,
+        "box": [
+          [
+            353,
+            170
+          ],
+          [
+            382,
+            170
+          ],
+          [
+            382,
+            196
+          ],
+          [
+            353,
+            196
+          ]
+        ]
+      },
+      {
+        "text": "\u4e0b50\u03a9",
+        "score": 0.708645,
+        "box": [
+          [
+            535,
+            170
+          ],
+          [
+            600,
+            170
+          ],
+          [
+            600,
+            194
+          ],
+          [
+            535,
+            194
+          ]
+        ]
+      },
+      {
+        "text": "L300",
+        "score": 0.864057,
+        "box": [
+          [
+            249,
+            182
+          ],
+          [
+            301,
+            182
+          ],
+          [
+            301,
+            207
+          ],
+          [
+            249,
+            207
+          ]
+        ]
+      },
+      {
+        "text": "30\u03a9",
+        "score": 0.882643,
+        "box": [
+          [
+            447,
+            199
+          ],
+          [
+            494,
+            199
+          ],
+          [
+            494,
+            223
+          ],
+          [
+            447,
+            223
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.5",
+        "score": 0.999167,
+        "box": [
+          [
+            366,
+            314
+          ],
+          [
+            481,
+            311
+          ],
+          [
+            482,
+            342
+          ],
+          [
+            367,
+            344
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.5. What is the total admittance Yr of this circuit?",
+        "score": 0.993233,
+        "box": [
+          [
+            23,
+            429
+          ],
+          [
+            617,
+            430
+          ],
+          [
+            617,
+            456
+          ],
+          [
+            23,
+            455
+          ]
+        ]
+      },
+      {
+        "text": "A) 63.73 S Z11.3",
+        "score": 0.951032,
+        "box": [
+          [
+            61,
+            492
+          ],
+          [
+            234,
+            501
+          ],
+          [
+            232,
+            534
+          ],
+          [
+            59,
+            525
+          ]
+        ]
+      },
+      {
+        "text": "B) 0.016 S -11.3",
+        "score": 0.993688,
+        "box": [
+          [
+            62,
+            567
+          ],
+          [
+            242,
+            576
+          ],
+          [
+            240,
+            609
+          ],
+          [
+            60,
+            600
+          ]
+        ]
+      },
+      {
+        "text": "C) 0.028 S -56.3\u00b0",
+        "score": 0.965103,
+        "box": [
+          [
+            64,
+            643
+          ],
+          [
+            241,
+            650
+          ],
+          [
+            240,
+            680
+          ],
+          [
+            63,
+            673
+          ]
+        ]
+      },
+      {
+        "text": "D) 0.02 S 90\u00b0",
+        "score": 0.966903,
+        "box": [
+          [
+            63,
+            717
+          ],
+          [
+            207,
+            725
+          ],
+          [
+            206,
+            756
+          ],
+          [
+            61,
+            748
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 060117.png",
+    "joined_text": "Question 23 (1 point)\nThe effect of a capacitor for the full audio range is negligible and will allow ac to\npass with little disturbance.\nTrue\nFalse\nQuestion 24 (1 point)\nZT\nE=\n20\u03a9\n50V\n300\n30\u03a9\nFigure 16.5\nSee Figure 16.5. What is the value of current I2?\nA) 1.39 A -26.3o\nB) 0.72 A 26.3\u00b0\nC) 1A \u2265120\u00b0\nD) 1 A \u2265-120\u00b0",
+    "lines": [
+      {
+        "text": "Question 23 (1 point)",
+        "score": 0.996572,
+        "box": [
+          [
+            15,
+            4
+          ],
+          [
+            227,
+            4
+          ],
+          [
+            227,
+            30
+          ],
+          [
+            15,
+            30
+          ]
+        ]
+      },
+      {
+        "text": "The effect of a capacitor for the full audio range is negligible and will allow ac to",
+        "score": 0.991345,
+        "box": [
+          [
+            34,
+            49
+          ],
+          [
+            800,
+            49
+          ],
+          [
+            800,
+            75
+          ],
+          [
+            34,
+            75
+          ]
+        ]
+      },
+      {
+        "text": "pass with little disturbance.",
+        "score": 0.983747,
+        "box": [
+          [
+            29,
+            82
+          ],
+          [
+            298,
+            81
+          ],
+          [
+            298,
+            107
+          ],
+          [
+            30,
+            108
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999612,
+        "box": [
+          [
+            70,
+            132
+          ],
+          [
+            118,
+            132
+          ],
+          [
+            118,
+            157
+          ],
+          [
+            70,
+            157
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.99931,
+        "box": [
+          [
+            69,
+            170
+          ],
+          [
+            123,
+            170
+          ],
+          [
+            123,
+            195
+          ],
+          [
+            69,
+            195
+          ]
+        ]
+      },
+      {
+        "text": "Question 24 (1 point)",
+        "score": 0.995442,
+        "box": [
+          [
+            17,
+            240
+          ],
+          [
+            226,
+            240
+          ],
+          [
+            226,
+            266
+          ],
+          [
+            17,
+            266
+          ]
+        ]
+      },
+      {
+        "text": "ZT",
+        "score": 0.965666,
+        "box": [
+          [
+            361,
+            344
+          ],
+          [
+            395,
+            356
+          ],
+          [
+            385,
+            384
+          ],
+          [
+            351,
+            373
+          ]
+        ]
+      },
+      {
+        "text": "E=",
+        "score": 0.994589,
+        "box": [
+          [
+            259,
+            356
+          ],
+          [
+            293,
+            356
+          ],
+          [
+            293,
+            379
+          ],
+          [
+            259,
+            379
+          ]
+        ]
+      },
+      {
+        "text": "20\u03a9",
+        "score": 0.924523,
+        "box": [
+          [
+            456,
+            355
+          ],
+          [
+            501,
+            355
+          ],
+          [
+            501,
+            377
+          ],
+          [
+            456,
+            377
+          ]
+        ]
+      },
+      {
+        "text": "50V",
+        "score": 0.983962,
+        "box": [
+          [
+            259,
+            378
+          ],
+          [
+            300,
+            378
+          ],
+          [
+            300,
+            401
+          ],
+          [
+            259,
+            401
+          ]
+        ]
+      },
+      {
+        "text": "300",
+        "score": 0.901872,
+        "box": [
+          [
+            256,
+            399
+          ],
+          [
+            310,
+            396
+          ],
+          [
+            311,
+            421
+          ],
+          [
+            257,
+            424
+          ]
+        ]
+      },
+      {
+        "text": "30\u03a9",
+        "score": 0.881019,
+        "box": [
+          [
+            456,
+            415
+          ],
+          [
+            502,
+            412
+          ],
+          [
+            503,
+            438
+          ],
+          [
+            457,
+            441
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.5",
+        "score": 0.999694,
+        "box": [
+          [
+            375,
+            531
+          ],
+          [
+            489,
+            528
+          ],
+          [
+            490,
+            557
+          ],
+          [
+            376,
+            559
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.5. What is the value of current I2?",
+        "score": 0.989413,
+        "box": [
+          [
+            32,
+            645
+          ],
+          [
+            484,
+            645
+          ],
+          [
+            484,
+            674
+          ],
+          [
+            32,
+            674
+          ]
+        ]
+      },
+      {
+        "text": "A) 1.39 A -26.3o",
+        "score": 0.924601,
+        "box": [
+          [
+            71,
+            709
+          ],
+          [
+            245,
+            717
+          ],
+          [
+            243,
+            747
+          ],
+          [
+            70,
+            739
+          ]
+        ]
+      },
+      {
+        "text": "B) 0.72 A 26.3\u00b0",
+        "score": 0.912085,
+        "box": [
+          [
+            71,
+            784
+          ],
+          [
+            235,
+            792
+          ],
+          [
+            233,
+            822
+          ],
+          [
+            70,
+            814
+          ]
+        ]
+      },
+      {
+        "text": "C) 1A \u2265120\u00b0",
+        "score": 0.969395,
+        "box": [
+          [
+            73,
+            858
+          ],
+          [
+            199,
+            866
+          ],
+          [
+            197,
+            897
+          ],
+          [
+            71,
+            889
+          ]
+        ]
+      },
+      {
+        "text": "D) 1 A \u2265-120\u00b0",
+        "score": 0.905892,
+        "box": [
+          [
+            72,
+            932
+          ],
+          [
+            209,
+            941
+          ],
+          [
+            207,
+            973
+          ],
+          [
+            70,
+            963
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 060152.png",
+    "joined_text": "Question 25 (1 point)\nZT\nE=\n20\u03a9\n50V\nL\n\u4e0b50Q\nL300\n30\u03a9\nFigure 16.5\nSee Figure 16.5. What is the value of current I?\nA) 1.39 A -26.3\u00b0\nB) 0.72 A 26.3o\nC) 1A <120\u00b0\nD) 1 A -120\u00b0\nQuestion 26 (1 point)\nThe fumdamental concept for solving series-parallel ac networks is different from\nsolving series-parallel dc networks.\nTrue\nFalse",
+    "lines": [
+      {
+        "text": "Question 25 (1 point)",
+        "score": 0.971199,
+        "box": [
+          [
+            14,
+            24
+          ],
+          [
+            224,
+            24
+          ],
+          [
+            224,
+            50
+          ],
+          [
+            14,
+            50
+          ]
+        ]
+      },
+      {
+        "text": "ZT",
+        "score": 0.787591,
+        "box": [
+          [
+            356,
+            131
+          ],
+          [
+            393,
+            139
+          ],
+          [
+            386,
+            175
+          ],
+          [
+            349,
+            167
+          ]
+        ]
+      },
+      {
+        "text": "E=",
+        "score": 0.994296,
+        "box": [
+          [
+            255,
+            142
+          ],
+          [
+            291,
+            142
+          ],
+          [
+            291,
+            165
+          ],
+          [
+            255,
+            165
+          ]
+        ]
+      },
+      {
+        "text": "20\u03a9",
+        "score": 0.924523,
+        "box": [
+          [
+            454,
+            141
+          ],
+          [
+            499,
+            141
+          ],
+          [
+            499,
+            163
+          ],
+          [
+            454,
+            163
+          ]
+        ]
+      },
+      {
+        "text": "50V",
+        "score": 0.983962,
+        "box": [
+          [
+            257,
+            164
+          ],
+          [
+            298,
+            164
+          ],
+          [
+            298,
+            187
+          ],
+          [
+            257,
+            187
+          ]
+        ]
+      },
+      {
+        "text": "L",
+        "score": 0.519557,
+        "box": [
+          [
+            360,
+            172
+          ],
+          [
+            389,
+            172
+          ],
+          [
+            389,
+            198
+          ],
+          [
+            360,
+            198
+          ]
+        ]
+      },
+      {
+        "text": "\u4e0b50Q",
+        "score": 0.758251,
+        "box": [
+          [
+            545,
+            173
+          ],
+          [
+            606,
+            173
+          ],
+          [
+            606,
+            194
+          ],
+          [
+            545,
+            194
+          ]
+        ]
+      },
+      {
+        "text": "L300",
+        "score": 0.790092,
+        "box": [
+          [
+            257,
+            185
+          ],
+          [
+            307,
+            185
+          ],
+          [
+            307,
+            207
+          ],
+          [
+            257,
+            207
+          ]
+        ]
+      },
+      {
+        "text": "30\u03a9",
+        "score": 0.914246,
+        "box": [
+          [
+            454,
+            200
+          ],
+          [
+            502,
+            200
+          ],
+          [
+            502,
+            225
+          ],
+          [
+            454,
+            225
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.5",
+        "score": 0.999528,
+        "box": [
+          [
+            374,
+            314
+          ],
+          [
+            490,
+            314
+          ],
+          [
+            490,
+            344
+          ],
+          [
+            374,
+            344
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.5. What is the value of current I?",
+        "score": 0.997225,
+        "box": [
+          [
+            32,
+            431
+          ],
+          [
+            481,
+            431
+          ],
+          [
+            481,
+            457
+          ],
+          [
+            32,
+            457
+          ]
+        ]
+      },
+      {
+        "text": "A) 1.39 A -26.3\u00b0",
+        "score": 0.923677,
+        "box": [
+          [
+            69,
+            494
+          ],
+          [
+            243,
+            502
+          ],
+          [
+            241,
+            534
+          ],
+          [
+            68,
+            526
+          ]
+        ]
+      },
+      {
+        "text": "B) 0.72 A 26.3o",
+        "score": 0.94836,
+        "box": [
+          [
+            70,
+            569
+          ],
+          [
+            233,
+            578
+          ],
+          [
+            231,
+            609
+          ],
+          [
+            69,
+            600
+          ]
+        ]
+      },
+      {
+        "text": "C) 1A <120\u00b0",
+        "score": 0.932815,
+        "box": [
+          [
+            71,
+            643
+          ],
+          [
+            202,
+            652
+          ],
+          [
+            200,
+            684
+          ],
+          [
+            68,
+            674
+          ]
+        ]
+      },
+      {
+        "text": "D) 1 A -120\u00b0",
+        "score": 0.9525,
+        "box": [
+          [
+            70,
+            718
+          ],
+          [
+            211,
+            726
+          ],
+          [
+            209,
+            757
+          ],
+          [
+            69,
+            749
+          ]
+        ]
+      },
+      {
+        "text": "Question 26 (1 point)",
+        "score": 0.997482,
+        "box": [
+          [
+            16,
+            817
+          ],
+          [
+            222,
+            817
+          ],
+          [
+            222,
+            840
+          ],
+          [
+            16,
+            840
+          ]
+        ]
+      },
+      {
+        "text": "The fumdamental concept for solving series-parallel ac networks is different from",
+        "score": 0.975797,
+        "box": [
+          [
+            30,
+            860
+          ],
+          [
+            804,
+            860
+          ],
+          [
+            804,
+            889
+          ],
+          [
+            30,
+            889
+          ]
+        ]
+      },
+      {
+        "text": "solving series-parallel dc networks.",
+        "score": 0.999393,
+        "box": [
+          [
+            32,
+            896
+          ],
+          [
+            368,
+            896
+          ],
+          [
+            368,
+            919
+          ],
+          [
+            32,
+            919
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999629,
+        "box": [
+          [
+            68,
+            945
+          ],
+          [
+            115,
+            945
+          ],
+          [
+            115,
+            970
+          ],
+          [
+            68,
+            970
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.99953,
+        "box": [
+          [
+            67,
+            980
+          ],
+          [
+            122,
+            983
+          ],
+          [
+            120,
+            1008
+          ],
+          [
+            66,
+            1005
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 060225.png",
+    "joined_text": "Question 27 (1 point)\nDetermining the source current is the most critical step in solving series-parallel ac\nnetworks.\nTrue\nFalse\nQuestion 28 (1 point)\n35Q\n15Q\n10V\n40Q\n50\u03a9\nL10\u00b0\nFigure 16.6\nSee Figure 16.6. What is the total current Is?\nA)502 A-10.7\u00b0\nB) 5.0 A -10.7\nC) 5.0 A 23.8\nD) 0.164 A 23.8\u00b0",
+    "lines": [
+      {
+        "text": "Question 27 (1 point)",
+        "score": 0.974346,
+        "box": [
+          [
+            10,
+            18
+          ],
+          [
+            220,
+            18
+          ],
+          [
+            220,
+            44
+          ],
+          [
+            10,
+            44
+          ]
+        ]
+      },
+      {
+        "text": "Determining the source current is the most critical step in solving series-parallel ac",
+        "score": 0.992814,
+        "box": [
+          [
+            26,
+            63
+          ],
+          [
+            814,
+            64
+          ],
+          [
+            814,
+            88
+          ],
+          [
+            26,
+            87
+          ]
+        ]
+      },
+      {
+        "text": "networks.",
+        "score": 0.999854,
+        "box": [
+          [
+            24,
+            97
+          ],
+          [
+            124,
+            94
+          ],
+          [
+            124,
+            118
+          ],
+          [
+            25,
+            121
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999723,
+        "box": [
+          [
+            64,
+            145
+          ],
+          [
+            111,
+            148
+          ],
+          [
+            110,
+            173
+          ],
+          [
+            62,
+            170
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.999601,
+        "box": [
+          [
+            65,
+            182
+          ],
+          [
+            117,
+            182
+          ],
+          [
+            117,
+            208
+          ],
+          [
+            65,
+            208
+          ]
+        ]
+      },
+      {
+        "text": "Question 28 (1 point)",
+        "score": 0.973762,
+        "box": [
+          [
+            10,
+            253
+          ],
+          [
+            220,
+            253
+          ],
+          [
+            220,
+            279
+          ],
+          [
+            10,
+            279
+          ]
+        ]
+      },
+      {
+        "text": "35Q",
+        "score": 0.806541,
+        "box": [
+          [
+            363,
+            304
+          ],
+          [
+            406,
+            304
+          ],
+          [
+            406,
+            326
+          ],
+          [
+            363,
+            326
+          ]
+        ]
+      },
+      {
+        "text": "15Q",
+        "score": 0.920876,
+        "box": [
+          [
+            472,
+            304
+          ],
+          [
+            514,
+            304
+          ],
+          [
+            514,
+            326
+          ],
+          [
+            472,
+            326
+          ]
+        ]
+      },
+      {
+        "text": "10V",
+        "score": 0.969488,
+        "box": [
+          [
+            257,
+            390
+          ],
+          [
+            297,
+            390
+          ],
+          [
+            297,
+            412
+          ],
+          [
+            257,
+            412
+          ]
+        ]
+      },
+      {
+        "text": "40Q",
+        "score": 0.881682,
+        "box": [
+          [
+            450,
+            401
+          ],
+          [
+            494,
+            401
+          ],
+          [
+            494,
+            423
+          ],
+          [
+            450,
+            423
+          ]
+        ]
+      },
+      {
+        "text": "50\u03a9",
+        "score": 0.927029,
+        "box": [
+          [
+            525,
+            398
+          ],
+          [
+            605,
+            398
+          ],
+          [
+            605,
+            422
+          ],
+          [
+            525,
+            422
+          ]
+        ]
+      },
+      {
+        "text": "L10\u00b0",
+        "score": 0.820384,
+        "box": [
+          [
+            251,
+            409
+          ],
+          [
+            303,
+            409
+          ],
+          [
+            303,
+            435
+          ],
+          [
+            251,
+            435
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.6",
+        "score": 0.999704,
+        "box": [
+          [
+            371,
+            543
+          ],
+          [
+            484,
+            541
+          ],
+          [
+            484,
+            569
+          ],
+          [
+            372,
+            571
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.6. What is the total current Is?",
+        "score": 0.991672,
+        "box": [
+          [
+            27,
+            658
+          ],
+          [
+            445,
+            658
+          ],
+          [
+            445,
+            684
+          ],
+          [
+            27,
+            684
+          ]
+        ]
+      },
+      {
+        "text": "A)502 A-10.7\u00b0",
+        "score": 0.934787,
+        "box": [
+          [
+            67,
+            722
+          ],
+          [
+            232,
+            730
+          ],
+          [
+            231,
+            760
+          ],
+          [
+            65,
+            753
+          ]
+        ]
+      },
+      {
+        "text": "B) 5.0 A -10.7",
+        "score": 0.981836,
+        "box": [
+          [
+            66,
+            796
+          ],
+          [
+            226,
+            804
+          ],
+          [
+            225,
+            835
+          ],
+          [
+            64,
+            827
+          ]
+        ]
+      },
+      {
+        "text": "C) 5.0 A 23.8",
+        "score": 0.958363,
+        "box": [
+          [
+            67,
+            870
+          ],
+          [
+            218,
+            878
+          ],
+          [
+            217,
+            909
+          ],
+          [
+            65,
+            901
+          ]
+        ]
+      },
+      {
+        "text": "D) 0.164 A 23.8\u00b0",
+        "score": 0.927904,
+        "box": [
+          [
+            65,
+            946
+          ],
+          [
+            241,
+            954
+          ],
+          [
+            240,
+            984
+          ],
+          [
+            64,
+            976
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 060255.png",
+    "joined_text": "Question 29 (1 point)\n60\nR=10\u03a9\n4\u03a9\n7\nFigure 16.1\nSee Figure 16.1. If Is = 1 A Z80\u00b0, what is the current through the coil?\nA) 2 A 100\u00b0\nB) 0.5 A -100\u00b0\nC) 0.5 A 100\u00b0\nD) 2A-100\u00b0",
+    "lines": [
+      {
+        "text": "Question 29 (1 point)",
+        "score": 0.982656,
+        "box": [
+          [
+            10,
+            32
+          ],
+          [
+            218,
+            32
+          ],
+          [
+            218,
+            55
+          ],
+          [
+            10,
+            55
+          ]
+        ]
+      },
+      {
+        "text": "60",
+        "score": 0.596025,
+        "box": [
+          [
+            489,
+            71
+          ],
+          [
+            527,
+            71
+          ],
+          [
+            527,
+            94
+          ],
+          [
+            489,
+            94
+          ]
+        ]
+      },
+      {
+        "text": "R=10\u03a9",
+        "score": 0.91805,
+        "box": [
+          [
+            349,
+            97
+          ],
+          [
+            422,
+            97
+          ],
+          [
+            422,
+            118
+          ],
+          [
+            349,
+            118
+          ]
+        ]
+      },
+      {
+        "text": "4\u03a9",
+        "score": 0.716193,
+        "box": [
+          [
+            493,
+            118
+          ],
+          [
+            532,
+            118
+          ],
+          [
+            532,
+            141
+          ],
+          [
+            493,
+            141
+          ]
+        ]
+      },
+      {
+        "text": "7",
+        "score": 0.547935,
+        "box": [
+          [
+            513,
+            144
+          ],
+          [
+            523,
+            144
+          ],
+          [
+            523,
+            153
+          ],
+          [
+            513,
+            153
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.1",
+        "score": 0.986033,
+        "box": [
+          [
+            370,
+            333
+          ],
+          [
+            481,
+            333
+          ],
+          [
+            481,
+            360
+          ],
+          [
+            370,
+            360
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.1. If Is = 1 A Z80\u00b0, what is the current through the coil?",
+        "score": 0.990929,
+        "box": [
+          [
+            27,
+            448
+          ],
+          [
+            681,
+            448
+          ],
+          [
+            681,
+            474
+          ],
+          [
+            27,
+            474
+          ]
+        ]
+      },
+      {
+        "text": "A) 2 A 100\u00b0",
+        "score": 0.883722,
+        "box": [
+          [
+            65,
+            511
+          ],
+          [
+            197,
+            519
+          ],
+          [
+            195,
+            549
+          ],
+          [
+            63,
+            541
+          ]
+        ]
+      },
+      {
+        "text": "B) 0.5 A -100\u00b0",
+        "score": 0.946572,
+        "box": [
+          [
+            65,
+            585
+          ],
+          [
+            220,
+            594
+          ],
+          [
+            219,
+            627
+          ],
+          [
+            63,
+            618
+          ]
+        ]
+      },
+      {
+        "text": "C) 0.5 A 100\u00b0",
+        "score": 0.930029,
+        "box": [
+          [
+            66,
+            661
+          ],
+          [
+            212,
+            669
+          ],
+          [
+            211,
+            700
+          ],
+          [
+            64,
+            692
+          ]
+        ]
+      },
+      {
+        "text": "D) 2A-100\u00b0",
+        "score": 0.940986,
+        "box": [
+          [
+            65,
+            736
+          ],
+          [
+            207,
+            744
+          ],
+          [
+            205,
+            774
+          ],
+          [
+            63,
+            766
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 060324.png",
+    "joined_text": "Question 30 (1 point)\n35\u03a9\n15Q\n10V\n40Q\n0\n10\u00b0\nFigure 16.6\nSee Figure 16.6. What is the total impedance ZT?\nA) 17.1 Q -33.2\u00b0\nB) 60.8 Q -13.80\nC) 39.2 Q -30.7\nD) 49.3 Q <-9.4\u00b0",
+    "lines": [
+      {
+        "text": "Question 30 (1 point)",
+        "score": 0.978313,
+        "box": [
+          [
+            8,
+            15
+          ],
+          [
+            219,
+            17
+          ],
+          [
+            219,
+            44
+          ],
+          [
+            8,
+            42
+          ]
+        ]
+      },
+      {
+        "text": "35\u03a9",
+        "score": 0.796808,
+        "box": [
+          [
+            360,
+            66
+          ],
+          [
+            406,
+            66
+          ],
+          [
+            406,
+            93
+          ],
+          [
+            360,
+            93
+          ]
+        ]
+      },
+      {
+        "text": "15Q",
+        "score": 0.862906,
+        "box": [
+          [
+            469,
+            67
+          ],
+          [
+            515,
+            67
+          ],
+          [
+            515,
+            93
+          ],
+          [
+            469,
+            93
+          ]
+        ]
+      },
+      {
+        "text": "10V",
+        "score": 0.973663,
+        "box": [
+          [
+            256,
+            155
+          ],
+          [
+            298,
+            155
+          ],
+          [
+            298,
+            178
+          ],
+          [
+            256,
+            178
+          ]
+        ]
+      },
+      {
+        "text": "40Q",
+        "score": 0.881682,
+        "box": [
+          [
+            449,
+            166
+          ],
+          [
+            493,
+            166
+          ],
+          [
+            493,
+            188
+          ],
+          [
+            449,
+            188
+          ]
+        ]
+      },
+      {
+        "text": "0",
+        "score": 0.519599,
+        "box": [
+          [
+            523,
+            161
+          ],
+          [
+            603,
+            163
+          ],
+          [
+            603,
+            187
+          ],
+          [
+            523,
+            185
+          ]
+        ]
+      },
+      {
+        "text": "10\u00b0",
+        "score": 0.828622,
+        "box": [
+          [
+            248,
+            177
+          ],
+          [
+            301,
+            173
+          ],
+          [
+            303,
+            199
+          ],
+          [
+            250,
+            203
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.6",
+        "score": 0.999369,
+        "box": [
+          [
+            369,
+            308
+          ],
+          [
+            483,
+            306
+          ],
+          [
+            483,
+            334
+          ],
+          [
+            369,
+            336
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.6. What is the total impedance ZT?",
+        "score": 0.998412,
+        "box": [
+          [
+            24,
+            421
+          ],
+          [
+            486,
+            423
+          ],
+          [
+            486,
+            452
+          ],
+          [
+            24,
+            450
+          ]
+        ]
+      },
+      {
+        "text": "A) 17.1 Q -33.2\u00b0",
+        "score": 0.952176,
+        "box": [
+          [
+            65,
+            486
+          ],
+          [
+            237,
+            494
+          ],
+          [
+            236,
+            524
+          ],
+          [
+            64,
+            516
+          ]
+        ]
+      },
+      {
+        "text": "B) 60.8 Q -13.80",
+        "score": 0.941324,
+        "box": [
+          [
+            65,
+            561
+          ],
+          [
+            237,
+            569
+          ],
+          [
+            236,
+            599
+          ],
+          [
+            64,
+            591
+          ]
+        ]
+      },
+      {
+        "text": "C) 39.2 Q -30.7",
+        "score": 0.965854,
+        "box": [
+          [
+            66,
+            636
+          ],
+          [
+            238,
+            644
+          ],
+          [
+            237,
+            675
+          ],
+          [
+            65,
+            667
+          ]
+        ]
+      },
+      {
+        "text": "D) 49.3 Q <-9.4\u00b0",
+        "score": 0.899034,
+        "box": [
+          [
+            65,
+            710
+          ],
+          [
+            230,
+            719
+          ],
+          [
+            228,
+            749
+          ],
+          [
+            63,
+            740
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 060445.png",
+    "joined_text": "Question 31 (1 point)\nE\nFigure 16.3\nSee Figure 16.3. Which one equation describes the total impedance Zr for this\ncircuit?\nA) Z\u03c0 = (Z1 +Z2)=Z3\nB) Z\u03c0 =(Z1 =Z2)= Z3\nC) Z = Z + Z2 - Z3\nD) ZT = Z1 + Z2 + Z3",
+    "lines": [
+      {
+        "text": "Question 31 (1 point)",
+        "score": 0.975667,
+        "box": [
+          [
+            7,
+            13
+          ],
+          [
+            215,
+            13
+          ],
+          [
+            215,
+            36
+          ],
+          [
+            7,
+            36
+          ]
+        ]
+      },
+      {
+        "text": "E",
+        "score": 0.529699,
+        "box": [
+          [
+            287,
+            159
+          ],
+          [
+            299,
+            150
+          ],
+          [
+            308,
+            163
+          ],
+          [
+            296,
+            172
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.3",
+        "score": 0.999601,
+        "box": [
+          [
+            366,
+            293
+          ],
+          [
+            479,
+            291
+          ],
+          [
+            480,
+            319
+          ],
+          [
+            367,
+            321
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.3. Which one equation describes the total impedance Zr for this",
+        "score": 0.990182,
+        "box": [
+          [
+            23,
+            409
+          ],
+          [
+            760,
+            409
+          ],
+          [
+            760,
+            435
+          ],
+          [
+            23,
+            435
+          ]
+        ]
+      },
+      {
+        "text": "circuit?",
+        "score": 0.999385,
+        "box": [
+          [
+            22,
+            444
+          ],
+          [
+            98,
+            444
+          ],
+          [
+            98,
+            468
+          ],
+          [
+            22,
+            468
+          ]
+        ]
+      },
+      {
+        "text": "A) Z\u03c0 = (Z1 +Z2)=Z3",
+        "score": 0.897315,
+        "box": [
+          [
+            50,
+            499
+          ],
+          [
+            273,
+            510
+          ],
+          [
+            272,
+            548
+          ],
+          [
+            48,
+            536
+          ]
+        ]
+      },
+      {
+        "text": "B) Z\u03c0 =(Z1 =Z2)= Z3",
+        "score": 0.89137,
+        "box": [
+          [
+            61,
+            578
+          ],
+          [
+            268,
+            587
+          ],
+          [
+            267,
+            621
+          ],
+          [
+            59,
+            612
+          ]
+        ]
+      },
+      {
+        "text": "C) Z = Z + Z2 - Z3",
+        "score": 0.938883,
+        "box": [
+          [
+            61,
+            652
+          ],
+          [
+            258,
+            662
+          ],
+          [
+            256,
+            696
+          ],
+          [
+            59,
+            686
+          ]
+        ]
+      },
+      {
+        "text": "D) ZT = Z1 + Z2 + Z3",
+        "score": 0.867655,
+        "box": [
+          [
+            60,
+            727
+          ],
+          [
+            264,
+            737
+          ],
+          [
+            263,
+            770
+          ],
+          [
+            58,
+            760
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 060501.png",
+    "joined_text": "Question 32 (1 point)\nFigure 16.4\nSee Figure 16.4. Which one equation describes the total impedance ZT?\nA) Zr = Z1 + Z3 + Z5 + Z6'\nB) Z = Z1 + Zr'\nC) ZT = Z1 = Z2\nD) Zr = Z1 + (Z2 =Zr)",
+    "lines": [
+      {
+        "text": "Question 32 (1 point)",
+        "score": 0.98497,
+        "box": [
+          [
+            5,
+            22
+          ],
+          [
+            215,
+            22
+          ],
+          [
+            215,
+            49
+          ],
+          [
+            5,
+            49
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.4",
+        "score": 0.999623,
+        "box": [
+          [
+            365,
+            313
+          ],
+          [
+            480,
+            313
+          ],
+          [
+            480,
+            340
+          ],
+          [
+            365,
+            340
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.4. Which one equation describes the total impedance ZT?",
+        "score": 0.979581,
+        "box": [
+          [
+            20,
+            425
+          ],
+          [
+            694,
+            427
+          ],
+          [
+            694,
+            457
+          ],
+          [
+            20,
+            455
+          ]
+        ]
+      },
+      {
+        "text": "A) Zr = Z1 + Z3 + Z5 + Z6'",
+        "score": 0.904717,
+        "box": [
+          [
+            59,
+            490
+          ],
+          [
+            310,
+            499
+          ],
+          [
+            309,
+            534
+          ],
+          [
+            58,
+            525
+          ]
+        ]
+      },
+      {
+        "text": "B) Z = Z1 + Zr'",
+        "score": 0.917909,
+        "box": [
+          [
+            61,
+            564
+          ],
+          [
+            220,
+            574
+          ],
+          [
+            218,
+            609
+          ],
+          [
+            59,
+            598
+          ]
+        ]
+      },
+      {
+        "text": "C) ZT = Z1 = Z2",
+        "score": 0.852865,
+        "box": [
+          [
+            61,
+            639
+          ],
+          [
+            212,
+            649
+          ],
+          [
+            210,
+            683
+          ],
+          [
+            59,
+            672
+          ]
+        ]
+      },
+      {
+        "text": "D) Zr = Z1 + (Z2 =Zr)",
+        "score": 0.873686,
+        "box": [
+          [
+            58,
+            714
+          ],
+          [
+            279,
+            724
+          ],
+          [
+            277,
+            758
+          ],
+          [
+            57,
+            748
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 060551.png",
+    "joined_text": "Question 32 (1 point)\nFigure 16.4\nSee Figure 16.4. Which one equation describes the total impedance ZT?\nA) Z = Z1 + Z3 + Z5 + Z6\nB) Zr = Z1 + ZT'\nC) Z = Z1 = Z2\nD) ZT = Z1 + (Z2 =ZT)",
+    "lines": [
+      {
+        "text": "Question 32 (1 point)",
+        "score": 0.985318,
+        "box": [
+          [
+            8,
+            20
+          ],
+          [
+            217,
+            20
+          ],
+          [
+            217,
+            45
+          ],
+          [
+            8,
+            45
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.4",
+        "score": 0.999695,
+        "box": [
+          [
+            367,
+            309
+          ],
+          [
+            482,
+            309
+          ],
+          [
+            482,
+            338
+          ],
+          [
+            367,
+            338
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.4. Which one equation describes the total impedance ZT?",
+        "score": 0.996892,
+        "box": [
+          [
+            22,
+            423
+          ],
+          [
+            696,
+            425
+          ],
+          [
+            696,
+            454
+          ],
+          [
+            22,
+            452
+          ]
+        ]
+      },
+      {
+        "text": "A) Z = Z1 + Z3 + Z5 + Z6",
+        "score": 0.91653,
+        "box": [
+          [
+            60,
+            488
+          ],
+          [
+            313,
+            497
+          ],
+          [
+            312,
+            531
+          ],
+          [
+            59,
+            521
+          ]
+        ]
+      },
+      {
+        "text": "B) Zr = Z1 + ZT'",
+        "score": 0.896098,
+        "box": [
+          [
+            63,
+            561
+          ],
+          [
+            221,
+            572
+          ],
+          [
+            219,
+            605
+          ],
+          [
+            61,
+            595
+          ]
+        ]
+      },
+      {
+        "text": "C) Z = Z1 = Z2",
+        "score": 0.91243,
+        "box": [
+          [
+            63,
+            636
+          ],
+          [
+            212,
+            646
+          ],
+          [
+            210,
+            679
+          ],
+          [
+            61,
+            670
+          ]
+        ]
+      },
+      {
+        "text": "D) ZT = Z1 + (Z2 =ZT)",
+        "score": 0.895941,
+        "box": [
+          [
+            60,
+            711
+          ],
+          [
+            280,
+            720
+          ],
+          [
+            279,
+            756
+          ],
+          [
+            59,
+            746
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 060617.png",
+    "joined_text": "Question 33 (1 point)\nFigure 16.3\nSee Figure 16.3. Which one equation describes current I2?\nA) I2 = I1\nB) I2 = Is + I1\nC) I2= Is\nD) 12 = Is - I1",
+    "lines": [
+      {
+        "text": "Question 33 (1 point)",
+        "score": 0.98067,
+        "box": [
+          [
+            2,
+            28
+          ],
+          [
+            208,
+            28
+          ],
+          [
+            208,
+            53
+          ],
+          [
+            2,
+            53
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.3",
+        "score": 0.999452,
+        "box": [
+          [
+            358,
+            307
+          ],
+          [
+            472,
+            307
+          ],
+          [
+            472,
+            337
+          ],
+          [
+            358,
+            337
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.3. Which one equation describes current I2?",
+        "score": 0.995306,
+        "box": [
+          [
+            16,
+            425
+          ],
+          [
+            560,
+            425
+          ],
+          [
+            560,
+            450
+          ],
+          [
+            16,
+            450
+          ]
+        ]
+      },
+      {
+        "text": "A) I2 = I1",
+        "score": 0.909736,
+        "box": [
+          [
+            52,
+            484
+          ],
+          [
+            148,
+            496
+          ],
+          [
+            144,
+            529
+          ],
+          [
+            48,
+            518
+          ]
+        ]
+      },
+      {
+        "text": "B) I2 = Is + I1",
+        "score": 0.913848,
+        "box": [
+          [
+            54,
+            560
+          ],
+          [
+            187,
+            571
+          ],
+          [
+            184,
+            605
+          ],
+          [
+            51,
+            593
+          ]
+        ]
+      },
+      {
+        "text": "C) I2= Is",
+        "score": 0.935813,
+        "box": [
+          [
+            54,
+            634
+          ],
+          [
+            148,
+            645
+          ],
+          [
+            144,
+            677
+          ],
+          [
+            51,
+            666
+          ]
+        ]
+      },
+      {
+        "text": "D) 12 = Is - I1",
+        "score": 0.853731,
+        "box": [
+          [
+            53,
+            709
+          ],
+          [
+            182,
+            720
+          ],
+          [
+            180,
+            752
+          ],
+          [
+            51,
+            742
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "filename": "Screenshot 2026-03-18 060656.png",
+    "joined_text": "Question 34 (1 point)\n60\nR=10\u03a9\nFigure 16.1\nSee Figure 16.1. The total impedance Zr of this circuit is independent of the applied\nfrequency.\nTrue\nFalse",
+    "lines": [
+      {
+        "text": "Question 34 (1 point)",
+        "score": 0.98192,
+        "box": [
+          [
+            13,
+            24
+          ],
+          [
+            220,
+            24
+          ],
+          [
+            220,
+            48
+          ],
+          [
+            13,
+            48
+          ]
+        ]
+      },
+      {
+        "text": "60",
+        "score": 0.611795,
+        "box": [
+          [
+            493,
+            65
+          ],
+          [
+            528,
+            65
+          ],
+          [
+            528,
+            84
+          ],
+          [
+            493,
+            84
+          ]
+        ]
+      },
+      {
+        "text": "R=10\u03a9",
+        "score": 0.913307,
+        "box": [
+          [
+            351,
+            89
+          ],
+          [
+            426,
+            89
+          ],
+          [
+            426,
+            110
+          ],
+          [
+            351,
+            110
+          ]
+        ]
+      },
+      {
+        "text": "Figure 16.1",
+        "score": 0.975538,
+        "box": [
+          [
+            374,
+            324
+          ],
+          [
+            485,
+            324
+          ],
+          [
+            485,
+            351
+          ],
+          [
+            374,
+            351
+          ]
+        ]
+      },
+      {
+        "text": "See Figure 16.1. The total impedance Zr of this circuit is independent of the applied",
+        "score": 0.995538,
+        "box": [
+          [
+            29,
+            439
+          ],
+          [
+            822,
+            440
+          ],
+          [
+            822,
+            466
+          ],
+          [
+            29,
+            465
+          ]
+        ]
+      },
+      {
+        "text": "frequency.",
+        "score": 0.999736,
+        "box": [
+          [
+            28,
+            474
+          ],
+          [
+            133,
+            479
+          ],
+          [
+            132,
+            505
+          ],
+          [
+            27,
+            500
+          ]
+        ]
+      },
+      {
+        "text": "True",
+        "score": 0.999703,
+        "box": [
+          [
+            65,
+            527
+          ],
+          [
+            114,
+            527
+          ],
+          [
+            114,
+            552
+          ],
+          [
+            65,
+            552
+          ]
+        ]
+      },
+      {
+        "text": "False",
+        "score": 0.999006,
+        "box": [
+          [
+            63,
+            562
+          ],
+          [
+            120,
+            562
+          ],
+          [
+            120,
+            589
+          ],
+          [
+            63,
+            589
+          ]
+        ]
+      }
+    ]
+  }
+]

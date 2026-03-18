@@ -6,6 +6,8 @@ from pathlib import Path
 
 from rapidocr_onnxruntime import RapidOCR
 
+IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".bmp", ".webp"}
+
 
 def extract_file(engine: RapidOCR, image_path: Path) -> dict[str, object]:
     result, _ = engine(str(image_path))
@@ -40,7 +42,11 @@ def main() -> None:
     args = parser.parse_args()
 
     engine = RapidOCR()
-    images = sorted(path for path in args.source_dir.iterdir() if path.is_file())
+    images = sorted(
+        path
+        for path in args.source_dir.iterdir()
+        if path.is_file() and path.suffix.lower() in IMAGE_SUFFIXES
+    )
     payload = [extract_file(engine, image_path) for image_path in images]
 
     args.output.write_text(json.dumps(payload, indent=2), encoding="utf-8")
