@@ -1,0 +1,5551 @@
+[
+  {
+    "question_number": 1,
+    "best_candidate": {
+      "question_number": 1,
+      "filename": "Screenshot 2026-03-16 234444.png",
+      "line_count": 5,
+      "kind": "true_false",
+      "prompt": "Power factor can be determined by forming the ratio of the total circuit resistance to the magnitude of the total circuit impedance.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "raw_lines": [
+        "Question 1 (1 point)",
+        "Power factor can be determined by forming the ratio of the total circuit resistance to",
+        "the magnitude of the total circuit impedance.",
+        "OTrue",
+        "OFalse"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 1,
+        "filename": "Screenshot 2026-03-16 234444.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Power factor can be determined by forming the ratio of the total circuit resistance to the magnitude of the total circuit impedance.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 1 (1 point)",
+          "Power factor can be determined by forming the ratio of the total circuit resistance to",
+          "the magnitude of the total circuit impedance.",
+          "OTrue",
+          "OFalse"
+        ]
+      },
+      {
+        "question_number": 1,
+        "filename": "Screenshot 2026-03-17 163503.png",
+        "line_count": 10,
+        "kind": "multiple_choice",
+        "prompt": "2000 6V 4A Figure 15.1 See Figure 15.1. Which one of these equations describes the voltage in this circuit?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "5.64 V - j2.05 V"
+          },
+          {
+            "id": "B",
+            "text": "-2.05V -j5.64V"
+          },
+          {
+            "id": "C",
+            "text": "2.05 V-j5.64V"
+          },
+          {
+            "id": "D",
+            "text": "-5.64V -j2.05V"
+          }
+        ],
+        "raw_lines": [
+          "Question 1 (1point)",
+          "2000",
+          "6V",
+          "4A",
+          "Figure 15.1",
+          "See Figure 15.1. Which one of these equations describes the voltage in this circuit?",
+          "A) 5.64 V - j2.05 V",
+          "B)-2.05V -j5.64V",
+          "C) 2.05 V-j5.64V",
+          "D)-5.64V -j2.05V"
+        ]
+      },
+      {
+        "question_number": 1,
+        "filename": "Screenshot 2026-03-17 174152.png",
+        "line_count": 11,
+        "kind": "multiple_choice",
+        "prompt": "I=1AL10\u00b0 E= 100V L400 Figure 15.4 See Figure 15.4. Determine Zr, expressed in rectangular form.",
+        "choices": [
+          {
+            "id": "A",
+            "text": "100Q+j30Q"
+          },
+          {
+            "id": "B",
+            "text": "86.6Q + j50 \u03a9"
+          },
+          {
+            "id": "C",
+            "text": "100 \u03a9+ j50\u03a9"
+          },
+          {
+            "id": "D",
+            "text": "64.3 Q + j76.6Q"
+          }
+        ],
+        "raw_lines": [
+          "Question 1 (1 point)",
+          "I=1AL10\u00b0",
+          "E=",
+          "100V",
+          "L400",
+          "Figure 15.4",
+          "See Figure 15.4. Determine Zr, expressed in rectangular form.",
+          "A)100Q+j30Q",
+          "B)86.6Q + j50 \u03a9",
+          "C)100 \u03a9+ j50\u03a9",
+          "D) 64.3 Q + j76.6Q"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 2,
+    "best_candidate": {
+      "question_number": 2,
+      "filename": "Screenshot 2026-03-16 234444.png",
+      "line_count": 5,
+      "kind": "true_false",
+      "prompt": "The angle associated with the total impedance is the angle by which the applied voltage leads the source current.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "raw_lines": [
+        "Question2(1point)",
+        "The angle associated with the total impedance is the angle by which the applied",
+        "voltage leads the source current.",
+        "OTrue",
+        "False"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 2,
+        "filename": "Screenshot 2026-03-16 234444.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "The angle associated with the total impedance is the angle by which the applied voltage leads the source current.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question2(1point)",
+          "The angle associated with the total impedance is the angle by which the applied",
+          "voltage leads the source current.",
+          "OTrue",
+          "False"
+        ]
+      },
+      {
+        "question_number": 2,
+        "filename": "Screenshot 2026-03-17 163536.png",
+        "line_count": 6,
+        "kind": "multiple_choice",
+        "prompt": "What is the susceptance of a 100 \u03bcF capacitor at 1000 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "10 S"
+          },
+          {
+            "id": "B",
+            "text": "0.63 S"
+          },
+          {
+            "id": "C",
+            "text": "1.59 S"
+          },
+          {
+            "id": "D",
+            "text": "10-4 S"
+          }
+        ],
+        "raw_lines": [
+          "Question2(1point)",
+          "What is the susceptance of a 100 \u03bcF capacitor at 1000 Hz?",
+          "A) 10 S",
+          "B) 0.63 S",
+          "C) 1.59 S",
+          "D)10-4 S"
+        ]
+      },
+      {
+        "question_number": 2,
+        "filename": "Screenshot 2026-03-17 174152.png",
+        "line_count": 4,
+        "kind": "true_false",
+        "prompt": "The heavier the current flow for a given voltage, the larger the value for admittance.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question2 (1point)",
+          "The heavier the current flow for a given voltage, the larger the value for admittance.",
+          "True",
+          "False"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 3,
+    "best_candidate": {
+      "question_number": 3,
+      "filename": "Screenshot 2026-03-17 174237.png",
+      "line_count": 8,
+      "kind": "multiple_choice",
+      "prompt": "Ignoring inductive effects, what is the impedance of a RC series capacitor made up of a 56 Kilohm resistor and a 0.033 microfarad capacitor at a signal frequency of 450 Hz?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "10.7 kilohms"
+        },
+        {
+          "id": "B",
+          "text": "66.7 kilohms"
+        },
+        {
+          "id": "C",
+          "text": "45.3kilohms"
+        },
+        {
+          "id": "D",
+          "text": "57.0 kilohms"
+        }
+      ],
+      "raw_lines": [
+        "Question3(1point)",
+        "Ignoring inductive effects, what is the impedance of a RC series capacitor made up",
+        "of a 56 Kilohm resistor and a 0.033 microfarad capacitor at a signal frequency of 450",
+        "Hz?",
+        "A) 10.7 kilohms",
+        "B)66.7 kilohms",
+        "C)45.3kilohms",
+        "D) 57.0 kilohms"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 3,
+        "filename": "Screenshot 2026-03-16 234444.png",
+        "line_count": 8,
+        "kind": "multiple_choice",
+        "prompt": "2000 Figure 15.1 See Figure 15.1. Which one of these equations describes the voltage in this circuit?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "-2.05 V - j5.64 V"
+          },
+          {
+            "id": "B",
+            "text": "2.05V-j5.64V"
+          },
+          {
+            "id": "C",
+            "text": "-5.64 V - j2.05 V"
+          },
+          {
+            "id": "D",
+            "text": "5.64 V - j2.05 V"
+          }
+        ],
+        "raw_lines": [
+          "Question 3(1 point)",
+          "2000",
+          "Figure 15.1",
+          "See Figure 15.1. Which one of these equations describes the voltage in this circuit?",
+          "A) -2.05 V - j5.64 V",
+          "B)2.05V-j5.64V",
+          "C) -5.64 V - j2.05 V",
+          "O D) 5.64 V - j2.05 V"
+        ]
+      },
+      {
+        "question_number": 3,
+        "filename": "Screenshot 2026-03-17 163536.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "What is the total impedance Z of a series network consisting of a 5 Q resistor, an inductor having 1o0 reactance, and a capacitor with 150 reactance?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "5Q+j5Q"
+          },
+          {
+            "id": "B",
+            "text": "5Q-j5Q"
+          },
+          {
+            "id": "C",
+            "text": "5Q-j25Q"
+          },
+          {
+            "id": "D",
+            "text": "5Q+j25Q"
+          }
+        ],
+        "raw_lines": [
+          "Question3(1point)",
+          "What is the total impedance Z of a series network consisting of a 5 Q resistor, an",
+          "inductor having 1o0 reactance, and a capacitor with 150 reactance?",
+          "A)5Q+j5Q",
+          "B)5Q-j5Q",
+          "C)5Q-j25Q",
+          "D)5Q+j25Q"
+        ]
+      },
+      {
+        "question_number": 3,
+        "filename": "Screenshot 2026-03-17 174237.png",
+        "line_count": 8,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring inductive effects, what is the impedance of a RC series capacitor made up of a 56 Kilohm resistor and a 0.033 microfarad capacitor at a signal frequency of 450 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "10.7 kilohms"
+          },
+          {
+            "id": "B",
+            "text": "66.7 kilohms"
+          },
+          {
+            "id": "C",
+            "text": "45.3kilohms"
+          },
+          {
+            "id": "D",
+            "text": "57.0 kilohms"
+          }
+        ],
+        "raw_lines": [
+          "Question3(1point)",
+          "Ignoring inductive effects, what is the impedance of a RC series capacitor made up",
+          "of a 56 Kilohm resistor and a 0.033 microfarad capacitor at a signal frequency of 450",
+          "Hz?",
+          "A) 10.7 kilohms",
+          "B)66.7 kilohms",
+          "C)45.3kilohms",
+          "D) 57.0 kilohms"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 4,
+    "best_candidate": {
+      "question_number": 4,
+      "filename": "Screenshot 2026-03-17 163559.png",
+      "line_count": 6,
+      "kind": "multiple_choice",
+      "prompt": "Express the impedance of a 10 \u03bcF capacitor at 60 Hz in rectangular form.",
+      "choices": [
+        {
+          "id": "A",
+          "text": "265.3Q-j0Q"
+        },
+        {
+          "id": "B",
+          "text": "0Q-j0.00377 Q"
+        },
+        {
+          "id": "C",
+          "text": "oQ -j265.3 Q"
+        },
+        {
+          "id": "D",
+          "text": "0Q+j265.3 Q"
+        }
+      ],
+      "raw_lines": [
+        "Question4(1point)",
+        "Express the impedance of a 10 \u03bcF capacitor at 60 Hz in rectangular form.",
+        "A) 265.3Q-j0Q",
+        "B) 0Q-j0.00377 Q",
+        "C) oQ -j265.3 Q",
+        "D)0Q+j265.3 Q"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 4,
+        "filename": "Screenshot 2026-03-16 234534.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Figure 15.2 See Figure 15.2. If R = 50 Q and X = 20 Q, find Z and 0T-",
+        "choices": [
+          {
+            "id": "A",
+            "text": "53.85 -21.89"
+          },
+          {
+            "id": "B",
+            "text": "53.85 Q+21.89"
+          },
+          {
+            "id": "C",
+            "text": "53.85 Q-68.2\u00b0"
+          },
+          {
+            "id": "D",
+            "text": "53.85 Q +68.29"
+          }
+        ],
+        "raw_lines": [
+          "Question 4 (1point)",
+          "Figure 15.2",
+          "See Figure 15.2. If R = 50 Q and X = 20 Q, find Z and 0T-",
+          "A)53.85 -21.89",
+          "B)53.85 Q+21.89",
+          "C) 53.85 Q-68.2\u00b0",
+          "D) 53.85 Q +68.29"
+        ]
+      },
+      {
+        "question_number": 4,
+        "filename": "Screenshot 2026-03-17 163559.png",
+        "line_count": 6,
+        "kind": "multiple_choice",
+        "prompt": "Express the impedance of a 10 \u03bcF capacitor at 60 Hz in rectangular form.",
+        "choices": [
+          {
+            "id": "A",
+            "text": "265.3Q-j0Q"
+          },
+          {
+            "id": "B",
+            "text": "0Q-j0.00377 Q"
+          },
+          {
+            "id": "C",
+            "text": "oQ -j265.3 Q"
+          },
+          {
+            "id": "D",
+            "text": "0Q+j265.3 Q"
+          }
+        ],
+        "raw_lines": [
+          "Question4(1point)",
+          "Express the impedance of a 10 \u03bcF capacitor at 60 Hz in rectangular form.",
+          "A) 265.3Q-j0Q",
+          "B) 0Q-j0.00377 Q",
+          "C) oQ -j265.3 Q",
+          "D)0Q+j265.3 Q"
+        ]
+      },
+      {
+        "question_number": 4,
+        "filename": "Screenshot 2026-03-17 174237.png",
+        "line_count": 6,
+        "kind": "multiple_choice",
+        "prompt": "What is the susceptance of a 100 \u03bcF capacitor at 1000 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "0.63 S"
+          },
+          {
+            "id": "B",
+            "text": "10*S"
+          },
+          {
+            "id": "C",
+            "text": "1.59 S"
+          },
+          {
+            "id": "D",
+            "text": "104S"
+          }
+        ],
+        "raw_lines": [
+          "Question4(1point)",
+          "What is the susceptance of a 100 \u03bcF capacitor at 1000 Hz?",
+          "A) 0.63 S",
+          "OB) 10*S",
+          "O C)1.59 S",
+          "D)104S"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 5,
+    "best_candidate": {
+      "question_number": 5,
+      "filename": "Screenshot 2026-03-16 234534.png",
+      "line_count": 5,
+      "kind": "true_false",
+      "prompt": "In analysis of a parallel RLC networks, inductive reactance would predominate at low frequencies and capacitive reactance at high frequencies.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "raw_lines": [
+        "Question5 (1point)",
+        "In analysis of a parallel RLC networks, inductive reactance would predominate at",
+        "low frequencies and capacitive reactance at high frequencies.",
+        "True",
+        "False"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 5,
+        "filename": "Screenshot 2026-03-16 234534.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "In analysis of a parallel RLC networks, inductive reactance would predominate at low frequencies and capacitive reactance at high frequencies.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question5 (1point)",
+          "In analysis of a parallel RLC networks, inductive reactance would predominate at",
+          "low frequencies and capacitive reactance at high frequencies.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 5,
+        "filename": "Screenshot 2026-03-17 163559.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "A circuit has a power factor of 0.8 lagging. The circuit dissipates 100 W of power rectangular form?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "1600 Q -j1200 Q"
+          },
+          {
+            "id": "B",
+            "text": "1600Q+j1200Q"
+          },
+          {
+            "id": "C",
+            "text": "1200 Q-j1600 Q"
+          },
+          {
+            "id": "D",
+            "text": "1200Q+j1600Q"
+          }
+        ],
+        "raw_lines": [
+          "Question5(1point)",
+          "A circuit has a power factor of 0.8 lagging. The circuit dissipates 100 W of power",
+          "rectangular form?",
+          "A) 1600 Q -j1200 Q",
+          "B)1600Q+j1200Q",
+          "C) 1200 Q-j1600 Q",
+          "D)1200Q+j1600Q"
+        ]
+      },
+      {
+        "question_number": 5,
+        "filename": "Screenshot 2026-03-17 174237.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "For parallel elements, the element with the smallest impedance will have the least impact on the total impedance at that frequency.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 5 (1 point)",
+          "For parallel elements, the element with the smallest impedance will have the least",
+          "impact on the total impedance at that frequency.",
+          "True",
+          "False"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 6,
+    "best_candidate": {
+      "question_number": 6,
+      "filename": "Screenshot 2026-03-17 174257.png",
+      "line_count": 5,
+      "kind": "true_false",
+      "prompt": "The basic format for the voltage divider rule in ac circuits is unlike that for dc circuits.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "raw_lines": [
+        "Question 6(1 point)",
+        "The basic format for the voltage divider rule in ac circuits is unlike that for dc",
+        "circuits.",
+        "True",
+        "False"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 6,
+        "filename": "Screenshot 2026-03-16 234534.png",
+        "line_count": 2,
+        "kind": "multiple_choice",
+        "prompt": "Figure 15.2",
+        "choices": [],
+        "raw_lines": [
+          "Question6 (1point)",
+          "Figure 15.2"
+        ]
+      },
+      {
+        "question_number": 6,
+        "filename": "Screenshot 2026-03-16 234549.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Figure 15.2 See Figure 15.2. If R = 100 Q and \u03b8 = 30\u00b0, what is the power factor?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "0.3 leading"
+          },
+          {
+            "id": "B",
+            "text": "0.3 lagging"
+          },
+          {
+            "id": "C",
+            "text": "0.866 lagging"
+          },
+          {
+            "id": "D",
+            "text": "0.866 leading"
+          }
+        ],
+        "raw_lines": [
+          "Question 6 (1 point)",
+          "Figure 15.2",
+          "See Figure 15.2. If R = 100 Q and \u03b8 = 30\u00b0, what is the power factor?",
+          "A) 0.3 leading",
+          "B) 0.3 lagging",
+          "C) 0.866 lagging",
+          "D)0.866 leading"
+        ]
+      },
+      {
+        "question_number": 6,
+        "filename": "Screenshot 2026-03-17 163628.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ameasureofhowwellanaccircuitwilladmit,or allowcurrenttoflowinthe circuit is",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Admittance"
+          },
+          {
+            "id": "B",
+            "text": "Capacitance"
+          },
+          {
+            "id": "C",
+            "text": "Inductance"
+          },
+          {
+            "id": "D",
+            "text": "Resistance"
+          }
+        ],
+        "raw_lines": [
+          "Question6(1point)",
+          "Ameasureofhowwellanaccircuitwilladmit,or allowcurrenttoflowinthe",
+          "circuit is",
+          "A)Admittance",
+          "B)Capacitance",
+          "C)Inductance",
+          "D) Resistance"
+        ]
+      },
+      {
+        "question_number": 6,
+        "filename": "Screenshot 2026-03-17 174257.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "The basic format for the voltage divider rule in ac circuits is unlike that for dc circuits.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 6(1 point)",
+          "The basic format for the voltage divider rule in ac circuits is unlike that for dc",
+          "circuits.",
+          "True",
+          "False"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 7,
+    "best_candidate": {
+      "question_number": 7,
+      "filename": "Screenshot 2026-03-17 174257.png",
+      "line_count": 11,
+      "kind": "multiple_choice",
+      "prompt": "R=100QX=50\u03a9 MM ZT- Figure 15.6 See Figure 15.6. Which one of the following combinations is equivalent to the given series circuit?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "R = 250 Q in parallel with X = 125 Q."
+        },
+        {
+          "id": "B",
+          "text": "R = 125 Q in parallel with X = 250 Q."
+        },
+        {
+          "id": "C",
+          "text": "R = 20 Q in parallel with X = 40 Q."
+        },
+        {
+          "id": "D",
+          "text": "R = 40 Q in parallel with X = 20 Q."
+        }
+      ],
+      "raw_lines": [
+        "Question 7(1 point)",
+        "R=100QX=50\u03a9",
+        "MM",
+        "ZT-",
+        "Figure 15.6",
+        "See Figure 15.6. Which one of the following combinations is equivalent to the given",
+        "series circuit?",
+        "A) R = 250 Q in parallel with X = 125 Q.",
+        "B) R = 125 Q in parallel with X = 250 Q.",
+        "C) R = 20 Q in parallel with X = 40 Q.",
+        "D) R = 40 Q in parallel with X = 20 Q."
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 7,
+        "filename": "Screenshot 2026-03-16 234602.png",
+        "line_count": 9,
+        "kind": "multiple_choice",
+        "prompt": "R=100QX=50Q ZT Figure 15.6 See Figure 15.6. What is the total impedance Zq for this circuit?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "112 Q -26.6\u00b0"
+          },
+          {
+            "id": "B",
+            "text": "112Q26.6\u00b0"
+          },
+          {
+            "id": "C",
+            "text": "112 Q2-63.4\u00b0"
+          },
+          {
+            "id": "D",
+            "text": "112Q263.4\u00b0"
+          }
+        ],
+        "raw_lines": [
+          "Question 7 (1 point)",
+          "R=100QX=50Q",
+          "ZT",
+          "Figure 15.6",
+          "See Figure 15.6. What is the total impedance Zq for this circuit?",
+          "A) 112 Q -26.6\u00b0",
+          "B)112Q26.6\u00b0",
+          "C) 112 Q2-63.4\u00b0",
+          "D)112Q263.4\u00b0"
+        ]
+      },
+      {
+        "question_number": 7,
+        "filename": "Screenshot 2026-03-17 163659.png",
+        "line_count": 13,
+        "kind": "multiple_choice",
+        "prompt": "R=10Q X=20Q E= 100V 15Q L300 Figure 15.3 See Figure 15.3. What is Zr in polar form?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "11.2Q 263.439"
+          },
+          {
+            "id": "B",
+            "text": "10Q5\u00b0"
+          },
+          {
+            "id": "C",
+            "text": "11.2Q26.6\u00b0"
+          },
+          {
+            "id": "D",
+            "text": "5Q10\u00b0"
+          }
+        ],
+        "raw_lines": [
+          "Question 7(1point)",
+          "R=10Q",
+          "X=20Q",
+          "E=",
+          "100V",
+          "15Q",
+          "L300",
+          "Figure 15.3",
+          "See Figure 15.3. What is Zr in polar form?",
+          "A) 11.2Q 263.439",
+          "B) 10Q5\u00b0",
+          "C)11.2Q26.6\u00b0",
+          "D)5Q10\u00b0"
+        ]
+      },
+      {
+        "question_number": 7,
+        "filename": "Screenshot 2026-03-17 174257.png",
+        "line_count": 11,
+        "kind": "multiple_choice",
+        "prompt": "R=100QX=50\u03a9 MM ZT- Figure 15.6 See Figure 15.6. Which one of the following combinations is equivalent to the given series circuit?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "R = 250 Q in parallel with X = 125 Q."
+          },
+          {
+            "id": "B",
+            "text": "R = 125 Q in parallel with X = 250 Q."
+          },
+          {
+            "id": "C",
+            "text": "R = 20 Q in parallel with X = 40 Q."
+          },
+          {
+            "id": "D",
+            "text": "R = 40 Q in parallel with X = 20 Q."
+          }
+        ],
+        "raw_lines": [
+          "Question 7(1 point)",
+          "R=100QX=50\u03a9",
+          "MM",
+          "ZT-",
+          "Figure 15.6",
+          "See Figure 15.6. Which one of the following combinations is equivalent to the given",
+          "series circuit?",
+          "A) R = 250 Q in parallel with X = 125 Q.",
+          "B) R = 125 Q in parallel with X = 250 Q.",
+          "C) R = 20 Q in parallel with X = 40 Q.",
+          "D) R = 40 Q in parallel with X = 20 Q."
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 8,
+    "best_candidate": {
+      "question_number": 8,
+      "filename": "Screenshot 2026-03-17 163747.png",
+      "line_count": 11,
+      "kind": "multiple_choice",
+      "prompt": "2000 6V 4A Figure 15.1 See Figure 15.1. Which one of the following statements is true? The circuit has no reactive component, since the voltage phasor is not in a +j quadrant.",
+      "choices": [
+        {
+          "id": "B",
+          "text": "Voltage leads current by 90\u00b0."
+        },
+        {
+          "id": "C",
+          "text": "The equivalent circuit is inductive."
+        },
+        {
+          "id": "D",
+          "text": "The equivalent circuit is capacitive."
+        }
+      ],
+      "raw_lines": [
+        "Question 8(1point)",
+        "2000",
+        "6V",
+        "4A",
+        "Figure 15.1",
+        "See Figure 15.1. Which one of the following statements is true?",
+        "The circuit has no reactive component, since the voltage phasor is not in a +j",
+        "quadrant.",
+        "B) Voltage leads current by 90\u00b0.",
+        "C) The equivalent circuit is inductive.",
+        "D) The equivalent circuit is capacitive."
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 8,
+        "filename": "Screenshot 2026-03-16 234602.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Which one of the following expressions describes the impedance of a 100 mH inductor at 1000 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "200\u03c0\u03a9\u22650\u00b0"
+          },
+          {
+            "id": "B",
+            "text": "200\u03c0Q\u2265-90\u00b0"
+          },
+          {
+            "id": "C",
+            "text": "200\u03c0Q+ j0Q"
+          },
+          {
+            "id": "D",
+            "text": "200\u03c0\u03a9\u2265+90\u00b0"
+          }
+        ],
+        "raw_lines": [
+          "Question8(1point)",
+          "Which one of the following expressions describes the impedance of a 100 mH",
+          "inductor at 1000 Hz?",
+          "A) 200\u03c0\u03a9\u22650\u00b0",
+          "B)200\u03c0Q\u2265-90\u00b0",
+          "C) 200\u03c0Q+ j0Q",
+          "D)200\u03c0\u03a9\u2265+90\u00b0"
+        ]
+      },
+      {
+        "question_number": 8,
+        "filename": "Screenshot 2026-03-17 163747.png",
+        "line_count": 11,
+        "kind": "multiple_choice",
+        "prompt": "2000 6V 4A Figure 15.1 See Figure 15.1. Which one of the following statements is true? The circuit has no reactive component, since the voltage phasor is not in a +j quadrant.",
+        "choices": [
+          {
+            "id": "B",
+            "text": "Voltage leads current by 90\u00b0."
+          },
+          {
+            "id": "C",
+            "text": "The equivalent circuit is inductive."
+          },
+          {
+            "id": "D",
+            "text": "The equivalent circuit is capacitive."
+          }
+        ],
+        "raw_lines": [
+          "Question 8(1point)",
+          "2000",
+          "6V",
+          "4A",
+          "Figure 15.1",
+          "See Figure 15.1. Which one of the following statements is true?",
+          "The circuit has no reactive component, since the voltage phasor is not in a +j",
+          "quadrant.",
+          "B) Voltage leads current by 90\u00b0.",
+          "C) The equivalent circuit is inductive.",
+          "D) The equivalent circuit is capacitive."
+        ]
+      },
+      {
+        "question_number": 8,
+        "filename": "Screenshot 2026-03-17 174257.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Impedance is the combination of capacitive reactance, inductive reactance, and dc resistance.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 8(1 point)",
+          "Impedance is the combination of capacitive reactance, inductive reactance, and dc",
+          "resistance.",
+          "True",
+          "False"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 9,
+    "best_candidate": {
+      "question_number": 9,
+      "filename": "Screenshot 2026-03-17 174317.png",
+      "line_count": 7,
+      "kind": "multiple_choice",
+      "prompt": "Which one of the following expressions describes the impedance of a 100 mH inductor at 1000 Hz?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "200\u03c0\u03a9\u2265+90\u00b0"
+        },
+        {
+          "id": "B",
+          "text": "200\u03c0Q\u2265-90\u00b0"
+        },
+        {
+          "id": "C",
+          "text": "200\u03c0\u03a9\u22650\u00b0"
+        },
+        {
+          "id": "D",
+          "text": "200\u03c0Q+j0Q"
+        }
+      ],
+      "raw_lines": [
+        "Question 9(1 point)",
+        "Which one of the following expressions describes the impedance of a 100 mH",
+        "inductor at 1000 Hz?",
+        "A) 200\u03c0\u03a9\u2265+90\u00b0",
+        "B) 200\u03c0Q\u2265-90\u00b0",
+        "C)200\u03c0\u03a9\u22650\u00b0",
+        "D)200\u03c0Q+j0Q"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 9,
+        "filename": "Screenshot 2026-03-16 234613.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Inductive reactance is plotted on the negative imaginary axis on an impedance diagram.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 9(1 point)",
+          "Inductive reactance is plotted on the negative imaginary axis on an impedance",
+          "diagram.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 9,
+        "filename": "Screenshot 2026-03-17 163747.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Impedance is the combination of capacitive reactance,inductive reactance, and dc resistance.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question9 (1 point)",
+          "Impedance is the combination of capacitive reactance,inductive reactance, and dc",
+          "resistance.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 9,
+        "filename": "Screenshot 2026-03-17 174317.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Which one of the following expressions describes the impedance of a 100 mH inductor at 1000 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "200\u03c0\u03a9\u2265+90\u00b0"
+          },
+          {
+            "id": "B",
+            "text": "200\u03c0Q\u2265-90\u00b0"
+          },
+          {
+            "id": "C",
+            "text": "200\u03c0\u03a9\u22650\u00b0"
+          },
+          {
+            "id": "D",
+            "text": "200\u03c0Q+j0Q"
+          }
+        ],
+        "raw_lines": [
+          "Question 9(1 point)",
+          "Which one of the following expressions describes the impedance of a 100 mH",
+          "inductor at 1000 Hz?",
+          "A) 200\u03c0\u03a9\u2265+90\u00b0",
+          "B) 200\u03c0Q\u2265-90\u00b0",
+          "C)200\u03c0\u03a9\u22650\u00b0",
+          "D)200\u03c0Q+j0Q"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 10,
+    "best_candidate": {
+      "question_number": 10,
+      "filename": "Screenshot 2026-03-17 163828.png",
+      "line_count": 5,
+      "kind": "true_false",
+      "prompt": "Total impedance of a system is the reciprocal of the sum of the individual impedances.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "raw_lines": [
+        "Question 10 (1 point)",
+        "Total impedance of a system is the reciprocal of the sum of the individual",
+        "impedances.",
+        "True",
+        "False"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 10,
+        "filename": "Screenshot 2026-03-16 234613.png",
+        "line_count": 6,
+        "kind": "multiple_choice",
+        "prompt": "The reactance of a 25 millihenry coil at 5000 hertz is which of the following?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "13 ohms"
+          },
+          {
+            "id": "B",
+            "text": "0.0013 ohms"
+          },
+          {
+            "id": "C",
+            "text": "785,000 ohms"
+          },
+          {
+            "id": "D",
+            "text": "785 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question 10 (1 point)",
+          "The reactance of a 25 millihenry coil at 5000 hertz is which of the following?",
+          "A)13 ohms",
+          "B) 0.0013 ohms",
+          "C) 785,000 ohms",
+          "D) 785 ohms"
+        ]
+      },
+      {
+        "question_number": 10,
+        "filename": "Screenshot 2026-03-17 163828.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Total impedance of a system is the reciprocal of the sum of the individual impedances.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 10 (1 point)",
+          "Total impedance of a system is the reciprocal of the sum of the individual",
+          "impedances.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 10,
+        "filename": "Screenshot 2026-03-17 174317.png",
+        "line_count": 6,
+        "kind": "multiple_choice",
+        "prompt": "Express the impedance of a 10 \u03bcF capacitor at 60 Hz in rectangular form.",
+        "choices": [
+          {
+            "id": "A",
+            "text": "0Q + j265.3Q"
+          },
+          {
+            "id": "B",
+            "text": "oQ-j0.00377 Q"
+          },
+          {
+            "id": "C",
+            "text": "265.3Q-j0Q"
+          },
+          {
+            "id": "D",
+            "text": "oQ-j265.3Q"
+          }
+        ],
+        "raw_lines": [
+          "Question10 (1point)",
+          "Express the impedance of a 10 \u03bcF capacitor at 60 Hz in rectangular form.",
+          "A) 0Q + j265.3Q",
+          "B)oQ-j0.00377 Q",
+          "C) 265.3Q-j0Q",
+          "D)oQ-j265.3Q"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 11,
+    "best_candidate": {
+      "question_number": 11,
+      "filename": "Screenshot 2026-03-16 234613.png",
+      "line_count": 11,
+      "kind": "multiple_choice",
+      "prompt": "Which one of the following is true of ac circuits with reactive elements? Depending on the frequency applied, the circuit can look either inductive or capacitive. The smaller the resistive element of a circuit, the closer the power factor is 3 to unity. The impedance of any one element can never exceed the total network impedance. The magnitude of the voltage across any one element can never exceed the applied voltage.",
+      "choices": [],
+      "raw_lines": [
+        "Question 11 (1 point)",
+        "Which one of the following is true of ac circuits with reactive elements?",
+        "Depending on the frequency applied, the circuit can look either inductive or",
+        "capacitive.",
+        "The smaller the resistive element of a circuit, the closer the power factor is",
+        "3",
+        "to unity.",
+        "The impedance of any one element can never exceed the total network",
+        "impedance.",
+        "The magnitude of the voltage across any one element can never exceed the",
+        "applied voltage."
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 11,
+        "filename": "Screenshot 2026-03-16 234613.png",
+        "line_count": 11,
+        "kind": "multiple_choice",
+        "prompt": "Which one of the following is true of ac circuits with reactive elements? Depending on the frequency applied, the circuit can look either inductive or capacitive. The smaller the resistive element of a circuit, the closer the power factor is 3 to unity. The impedance of any one element can never exceed the total network impedance. The magnitude of the voltage across any one element can never exceed the applied voltage.",
+        "choices": [],
+        "raw_lines": [
+          "Question 11 (1 point)",
+          "Which one of the following is true of ac circuits with reactive elements?",
+          "Depending on the frequency applied, the circuit can look either inductive or",
+          "capacitive.",
+          "The smaller the resistive element of a circuit, the closer the power factor is",
+          "3",
+          "to unity.",
+          "The impedance of any one element can never exceed the total network",
+          "impedance.",
+          "The magnitude of the voltage across any one element can never exceed the",
+          "applied voltage."
+        ]
+      },
+      {
+        "question_number": 11,
+        "filename": "Screenshot 2026-03-17 163828.png",
+        "line_count": 3,
+        "kind": "true_false",
+        "prompt": "",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 11 (1 point)",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 11,
+        "filename": "Screenshot 2026-03-17 174317.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Inductive reactance is plotted on the negative imaginary axis on an impedance diagram.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 11 (1 point)",
+          "Inductive reactance is plotted on the negative imaginary axis on an impedance",
+          "diagram.",
+          "True",
+          "False"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 12,
+    "best_candidate": {
+      "question_number": 12,
+      "filename": "Screenshot 2026-03-16 234622.png",
+      "line_count": 8,
+      "kind": "multiple_choice",
+      "prompt": "Ignoring inductive effects, what is the impedance of a RC series capacitor made up of a 56 Kilohm resistor and a 0.033 microfarad capacitor at a signal frequency of 450 Hz?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "10.7kilohms"
+        },
+        {
+          "id": "B",
+          "text": "57.0 kilohms"
+        },
+        {
+          "id": "C",
+          "text": "45.3 kilohms"
+        },
+        {
+          "id": "D",
+          "text": "66.7 kilohms"
+        }
+      ],
+      "raw_lines": [
+        "Question12(1point)",
+        "Ignoring inductive effects, what is the impedance of a RC series capacitor made up",
+        "of a 56 Kilohm resistor and a 0.033 microfarad capacitor at a signal frequency of 450",
+        "Hz?",
+        "A)10.7kilohms",
+        "B)57.0 kilohms",
+        "C) 45.3 kilohms",
+        "D) 66.7 kilohms"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 12,
+        "filename": "Screenshot 2026-03-16 234613.png",
+        "line_count": 4,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring inductive effects, what is the impedance of a RC series capacitor made up of a 56 Kilohm resistor and a 0.033 microfarad capacitor at a signal frequency of 450 Hz?",
+        "choices": [],
+        "raw_lines": [
+          "Question 12(1 point)",
+          "Ignoring inductive effects, what is the impedance of a RC series capacitor made up",
+          "of a 56 Kilohm resistor and a 0.033 microfarad capacitor at a signal frequency of 450",
+          "Hz?"
+        ]
+      },
+      {
+        "question_number": 12,
+        "filename": "Screenshot 2026-03-16 234622.png",
+        "line_count": 8,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring inductive effects, what is the impedance of a RC series capacitor made up of a 56 Kilohm resistor and a 0.033 microfarad capacitor at a signal frequency of 450 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "10.7kilohms"
+          },
+          {
+            "id": "B",
+            "text": "57.0 kilohms"
+          },
+          {
+            "id": "C",
+            "text": "45.3 kilohms"
+          },
+          {
+            "id": "D",
+            "text": "66.7 kilohms"
+          }
+        ],
+        "raw_lines": [
+          "Question12(1point)",
+          "Ignoring inductive effects, what is the impedance of a RC series capacitor made up",
+          "of a 56 Kilohm resistor and a 0.033 microfarad capacitor at a signal frequency of 450",
+          "Hz?",
+          "A)10.7kilohms",
+          "B)57.0 kilohms",
+          "C) 45.3 kilohms",
+          "D) 66.7 kilohms"
+        ]
+      },
+      {
+        "question_number": 12,
+        "filename": "Screenshot 2026-03-17 163828.png",
+        "line_count": 11,
+        "kind": "multiple_choice",
+        "prompt": "I=1AL10\u00b0 E= 100V L400 Figure 15.4 See Figure 15.4. Determine ZT, expressed in rectangular form.",
+        "choices": [
+          {
+            "id": "A",
+            "text": "100Q+j30Q"
+          },
+          {
+            "id": "B",
+            "text": "64.3Q+ j76.6Q"
+          },
+          {
+            "id": "C",
+            "text": "100Q+j50Q"
+          },
+          {
+            "id": "D",
+            "text": "86.6 Q + j50 Q"
+          }
+        ],
+        "raw_lines": [
+          "Question 12 (1 point)",
+          "I=1AL10\u00b0",
+          "E=",
+          "100V",
+          "L400",
+          "Figure 15.4",
+          "See Figure 15.4. Determine ZT, expressed in rectangular form.",
+          "A) 100Q+j30Q",
+          "B)64.3Q+ j76.6Q",
+          "C)100Q+j50Q",
+          "D) 86.6 Q + j50 Q"
+        ]
+      },
+      {
+        "question_number": 12,
+        "filename": "Screenshot 2026-03-17 174336.png",
+        "line_count": 15,
+        "kind": "multiple_choice",
+        "prompt": "R=10Q X=20\u03a9 mm E= Xc 100V 15Q 300 Figure 15.3 See Figure 15.3. The total impedance of this circuit may be made purely resistive by",
+        "choices": [
+          {
+            "id": "A",
+            "text": "increasing R to 5 Q."
+          },
+          {
+            "id": "B",
+            "text": "decreasing the signal frequency. increasing R to 35 Q."
+          },
+          {
+            "id": "D",
+            "text": "increasing the signal frequency."
+          }
+        ],
+        "raw_lines": [
+          "Question 12 (1 point)",
+          "R=10Q",
+          "X=20\u03a9",
+          "mm",
+          "E=",
+          "Xc",
+          "100V",
+          "15Q",
+          "300",
+          "Figure 15.3",
+          "See Figure 15.3. The total impedance of this circuit may be made purely resistive by",
+          "A) increasing R to 5 Q.",
+          "B) decreasing the signal frequency.",
+          "increasing R to 35 Q.",
+          "D) increasing the signal frequency."
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 13,
+    "best_candidate": {
+      "question_number": 13,
+      "filename": "Screenshot 2026-03-17 163915.png",
+      "line_count": 8,
+      "kind": "multiple_choice",
+      "prompt": "Ignoring inductive effects, what is the impedance of a RC series capacitor made up of a 56 Kilohm resistor and a 0.033 microfarad capacitor at a signal frequency of 450 Hz?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "66.7 kilohms"
+        },
+        {
+          "id": "B",
+          "text": "45.3 kilohms"
+        },
+        {
+          "id": "C",
+          "text": "57.0 kilohms"
+        },
+        {
+          "id": "D",
+          "text": "10.7 kilohms"
+        }
+      ],
+      "raw_lines": [
+        "Question13(1point)",
+        "Ignoring inductive effects, what is the impedance of a RC series capacitor made up",
+        "of a 56 Kilohm resistor and a 0.033 microfarad capacitor at a signal frequency of 450",
+        "Hz?",
+        "A) 66.7 kilohms",
+        "B) 45.3 kilohms",
+        "C) 57.0 kilohms",
+        "D)10.7 kilohms"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 13,
+        "filename": "Screenshot 2026-03-16 234622.png",
+        "line_count": 3,
+        "kind": "true_false",
+        "prompt": "",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 13 (1point)",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 13,
+        "filename": "Screenshot 2026-03-17 163915.png",
+        "line_count": 8,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring inductive effects, what is the impedance of a RC series capacitor made up of a 56 Kilohm resistor and a 0.033 microfarad capacitor at a signal frequency of 450 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "66.7 kilohms"
+          },
+          {
+            "id": "B",
+            "text": "45.3 kilohms"
+          },
+          {
+            "id": "C",
+            "text": "57.0 kilohms"
+          },
+          {
+            "id": "D",
+            "text": "10.7 kilohms"
+          }
+        ],
+        "raw_lines": [
+          "Question13(1point)",
+          "Ignoring inductive effects, what is the impedance of a RC series capacitor made up",
+          "of a 56 Kilohm resistor and a 0.033 microfarad capacitor at a signal frequency of 450",
+          "Hz?",
+          "A) 66.7 kilohms",
+          "B) 45.3 kilohms",
+          "C) 57.0 kilohms",
+          "D)10.7 kilohms"
+        ]
+      },
+      {
+        "question_number": 13,
+        "filename": "Screenshot 2026-03-17 174336.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Power factor can be determined by forming the ratio of the total circuit resistance to the magnitude of the total circuit impedance.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 13 (1 point)",
+          "Power factor can be determined by forming the ratio of the total circuit resistance to",
+          "the magnitude of the total circuit impedance.",
+          "True",
+          "False"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 14,
+    "best_candidate": {
+      "question_number": 14,
+      "filename": "Screenshot 2026-03-16 234622.png",
+      "line_count": 8,
+      "kind": "multiple_choice",
+      "prompt": "A circuit has a power factor of 0.8 lagging. The circuit dissipates 100 W of power with an input voltage of 500 V. What is the impedance of the circuit, expressed in rectangular form?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "1600 Q +j1200 Q"
+        },
+        {
+          "id": "B",
+          "text": "1200 Q +j1600\u03a9"
+        },
+        {
+          "id": "C",
+          "text": "1200 Q-j1600Q"
+        },
+        {
+          "id": "D",
+          "text": "1600 Q -j1200 Q"
+        }
+      ],
+      "raw_lines": [
+        "Question 14 (1 point)",
+        "A circuit has a power factor of 0.8 lagging. The circuit dissipates 100 W of power",
+        "with an input voltage of 500 V. What is the impedance of the circuit, expressed in",
+        "rectangular form?",
+        "A) 1600 Q +j1200 Q",
+        "B)1200 Q +j1600\u03a9",
+        "C)1200 Q-j1600Q",
+        "D) 1600 Q -j1200 Q"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 14,
+        "filename": "Screenshot 2026-03-16 234622.png",
+        "line_count": 8,
+        "kind": "multiple_choice",
+        "prompt": "A circuit has a power factor of 0.8 lagging. The circuit dissipates 100 W of power with an input voltage of 500 V. What is the impedance of the circuit, expressed in rectangular form?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "1600 Q +j1200 Q"
+          },
+          {
+            "id": "B",
+            "text": "1200 Q +j1600\u03a9"
+          },
+          {
+            "id": "C",
+            "text": "1200 Q-j1600Q"
+          },
+          {
+            "id": "D",
+            "text": "1600 Q -j1200 Q"
+          }
+        ],
+        "raw_lines": [
+          "Question 14 (1 point)",
+          "A circuit has a power factor of 0.8 lagging. The circuit dissipates 100 W of power",
+          "with an input voltage of 500 V. What is the impedance of the circuit, expressed in",
+          "rectangular form?",
+          "A) 1600 Q +j1200 Q",
+          "B)1200 Q +j1600\u03a9",
+          "C)1200 Q-j1600Q",
+          "D) 1600 Q -j1200 Q"
+        ]
+      },
+      {
+        "question_number": 14,
+        "filename": "Screenshot 2026-03-17 163915.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in series with a 4.7 microfarad capacitor at a signal frequency of 60 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "111 ohms"
+          },
+          {
+            "id": "B",
+            "text": "113 ohms"
+          },
+          {
+            "id": "C",
+            "text": "659 ohms"
+          },
+          {
+            "id": "D",
+            "text": "470 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question 14 (1 point)",
+          "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in",
+          "series with a 4.7 microfarad capacitor at a signal frequency of 60 Hz?",
+          "A) 111 ohms",
+          "B)113 ohms",
+          "C) 659 ohms",
+          "D) 470 ohms"
+        ]
+      },
+      {
+        "question_number": 14,
+        "filename": "Screenshot 2026-03-17 174357.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Capacitive reactance is a measurement of how much the capacitive element will impede",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Power dissipated by the network"
+          },
+          {
+            "id": "B",
+            "text": "Resistance of components"
+          },
+          {
+            "id": "C",
+            "text": "Voltage across elements"
+          },
+          {
+            "id": "D",
+            "text": "Current through the network"
+          }
+        ],
+        "raw_lines": [
+          "Question 14 (1 point)",
+          "Capacitive reactance is a measurement of how much the capacitive element will",
+          "impede",
+          "A) Power dissipated by the network",
+          "B) Resistance of components",
+          "C) Voltage across elements",
+          "D) Current through the network"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 15,
+    "best_candidate": {
+      "question_number": 15,
+      "filename": "Screenshot 2026-03-17 174357.png",
+      "line_count": 7,
+      "kind": "multiple_choice",
+      "prompt": "Ignoring capacitive effects, what is the impedance of a 250 mH coil with an internal resistance of 55 ohms at 60 Hz?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "10,900 ohms"
+        },
+        {
+          "id": "B",
+          "text": "109ohms"
+        },
+        {
+          "id": "C",
+          "text": "149.2 ohms"
+        },
+        {
+          "id": "D",
+          "text": "94.2 ohms"
+        }
+      ],
+      "raw_lines": [
+        "Question 15 (1 point)",
+        "Ignoring capacitive effects, what is the impedance of a 250 mH coil with an internal",
+        "resistance of 55 ohms at 60 Hz?",
+        "A)10,900 ohms",
+        "B)109ohms",
+        "C)149.2 ohms",
+        "D) 94.2 ohms"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 15,
+        "filename": "Screenshot 2026-03-16 234638.png",
+        "line_count": 5,
+        "kind": "multiple_choice",
+        "prompt": "Figure 15.2 See Figure 15.2. Increasing R while keeping X constant",
+        "choices": [
+          {
+            "id": "C",
+            "text": "increases Z but not 0."
+          },
+          {
+            "id": "D",
+            "text": "decreases power factor."
+          }
+        ],
+        "raw_lines": [
+          "Question 15 (1 point)",
+          "Figure 15.2",
+          "See Figure 15.2. Increasing R while keeping X constant",
+          "C) increases Z but not 0.",
+          "D)decreases power factor."
+        ]
+      },
+      {
+        "question_number": 15,
+        "filename": "Screenshot 2026-03-17 163915.png",
+        "line_count": 4,
+        "kind": "true_false",
+        "prompt": "Admittance is thereciprocal of impedance.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 15(1point)",
+          "Admittance is thereciprocal of impedance.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 15,
+        "filename": "Screenshot 2026-03-17 174357.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring capacitive effects, what is the impedance of a 250 mH coil with an internal resistance of 55 ohms at 60 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "10,900 ohms"
+          },
+          {
+            "id": "B",
+            "text": "109ohms"
+          },
+          {
+            "id": "C",
+            "text": "149.2 ohms"
+          },
+          {
+            "id": "D",
+            "text": "94.2 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question 15 (1 point)",
+          "Ignoring capacitive effects, what is the impedance of a 250 mH coil with an internal",
+          "resistance of 55 ohms at 60 Hz?",
+          "A)10,900 ohms",
+          "B)109ohms",
+          "C)149.2 ohms",
+          "D) 94.2 ohms"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 16,
+    "best_candidate": {
+      "question_number": 16,
+      "filename": "Screenshot 2026-03-17 174416.png",
+      "line_count": 8,
+      "kind": "multiple_choice",
+      "prompt": "A circuit has a power factor of 0.8 lagging. The circuit dissipates 100 W of power with an input voltage of 500 V. What is the impedance of the circuit, expressed in rectangular form?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "1200 Q-j1600 Q"
+        },
+        {
+          "id": "B",
+          "text": "1600 Q+j1200 Q\u03a9"
+        },
+        {
+          "id": "C",
+          "text": "1200Q+j1600Q"
+        },
+        {
+          "id": "D",
+          "text": "1600 Q-j1200 Q"
+        }
+      ],
+      "raw_lines": [
+        "Question16(1point)",
+        "A circuit has a power factor of 0.8 lagging. The circuit dissipates 100 W of power",
+        "with an input voltage of 500 V. What is the impedance of the circuit, expressed in",
+        "rectangular form?",
+        "A) 1200 Q-j1600 Q",
+        "B)1600 Q+j1200 Q\u03a9",
+        "C)1200Q+j1600Q",
+        "D)1600 Q-j1200 Q"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 16,
+        "filename": "Screenshot 2026-03-16 234638.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Impedance is the combination of capacitive reactance, inductive reactance, and dc resistance.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 16(1point)",
+          "Impedance is the combination of capacitive reactance, inductive reactance, and dc",
+          "resistance.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 16,
+        "filename": "Screenshot 2026-03-17 163943.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "The angle associated with the total impedance is the angle by which the applied voltage leads the source current.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 16 (1 point)",
+          "The angle associated with the total impedance is the angle by which the applied",
+          "voltage leads the source current.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 16,
+        "filename": "Screenshot 2026-03-17 164023.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "The angle associated with the total impedance is the angle by which the applied voltage leads the source current.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 16 (1 point)",
+          "The angle associated with the total impedance is the angle by which the applied",
+          "voltage leads the source current.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 16,
+        "filename": "Screenshot 2026-03-17 164033.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "The angle associated with the total impedance is the angle by which the applied voltage leads the source current.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 16 (1 point)",
+          "The angle associated with the total impedance is the angle by which the applied",
+          "voltage leads the source current.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 16,
+        "filename": "Screenshot 2026-03-17 164127.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "The angle associated with the total impedance is the angle by which the applied voltage leads the source current.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 16(1 point)",
+          "The angle associated with the total impedance is the angle by which the applied",
+          "voltage leads the source current.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 16,
+        "filename": "Screenshot 2026-03-17 174416.png",
+        "line_count": 8,
+        "kind": "multiple_choice",
+        "prompt": "A circuit has a power factor of 0.8 lagging. The circuit dissipates 100 W of power with an input voltage of 500 V. What is the impedance of the circuit, expressed in rectangular form?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "1200 Q-j1600 Q"
+          },
+          {
+            "id": "B",
+            "text": "1600 Q+j1200 Q\u03a9"
+          },
+          {
+            "id": "C",
+            "text": "1200Q+j1600Q"
+          },
+          {
+            "id": "D",
+            "text": "1600 Q-j1200 Q"
+          }
+        ],
+        "raw_lines": [
+          "Question16(1point)",
+          "A circuit has a power factor of 0.8 lagging. The circuit dissipates 100 W of power",
+          "with an input voltage of 500 V. What is the impedance of the circuit, expressed in",
+          "rectangular form?",
+          "A) 1200 Q-j1600 Q",
+          "B)1600 Q+j1200 Q\u03a9",
+          "C)1200Q+j1600Q",
+          "D)1600 Q-j1200 Q"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 17,
+    "best_candidate": {
+      "question_number": 17,
+      "filename": "Screenshot 2026-03-17 174416.png",
+      "line_count": 5,
+      "kind": "true_false",
+      "prompt": "In analysis of a parallel RLC networks, inductive reactance would predominate at low frequencies and capacitive reactance at high frequencies.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "raw_lines": [
+        "Question17(1point)",
+        "In analysis of a parallel RLC networks, inductive reactance would predominate at",
+        "low frequencies and capacitive reactance at high frequencies.",
+        "True",
+        "False"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 17,
+        "filename": "Screenshot 2026-03-16 234650.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring capacitive effects, what is the impedance of a 250 mH coil with an internal resistance of 55 ohms at 60 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "109 ohms"
+          },
+          {
+            "id": "B",
+            "text": "94.2 ohms"
+          },
+          {
+            "id": "C",
+            "text": "10,900ohms"
+          },
+          {
+            "id": "D",
+            "text": "149.2 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question 17 (1point)",
+          "Ignoring capacitive effects, what is the impedance of a 250 mH coil with an internal",
+          "resistance of 55 ohms at 60 Hz?",
+          "A)109 ohms",
+          "B) 94.2 ohms",
+          "C)10,900ohms",
+          "D) 149.2 ohms"
+        ]
+      },
+      {
+        "question_number": 17,
+        "filename": "Screenshot 2026-03-17 163943.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Inductive reactance is plotted on the negative imaginary axis on an impedance diagram.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 17(1 point)",
+          "Inductive reactance is plotted on the negative imaginary axis on an impedance",
+          "diagram.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 17,
+        "filename": "Screenshot 2026-03-17 164023.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Inductivereactance isplotted on thenegativeimaginary axis on animpedance diagram.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 17 (1 point)",
+          "Inductivereactance isplotted on thenegativeimaginary axis on animpedance",
+          "diagram.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 17,
+        "filename": "Screenshot 2026-03-17 164033.png",
+        "line_count": 4,
+        "kind": "true_false",
+        "prompt": "diagram.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 17 (1 point)",
+          "diagram.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 17,
+        "filename": "Screenshot 2026-03-17 164127.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Inductive reactance is plotted on the negative imaginary axis on an impedance diagram.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question17 (1point)",
+          "Inductive reactance is plotted on the negative imaginary axis on an impedance",
+          "diagram.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 17,
+        "filename": "Screenshot 2026-03-17 174416.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "In analysis of a parallel RLC networks, inductive reactance would predominate at low frequencies and capacitive reactance at high frequencies.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question17(1point)",
+          "In analysis of a parallel RLC networks, inductive reactance would predominate at",
+          "low frequencies and capacitive reactance at high frequencies.",
+          "True",
+          "False"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 18,
+    "best_candidate": {
+      "question_number": 18,
+      "filename": "Screenshot 2026-03-16 234650.png",
+      "line_count": 7,
+      "kind": "multiple_choice",
+      "prompt": "Ignoring capacitive effects, what is the impedance of a 100 mH coil with an internal resistance of 45 ohms in parallel with a 4700 ohm resistor at a frequency of 500 Hz?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "317 ohms"
+        },
+        {
+          "id": "B",
+          "text": "237 ohms"
+        },
+        {
+          "id": "C",
+          "text": "314 ohms"
+        },
+        {
+          "id": "D",
+          "text": "5014 ohms"
+        }
+      ],
+      "raw_lines": [
+        "Question18(1point)",
+        "Ignoring capacitive effects, what is the impedance of a 100 mH coil with an internal",
+        "resistance of 45 ohms in parallel with a 4700 ohm resistor at a frequency of 500 Hz?",
+        "A) 317 ohms",
+        "B) 237 ohms",
+        "C) 314 ohms",
+        "D)5014 ohms"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 18,
+        "filename": "Screenshot 2026-03-16 234650.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring capacitive effects, what is the impedance of a 100 mH coil with an internal resistance of 45 ohms in parallel with a 4700 ohm resistor at a frequency of 500 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "317 ohms"
+          },
+          {
+            "id": "B",
+            "text": "237 ohms"
+          },
+          {
+            "id": "C",
+            "text": "314 ohms"
+          },
+          {
+            "id": "D",
+            "text": "5014 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question18(1point)",
+          "Ignoring capacitive effects, what is the impedance of a 100 mH coil with an internal",
+          "resistance of 45 ohms in parallel with a 4700 ohm resistor at a frequency of 500 Hz?",
+          "A) 317 ohms",
+          "B) 237 ohms",
+          "C) 314 ohms",
+          "D)5014 ohms"
+        ]
+      },
+      {
+        "question_number": 18,
+        "filename": "Screenshot 2026-03-17 163943.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "For parallel elements, the element with the smallest impedance will have the least impact on the total impedance at that frequency.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 18(1point)",
+          "For parallel elements, the element with the smallest impedance will have the least",
+          "impact on the total impedance at that frequency.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 18,
+        "filename": "Screenshot 2026-03-17 164023.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "For parallel elements, the element with the smallest impedance will have the least impact on the total impedance at that frequency.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 18 (1 point)",
+          "For parallel elements, the element with the smallest impedance will have the least",
+          "impact on the total impedance at that frequency.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 18,
+        "filename": "Screenshot 2026-03-17 164033.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "For parallel elements, the element with the smallest impedance will have the least impact on the total impedance at that frequency.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 18 (1 point)",
+          "For parallel elements, the element with the smallest impedance will have the least",
+          "impact on the total impedance at that frequency.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 18,
+        "filename": "Screenshot 2026-03-17 164127.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "For parallel elements, the element with the smallest impedance will have the least impact on the total impedance at that frequency.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 18 (1 point)",
+          "For parallel elements, the element with the smallest impedance will have the least",
+          "impact on the total impedance at that frequency.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 18,
+        "filename": "Screenshot 2026-03-17 174416.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Inductive elements are storage devices and, unlike resistors, do not dissipate energy.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 18 (1point)",
+          "Inductive elements are storage devices and, unlike resistors, do not dissipate",
+          "energy.",
+          "True",
+          "False"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 19,
+    "best_candidate": {
+      "question_number": 19,
+      "filename": "Screenshot 2026-03-16 234703.png",
+      "line_count": 11,
+      "kind": "multiple_choice",
+      "prompt": "I=1A100 E= 100V L400 Figure 15.4 See Figure 15.4. Determine Z, expressed in rectangular form.",
+      "choices": [
+        {
+          "id": "A",
+          "text": "100Q+j50Q"
+        },
+        {
+          "id": "B",
+          "text": "86.6Q+ j50Q"
+        },
+        {
+          "id": "C",
+          "text": "64.3Q + j76.6Q"
+        },
+        {
+          "id": "D",
+          "text": "100Q+j30Q"
+        }
+      ],
+      "raw_lines": [
+        "Question 19 (1 point)",
+        "I=1A100",
+        "E=",
+        "100V",
+        "L400",
+        "Figure 15.4",
+        "See Figure 15.4. Determine Z, expressed in rectangular form.",
+        "A) 100Q+j50Q",
+        "B) 86.6Q+ j50Q",
+        "C)64.3Q + j76.6Q",
+        "D)100Q+j30Q"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 19,
+        "filename": "Screenshot 2026-03-16 234650.png",
+        "line_count": 6,
+        "kind": "multiple_choice",
+        "prompt": "I=1AL10\u00b0 E= 100V L400 Figure 15.4",
+        "choices": [],
+        "raw_lines": [
+          "Question19 (1point)",
+          "I=1AL10\u00b0",
+          "E=",
+          "100V",
+          "L400",
+          "Figure 15.4"
+        ]
+      },
+      {
+        "question_number": 19,
+        "filename": "Screenshot 2026-03-16 234703.png",
+        "line_count": 11,
+        "kind": "multiple_choice",
+        "prompt": "I=1A100 E= 100V L400 Figure 15.4 See Figure 15.4. Determine Z, expressed in rectangular form.",
+        "choices": [
+          {
+            "id": "A",
+            "text": "100Q+j50Q"
+          },
+          {
+            "id": "B",
+            "text": "86.6Q+ j50Q"
+          },
+          {
+            "id": "C",
+            "text": "64.3Q + j76.6Q"
+          },
+          {
+            "id": "D",
+            "text": "100Q+j30Q"
+          }
+        ],
+        "raw_lines": [
+          "Question 19 (1 point)",
+          "I=1A100",
+          "E=",
+          "100V",
+          "L400",
+          "Figure 15.4",
+          "See Figure 15.4. Determine Z, expressed in rectangular form.",
+          "A) 100Q+j50Q",
+          "B) 86.6Q+ j50Q",
+          "C)64.3Q + j76.6Q",
+          "D)100Q+j30Q"
+        ]
+      },
+      {
+        "question_number": 19,
+        "filename": "Screenshot 2026-03-17 163943.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Capacitive reactance is a measurement of how much the capacitive element will impede",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Power dissipated by the network"
+          },
+          {
+            "id": "B",
+            "text": "Resistance of components"
+          },
+          {
+            "id": "C",
+            "text": "voltage across elements"
+          },
+          {
+            "id": "D",
+            "text": "Current through the network"
+          }
+        ],
+        "raw_lines": [
+          "Question 19 (1 point)",
+          "Capacitive reactance is a measurement of how much the capacitive element will",
+          "impede",
+          "A) Power dissipated by the network",
+          "B)Resistance of components",
+          "C) voltage across elements",
+          "D)Current through the network"
+        ]
+      },
+      {
+        "question_number": 19,
+        "filename": "Screenshot 2026-03-17 164023.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Capacitive reactance is a measurement of how much the capacitive element will impede",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Power dissipated by the network"
+          },
+          {
+            "id": "B",
+            "text": "Resistance of components"
+          },
+          {
+            "id": "C",
+            "text": "Voltage acrosselements"
+          },
+          {
+            "id": "D",
+            "text": "Current through the network"
+          }
+        ],
+        "raw_lines": [
+          "Question 19 (1 point)",
+          "Capacitive reactance is a measurement of how much the capacitive element will",
+          "impede",
+          "A) Power dissipated by the network",
+          "B) Resistance of components",
+          "C) Voltage acrosselements",
+          "D) Current through the network"
+        ]
+      },
+      {
+        "question_number": 19,
+        "filename": "Screenshot 2026-03-17 164033.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Capacitive reactance is a measurement of how much the capacitive element will impede",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Power disipated by the network"
+          },
+          {
+            "id": "B",
+            "text": "Resistance of components"
+          },
+          {
+            "id": "C",
+            "text": "voltage across elements"
+          },
+          {
+            "id": "D",
+            "text": "Current through the network"
+          }
+        ],
+        "raw_lines": [
+          "Question 19 (1 point)",
+          "Capacitive reactance is a measurement of how much the capacitive element will",
+          "impede",
+          "A) Power disipated by the network",
+          "B) Resistance of components",
+          "C) voltage across elements",
+          "D) Current through the network"
+        ]
+      },
+      {
+        "question_number": 19,
+        "filename": "Screenshot 2026-03-17 164127.png",
+        "line_count": 6,
+        "kind": "multiple_choice",
+        "prompt": "Capacitive reactance is a measurement of how much the capacitive element will impede",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Power disipated by the network"
+          },
+          {
+            "id": "B",
+            "text": "Resistance of components"
+          },
+          {
+            "id": "C",
+            "text": "voltage acrosselements"
+          }
+        ],
+        "raw_lines": [
+          "Question19 (1point)",
+          "Capacitive reactance is a measurement of how much the capacitive element will",
+          "impede",
+          "A) Power disipated by the network",
+          "B) Resistance of components",
+          "C) voltage acrosselements"
+        ]
+      },
+      {
+        "question_number": 19,
+        "filename": "Screenshot 2026-03-17 174416.png",
+        "line_count": 4,
+        "kind": "true_false",
+        "prompt": "The susceptance of a given capacitor decreases as frequency increases.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 19 (1 point)",
+          "The susceptance of a given capacitor decreases as frequency increases.",
+          "True",
+          "False"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 20,
+    "best_candidate": {
+      "question_number": 20,
+      "filename": "Screenshot 2026-03-16 234703.png",
+      "line_count": 7,
+      "kind": "multiple_choice",
+      "prompt": "Ignoring anyeffects of dc resistance,what is the total reactance of a 250mHcoil in series with a 4.7 microfarad capacitor at a signal frequency of 450 Hz?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "632 ohms"
+        },
+        {
+          "id": "B",
+          "text": "97 ohms"
+        },
+        {
+          "id": "C",
+          "text": "781 ohms"
+        },
+        {
+          "id": "D",
+          "text": "706 ohms"
+        }
+      ],
+      "raw_lines": [
+        "Question20 (1point)",
+        "Ignoring anyeffects of dc resistance,what is the total reactance of a 250mHcoil in",
+        "series with a 4.7 microfarad capacitor at a signal frequency of 450 Hz?",
+        "A) 632 ohms",
+        "B) 97 ohms",
+        "C) 781 ohms",
+        "D) 706 ohms"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 20,
+        "filename": "Screenshot 2026-03-16 234703.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring anyeffects of dc resistance,what is the total reactance of a 250mHcoil in series with a 4.7 microfarad capacitor at a signal frequency of 450 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "632 ohms"
+          },
+          {
+            "id": "B",
+            "text": "97 ohms"
+          },
+          {
+            "id": "C",
+            "text": "781 ohms"
+          },
+          {
+            "id": "D",
+            "text": "706 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question20 (1point)",
+          "Ignoring anyeffects of dc resistance,what is the total reactance of a 250mHcoil in",
+          "series with a 4.7 microfarad capacitor at a signal frequency of 450 Hz?",
+          "A) 632 ohms",
+          "B) 97 ohms",
+          "C) 781 ohms",
+          "D) 706 ohms"
+        ]
+      },
+      {
+        "question_number": 20,
+        "filename": "Screenshot 2026-03-17 164225.png",
+        "line_count": 8,
+        "kind": "multiple_choice",
+        "prompt": "R=100QXL=50\u03a9 Figure 15.6 See Figure 15.6. What is the total impedance Z for this circuit?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "112 Q 263.4\u00b0"
+          },
+          {
+            "id": "B",
+            "text": "112 Q 26.6\u00b0"
+          },
+          {
+            "id": "C",
+            "text": "112 Q -63.49"
+          },
+          {
+            "id": "D",
+            "text": "112 Q -26.6\u00b0"
+          }
+        ],
+        "raw_lines": [
+          "Question 20 (1 point)",
+          "R=100QXL=50\u03a9",
+          "Figure 15.6",
+          "See Figure 15.6. What is the total impedance Z for this circuit?",
+          "A) 112 Q 263.4\u00b0",
+          "B) 112 Q 26.6\u00b0",
+          "C) 112 Q -63.49",
+          "D) 112 Q -26.6\u00b0"
+        ]
+      },
+      {
+        "question_number": 20,
+        "filename": "Screenshot 2026-03-17 174434.png",
+        "line_count": 10,
+        "kind": "multiple_choice",
+        "prompt": "2000 6V 4A Figure 15.1 See Figure 15.1. Which one of these equations describes the voltage in this circuit?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "2.05 V - j5.64 V"
+          },
+          {
+            "id": "B",
+            "text": "-5.64V - j2.05V"
+          },
+          {
+            "id": "C",
+            "text": "5.64 V -j2.05 V"
+          },
+          {
+            "id": "D",
+            "text": "-2.05 V -j5.64V"
+          }
+        ],
+        "raw_lines": [
+          "Question20(1point)",
+          "2000",
+          "6V",
+          "4A",
+          "Figure 15.1",
+          "See Figure 15.1. Which one of these equations describes the voltage in this circuit?",
+          "A) 2.05 V - j5.64 V",
+          "B)-5.64V - j2.05V",
+          "C) 5.64 V -j2.05 V",
+          "D)-2.05 V -j5.64V"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 21,
+    "best_candidate": {
+      "question_number": 21,
+      "filename": "Screenshot 2026-03-17 164225.png",
+      "line_count": 7,
+      "kind": "multiple_choice",
+      "prompt": "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in series with a 4.7 microfarad capacitor at a signal frequency of 1000 Hz?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "35 ohms"
+        },
+        {
+          "id": "B",
+          "text": "1540 ohms"
+        },
+        {
+          "id": "C",
+          "text": "1570 ohms"
+        },
+        {
+          "id": "D",
+          "text": "1600 ohms"
+        }
+      ],
+      "raw_lines": [
+        "Question21(1point)",
+        "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in",
+        "series with a 4.7 microfarad capacitor at a signal frequency of 1000 Hz?",
+        "A) 35 ohms",
+        "B)1540 ohms",
+        "C)1570 ohms",
+        "D) 1600 ohms"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 21,
+        "filename": "Screenshot 2026-03-16 234711.png",
+        "line_count": 6,
+        "kind": "multiple_choice",
+        "prompt": "What is the reactance of a 25 millihenry coil at 600 hertz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "785 ohms"
+          },
+          {
+            "id": "B",
+            "text": "94,000ohms"
+          },
+          {
+            "id": "C",
+            "text": "0.011 ohms"
+          },
+          {
+            "id": "D",
+            "text": "94 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question 21 (1 point)",
+          "What is the reactance of a 25 millihenry coil at 600 hertz?",
+          "A)785 ohms",
+          "B)94,000ohms",
+          "C)0.011 ohms",
+          "D) 94 ohms"
+        ]
+      },
+      {
+        "question_number": 21,
+        "filename": "Screenshot 2026-03-17 164225.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in series with a 4.7 microfarad capacitor at a signal frequency of 1000 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "35 ohms"
+          },
+          {
+            "id": "B",
+            "text": "1540 ohms"
+          },
+          {
+            "id": "C",
+            "text": "1570 ohms"
+          },
+          {
+            "id": "D",
+            "text": "1600 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question21(1point)",
+          "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in",
+          "series with a 4.7 microfarad capacitor at a signal frequency of 1000 Hz?",
+          "A) 35 ohms",
+          "B)1540 ohms",
+          "C)1570 ohms",
+          "D) 1600 ohms"
+        ]
+      },
+      {
+        "question_number": 21,
+        "filename": "Screenshot 2026-03-17 174455.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Figure 15.2 See Figure 15.2.IfR = 50 Q and X = 20 Q, find Z and \u03b8-",
+        "choices": [
+          {
+            "id": "A",
+            "text": "53.85 Q+68.2\u00b0"
+          },
+          {
+            "id": "B",
+            "text": "53.85 Q-21.8\u00b0"
+          },
+          {
+            "id": "C",
+            "text": "53.85 Q+21.8\u00b0"
+          },
+          {
+            "id": "D",
+            "text": "53.85 Q -68.2\u00b0"
+          }
+        ],
+        "raw_lines": [
+          "Question 21 (1 point)",
+          "Figure 15.2",
+          "See Figure 15.2.IfR = 50 Q and X = 20 Q, find Z and \u03b8-",
+          "A)53.85 Q+68.2\u00b0",
+          "B) 53.85 Q-21.8\u00b0",
+          "C) 53.85 Q+21.8\u00b0",
+          "D)53.85 Q -68.2\u00b0"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 22,
+    "best_candidate": {
+      "question_number": 22,
+      "filename": "Screenshot 2026-03-17 174455.png",
+      "line_count": 7,
+      "kind": "multiple_choice",
+      "prompt": "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in series with a 4.7 microfarad capacitor at a signal frequency of 60 Hz?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "659 ohms"
+        },
+        {
+          "id": "B",
+          "text": "113 ohms"
+        },
+        {
+          "id": "C",
+          "text": "111 ohms"
+        },
+        {
+          "id": "D",
+          "text": "470 ohms"
+        }
+      ],
+      "raw_lines": [
+        "Question 22(1point)",
+        "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in",
+        "series with a 4.7 microfarad capacitor at a signal frequency of 60 Hz?",
+        "A) 659 ohms",
+        "B) 113 ohms",
+        "C) 111 ohms",
+        "D) 470 ohms"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 22,
+        "filename": "Screenshot 2026-03-16 234711.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "A measure of how well an ac circuit will admit, or allow current to flow in the circuit is",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Capacitance"
+          },
+          {
+            "id": "B",
+            "text": "Admittance"
+          },
+          {
+            "id": "C",
+            "text": "Resistance"
+          },
+          {
+            "id": "D",
+            "text": "Inductance"
+          }
+        ],
+        "raw_lines": [
+          "Question22(1point)",
+          "A measure of how well an ac circuit will admit, or allow current to flow in the",
+          "circuit is",
+          "A) Capacitance",
+          "B)Admittance",
+          "C) Resistance",
+          "D)Inductance"
+        ]
+      },
+      {
+        "question_number": 22,
+        "filename": "Screenshot 2026-03-17 164251.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Which one of the following expressions describes the impedance of a 100 mH inductor at 1000 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "200\u03c0 \u03a9 \u2265+90\u00b0"
+          },
+          {
+            "id": "B",
+            "text": "200\u03c0Q+j0 \u03a9"
+          },
+          {
+            "id": "C",
+            "text": "200\u03c0 \u03a9 \u2265-90\u00b0"
+          },
+          {
+            "id": "D",
+            "text": "200\u03c0 \u03a9 \u22650\u00b0"
+          }
+        ],
+        "raw_lines": [
+          "Question22(1point)",
+          "Which one of the following expressions describes the impedance of a 100 mH",
+          "inductor at 1000 Hz?",
+          "A) 200\u03c0 \u03a9 \u2265+90\u00b0",
+          "B) 200\u03c0Q+j0 \u03a9",
+          "C) 200\u03c0 \u03a9 \u2265-90\u00b0",
+          "D) 200\u03c0 \u03a9 \u22650\u00b0"
+        ]
+      },
+      {
+        "question_number": 22,
+        "filename": "Screenshot 2026-03-17 174455.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in series with a 4.7 microfarad capacitor at a signal frequency of 60 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "659 ohms"
+          },
+          {
+            "id": "B",
+            "text": "113 ohms"
+          },
+          {
+            "id": "C",
+            "text": "111 ohms"
+          },
+          {
+            "id": "D",
+            "text": "470 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question 22(1point)",
+          "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in",
+          "series with a 4.7 microfarad capacitor at a signal frequency of 60 Hz?",
+          "A) 659 ohms",
+          "B) 113 ohms",
+          "C) 111 ohms",
+          "D) 470 ohms"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 23,
+    "best_candidate": {
+      "question_number": 23,
+      "filename": "Screenshot 2026-03-16 234711.png",
+      "line_count": 7,
+      "kind": "multiple_choice",
+      "prompt": "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in series with a 4.7 microfarad capacitor at a signal frequency of 1000 Hz?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "1570 ohms"
+        },
+        {
+          "id": "B",
+          "text": "35 ohms"
+        },
+        {
+          "id": "C",
+          "text": "1540 ohms"
+        },
+        {
+          "id": "D",
+          "text": "1600 ohms"
+        }
+      ],
+      "raw_lines": [
+        "Question 23(1point)",
+        "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in",
+        "series with a 4.7 microfarad capacitor at a signal frequency of 1000 Hz?",
+        "A) 1570 ohms",
+        "B)35 ohms",
+        "C) 1540 ohms",
+        "D) 1600 ohms"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 23,
+        "filename": "Screenshot 2026-03-16 234711.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in series with a 4.7 microfarad capacitor at a signal frequency of 1000 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "1570 ohms"
+          },
+          {
+            "id": "B",
+            "text": "35 ohms"
+          },
+          {
+            "id": "C",
+            "text": "1540 ohms"
+          },
+          {
+            "id": "D",
+            "text": "1600 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question 23(1point)",
+          "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in",
+          "series with a 4.7 microfarad capacitor at a signal frequency of 1000 Hz?",
+          "A) 1570 ohms",
+          "B)35 ohms",
+          "C) 1540 ohms",
+          "D) 1600 ohms"
+        ]
+      },
+      {
+        "question_number": 23,
+        "filename": "Screenshot 2026-03-17 164251.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring any effects of dc resistance,what is the total reactance of a 250mH coil in series with a 4.7 microfarad capacitor at a signal frequency of 450 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "632 ohms"
+          },
+          {
+            "id": "B",
+            "text": "706 ohms"
+          },
+          {
+            "id": "C",
+            "text": "97 ohms"
+          },
+          {
+            "id": "D",
+            "text": "781 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question23(1point)",
+          "Ignoring any effects of dc resistance,what is the total reactance of a 250mH coil in",
+          "series with a 4.7 microfarad capacitor at a signal frequency of 450 Hz?",
+          "A) 632 ohms",
+          "B) 706 ohms",
+          "C) 97 ohms",
+          "D) 781 ohms"
+        ]
+      },
+      {
+        "question_number": 23,
+        "filename": "Screenshot 2026-03-17 174520.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "What is the total impedance Z of a series network consisting of a 5 Q resistor, an inductor having 100 reactance, and a capacitor with 150 reactance?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "5Q-j5Q"
+          },
+          {
+            "id": "B",
+            "text": "5Q-j25Q"
+          },
+          {
+            "id": "C",
+            "text": "5Q+j5Q"
+          },
+          {
+            "id": "D",
+            "text": "5Q+j25 Q"
+          }
+        ],
+        "raw_lines": [
+          "Question23(1point)",
+          "What is the total impedance Z of a series network consisting of a 5 Q resistor, an",
+          "inductor having 100 reactance, and a capacitor with 150 reactance?",
+          "OA)5Q-j5Q",
+          "B)5Q-j25Q",
+          "C)5Q+j5Q",
+          "D) 5Q+j25 Q"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 24,
+    "best_candidate": {
+      "question_number": 24,
+      "filename": "Screenshot 2026-03-16 234721.png",
+      "line_count": 5,
+      "kind": "true_false",
+      "prompt": "The basic format for the voltage divider rule in ac circuits is unlike that for dc circuits.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "raw_lines": [
+        "Question 24 (1 point)",
+        "The basic format for the voltage divider rule in ac circuits is unlike that for dc",
+        "circuits.",
+        "True",
+        "False"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 24,
+        "filename": "Screenshot 2026-03-16 234721.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "The basic format for the voltage divider rule in ac circuits is unlike that for dc circuits.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 24 (1 point)",
+          "The basic format for the voltage divider rule in ac circuits is unlike that for dc",
+          "circuits.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 24,
+        "filename": "Screenshot 2026-03-17 164251.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Inductive elements are storage devices and, unlike resistors, do not dissipate energy.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question24(1point)",
+          "Inductive elements are storage devices and, unlike resistors, do not dissipate",
+          "energy.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 24,
+        "filename": "Screenshot 2026-03-17 174520.png",
+        "line_count": 6,
+        "kind": "multiple_choice",
+        "prompt": "What is the reactance of a 25 millihenry coil at 600 hertz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "94 ohms"
+          },
+          {
+            "id": "B",
+            "text": "785 ohms"
+          },
+          {
+            "id": "C",
+            "text": "94,000 ohms"
+          },
+          {
+            "id": "D",
+            "text": "0.011 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question24(1point)",
+          "What is the reactance of a 25 millihenry coil at 600 hertz?",
+          "A) 94 ohms",
+          "B) 785 ohms",
+          "C) 94,000 ohms",
+          "D) 0.011 ohms"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 25,
+    "best_candidate": {
+      "question_number": 25,
+      "filename": "Screenshot 2026-03-17 174520.png",
+      "line_count": 5,
+      "kind": "true_false",
+      "prompt": "The advantage of an impedance diagram is that it will reflect all impedance on the positive real axis.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "raw_lines": [
+        "Question 25 (1 point)",
+        "The advantage of an impedance diagram is that it will reflect all impedance on the",
+        "positive real axis.",
+        "True",
+        "False"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 25,
+        "filename": "Screenshot 2026-03-16 234721.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Capacitive reactance is a measurement of how much the capacitive element will impede",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Resistance of components"
+          },
+          {
+            "id": "B",
+            "text": "Current through the network"
+          },
+          {
+            "id": "C",
+            "text": "Voltage across elements"
+          },
+          {
+            "id": "D",
+            "text": "Power dissipated by the network"
+          }
+        ],
+        "raw_lines": [
+          "Question 25 (1 point)",
+          "Capacitive reactance is a measurement of how much the capacitive element will",
+          "impede",
+          "A)Resistance of components",
+          "B) Current through the network",
+          "C) Voltage across elements",
+          "D) Power dissipated by the network"
+        ]
+      },
+      {
+        "question_number": 25,
+        "filename": "Screenshot 2026-03-17 164324.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ina seriesR-Ccircuit,atlowfrequencies,the total reactance of the circuitwill become",
+        "choices": [
+          {
+            "id": "A",
+            "text": "More inductive"
+          },
+          {
+            "id": "B",
+            "text": "Purely capacitive"
+          },
+          {
+            "id": "C",
+            "text": "Balanced"
+          },
+          {
+            "id": "D",
+            "text": "Purely resistive"
+          }
+        ],
+        "raw_lines": [
+          "Question25\uff081point)",
+          "Ina seriesR-Ccircuit,atlowfrequencies,the total reactance of the",
+          "circuitwill become",
+          "A) More inductive",
+          "B) Purely capacitive",
+          "C)Balanced",
+          "D) Purely resistive"
+        ]
+      },
+      {
+        "question_number": 25,
+        "filename": "Screenshot 2026-03-17 174520.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "The advantage of an impedance diagram is that it will reflect all impedance on the positive real axis.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 25 (1 point)",
+          "The advantage of an impedance diagram is that it will reflect all impedance on the",
+          "positive real axis.",
+          "True",
+          "False"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 26,
+    "best_candidate": {
+      "question_number": 26,
+      "filename": "Screenshot 2026-03-16 234721.png",
+      "line_count": 5,
+      "kind": "true_false",
+      "prompt": "Total impedance of a system is the reciprocal of the sum of the individual impedances.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "raw_lines": [
+        "Question 26(1point)",
+        "Total impedance of a system is the reciprocal of the sum of the individual",
+        "impedances.",
+        "True",
+        "False"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 26,
+        "filename": "Screenshot 2026-03-16 234721.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Total impedance of a system is the reciprocal of the sum of the individual impedances.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 26(1point)",
+          "Total impedance of a system is the reciprocal of the sum of the individual",
+          "impedances.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 26,
+        "filename": "Screenshot 2026-03-17 174538.png",
+        "line_count": 14,
+        "kind": "multiple_choice",
+        "prompt": "R=10Q X=20\u03a9 E= Xc= 100V 15Q 300 Figure 15.3 See Figure 15.3. What is Z in polar form?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "10Q5\u00b0"
+          },
+          {
+            "id": "B",
+            "text": "11.2 Q26.6\u00b0"
+          },
+          {
+            "id": "C",
+            "text": "5Q210\u00b0"
+          },
+          {
+            "id": "D",
+            "text": "11.2 Q 263.439"
+          }
+        ],
+        "raw_lines": [
+          "Question 26(1point)",
+          "R=10Q",
+          "X=20\u03a9",
+          "E=",
+          "Xc=",
+          "100V",
+          "15Q",
+          "300",
+          "Figure 15.3",
+          "See Figure 15.3. What is Z in polar form?",
+          "A) 10Q5\u00b0",
+          "B) 11.2 Q26.6\u00b0",
+          "C)5Q210\u00b0",
+          "D) 11.2 Q 263.439"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 27,
+    "best_candidate": {
+      "question_number": 27,
+      "filename": "Screenshot 2026-03-16 234734.png",
+      "line_count": 16,
+      "kind": "multiple_choice",
+      "prompt": "R=10Q X=20\u03a9 E= Xc 100V 15\u03a9 300 Figure 15.3 See Figure 15.3. The total impedance of this circuit may be made purely resistive by",
+      "choices": [
+        {
+          "id": "A",
+          "text": "decreasing the signal frequency."
+        },
+        {
+          "id": "B",
+          "text": "increasing the signal frequency. C increasing R to35 Q."
+        },
+        {
+          "id": "D",
+          "text": "increasing R to 5 Q."
+        }
+      ],
+      "raw_lines": [
+        "Question27(1point)",
+        "R=10Q",
+        "X=20\u03a9",
+        "E=",
+        "Xc",
+        "100V",
+        "15\u03a9",
+        "300",
+        "Figure 15.3",
+        "See Figure 15.3. The total impedance of this circuit may be made purely resistive by",
+        "A) decreasing the signal frequency.",
+        "B)",
+        "increasing the signal frequency.",
+        "C",
+        "increasing R to35 Q.",
+        "D) increasing R to 5 Q."
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 27,
+        "filename": "Screenshot 2026-03-16 234734.png",
+        "line_count": 16,
+        "kind": "multiple_choice",
+        "prompt": "R=10Q X=20\u03a9 E= Xc 100V 15\u03a9 300 Figure 15.3 See Figure 15.3. The total impedance of this circuit may be made purely resistive by",
+        "choices": [
+          {
+            "id": "A",
+            "text": "decreasing the signal frequency."
+          },
+          {
+            "id": "B",
+            "text": "increasing the signal frequency. C increasing R to35 Q."
+          },
+          {
+            "id": "D",
+            "text": "increasing R to 5 Q."
+          }
+        ],
+        "raw_lines": [
+          "Question27(1point)",
+          "R=10Q",
+          "X=20\u03a9",
+          "E=",
+          "Xc",
+          "100V",
+          "15\u03a9",
+          "300",
+          "Figure 15.3",
+          "See Figure 15.3. The total impedance of this circuit may be made purely resistive by",
+          "A) decreasing the signal frequency.",
+          "B)",
+          "increasing the signal frequency.",
+          "C",
+          "increasing R to35 Q.",
+          "D) increasing R to 5 Q."
+        ]
+      },
+      {
+        "question_number": 27,
+        "filename": "Screenshot 2026-03-17 164404.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Figure 15.2 See Figure 15.2. If R = 100 Q and \u03b8 = 30\u00b0, what is the power factor?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "0.3leading"
+          },
+          {
+            "id": "B",
+            "text": "0.866lagging"
+          },
+          {
+            "id": "C",
+            "text": "0.866leading"
+          },
+          {
+            "id": "D",
+            "text": "0.3lagging"
+          }
+        ],
+        "raw_lines": [
+          "Question27(1point)",
+          "Figure 15.2",
+          "See Figure 15.2. If R = 100 Q and \u03b8 = 30\u00b0, what is the power factor?",
+          "A)0.3leading",
+          "B) 0.866lagging",
+          "C)0.866leading",
+          "D) 0.3lagging"
+        ]
+      },
+      {
+        "question_number": 27,
+        "filename": "Screenshot 2026-03-17 164517.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Figure 15.2 See Figure 15.2. If R = 100 Q and 0 = 30\u00b0, what is the power factor?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "0.3leading"
+          },
+          {
+            "id": "B",
+            "text": "0.866lagging"
+          },
+          {
+            "id": "C",
+            "text": "0.866leading"
+          },
+          {
+            "id": "D",
+            "text": "0.3lagging"
+          }
+        ],
+        "raw_lines": [
+          "Question27(1point)",
+          "Figure 15.2",
+          "See Figure 15.2. If R = 100 Q and 0 = 30\u00b0, what is the power factor?",
+          "A) 0.3leading",
+          "B)0.866lagging",
+          "C)0.866leading",
+          "D) 0.3lagging"
+        ]
+      },
+      {
+        "question_number": 27,
+        "filename": "Screenshot 2026-03-17 165842.png",
+        "line_count": 8,
+        "kind": "multiple_choice",
+        "prompt": "XL Figure 15.2 See Figure 15.2. If R = 100 Q and \u03b8 = 30\u00b0, what is the power factor?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "0.3 leading"
+          },
+          {
+            "id": "B",
+            "text": "0.866lagging"
+          },
+          {
+            "id": "C",
+            "text": "0.866 leading"
+          },
+          {
+            "id": "D",
+            "text": "0.3 lagging"
+          }
+        ],
+        "raw_lines": [
+          "Question 27 (1 point)",
+          "XL",
+          "Figure 15.2",
+          "See Figure 15.2. If R = 100 Q and \u03b8 = 30\u00b0, what is the power factor?",
+          "A) 0.3 leading",
+          "B) 0.866lagging",
+          "C) 0.866 leading",
+          "D) 0.3 lagging"
+        ]
+      },
+      {
+        "question_number": 27,
+        "filename": "Screenshot 2026-03-17 174558.png",
+        "line_count": 8,
+        "kind": "multiple_choice",
+        "prompt": "XL Figure 15.2 See Figure 15.2. If R = 100 Q and \u03b8 = 30\u00b0, what is the power factor?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "0.3leading"
+          },
+          {
+            "id": "B",
+            "text": "0.3lagging"
+          },
+          {
+            "id": "C",
+            "text": "0.866leading"
+          },
+          {
+            "id": "D",
+            "text": "0.866 lagging"
+          }
+        ],
+        "raw_lines": [
+          "Question 27(1 point)",
+          "XL",
+          "Figure 15.2",
+          "See Figure 15.2. If R = 100 Q and \u03b8 = 30\u00b0, what is the power factor?",
+          "A)0.3leading",
+          "B) 0.3lagging",
+          "C) 0.866leading",
+          "D) 0.866 lagging"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 28,
+    "best_candidate": {
+      "question_number": 28,
+      "filename": "Screenshot 2026-03-17 174558.png",
+      "line_count": 8,
+      "kind": "multiple_choice",
+      "prompt": "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in series with a 4.7 microfarad capacitor at a signal frequency of 1000 Hz?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "1570 ohms"
+        },
+        {
+          "id": "B",
+          "text": "1540 ohms"
+        },
+        {
+          "id": "C",
+          "text": "35 ohms D 1600ohms"
+        }
+      ],
+      "raw_lines": [
+        "Question28(1point)",
+        "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in",
+        "series with a 4.7 microfarad capacitor at a signal frequency of 1000 Hz?",
+        "A) 1570 ohms",
+        "B) 1540 ohms",
+        "C) 35 ohms",
+        "D",
+        "1600ohms"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 28,
+        "filename": "Screenshot 2026-03-16 234744.png",
+        "line_count": 14,
+        "kind": "multiple_choice",
+        "prompt": "R=10\u03a9 X=20\u03a9 E= Xc= 100V L300 15Q Figure 15.3 See Figure 15.3. What is Z in polar form?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "11.2 Q 263.43\u00b0"
+          },
+          {
+            "id": "B",
+            "text": "11.2Q26.6\u00b0"
+          },
+          {
+            "id": "C",
+            "text": "10Q5\u00b0"
+          },
+          {
+            "id": "D",
+            "text": "5Q10\u00b0"
+          }
+        ],
+        "raw_lines": [
+          "Question 28 (1point)",
+          "R=10\u03a9",
+          "X=20\u03a9",
+          "E=",
+          "Xc=",
+          "100V",
+          "L300",
+          "15Q",
+          "Figure 15.3",
+          "See Figure 15.3. What is Z in polar form?",
+          "A) 11.2 Q 263.43\u00b0",
+          "B)11.2Q26.6\u00b0",
+          "C)10Q5\u00b0",
+          "D)5Q10\u00b0"
+        ]
+      },
+      {
+        "question_number": 28,
+        "filename": "Screenshot 2026-03-17 164404.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Power factor can be determined by forming the ratio of the total circuit resistance to the magnitude of the total circuit impedance.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question28(1point)",
+          "Power factor can be determined by forming the ratio of the total circuit resistance to",
+          "the magnitude of the total circuit impedance.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 28,
+        "filename": "Screenshot 2026-03-17 164517.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Power factor can be determined by forming the ratio of the total circuit resistance t the magnitude of the total circuitimpedance.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question28(1point)",
+          "Power factor can be determined by forming the ratio of the total circuit resistance t",
+          "the magnitude of the total circuitimpedance.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 28,
+        "filename": "Screenshot 2026-03-17 165842.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Power factor canbe determined by forming the ratio of the total circuit resistance to the magnitude of the total circuit impedance.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 28(1point)",
+          "Power factor canbe determined by forming the ratio of the total circuit resistance to",
+          "the magnitude of the total circuit impedance.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 28,
+        "filename": "Screenshot 2026-03-17 174558.png",
+        "line_count": 8,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in series with a 4.7 microfarad capacitor at a signal frequency of 1000 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "1570 ohms"
+          },
+          {
+            "id": "B",
+            "text": "1540 ohms"
+          },
+          {
+            "id": "C",
+            "text": "35 ohms D 1600ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question28(1point)",
+          "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in",
+          "series with a 4.7 microfarad capacitor at a signal frequency of 1000 Hz?",
+          "A) 1570 ohms",
+          "B) 1540 ohms",
+          "C) 35 ohms",
+          "D",
+          "1600ohms"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 29,
+    "best_candidate": {
+      "question_number": 29,
+      "filename": "Screenshot 2026-03-17 174614.png",
+      "line_count": 9,
+      "kind": "multiple_choice",
+      "prompt": "2000 6V Figure 15.1 See Figure 15.1. Which one of the following statements is true? \uff09The circuit has no reactive component, since the voltage phasor is not in a +j quadrant.",
+      "choices": [
+        {
+          "id": "B",
+          "text": "Voltage leads current by 90."
+        },
+        {
+          "id": "C",
+          "text": "The equivalent circuit is capacitive."
+        }
+      ],
+      "raw_lines": [
+        "Question29 (1point)",
+        "2000",
+        "6V",
+        "Figure 15.1",
+        "See Figure 15.1. Which one of the following statements is true?",
+        "\uff09The circuit has no reactive component, since the voltage phasor is not in a +j",
+        "quadrant.",
+        "B) Voltage leads current by 90.",
+        "C) The equivalent circuit is capacitive."
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 29,
+        "filename": "Screenshot 2026-03-16 234744.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "The advantage of an impedance diagram is that it will reflect allimpedance on the positive real axis.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 29 (1 point)",
+          "The advantage of an impedance diagram is that it will reflect allimpedance on the",
+          "positive real axis.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 29,
+        "filename": "Screenshot 2026-03-17 165927.png",
+        "line_count": 10,
+        "kind": "multiple_choice",
+        "prompt": "R=100QXL=50\u03a9 ZT- Figure 15.6 See Figure 15.6. Which one of the following combinations is equivalent to the given series circuit?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "R = 125 Q in parallel with X = 250 Q."
+          },
+          {
+            "id": "B",
+            "text": "R = 20 Q in parallel with X = 40 Q."
+          },
+          {
+            "id": "C",
+            "text": "R = 40 Q in parallel with X = 20 Q."
+          },
+          {
+            "id": "D",
+            "text": "R = 250 Q in parall with X, = 125 Q."
+          }
+        ],
+        "raw_lines": [
+          "Question 29 (1 point)",
+          "R=100QXL=50\u03a9",
+          "ZT-",
+          "Figure 15.6",
+          "See Figure 15.6. Which one of the following combinations is equivalent to the given",
+          "series circuit?",
+          "A) R = 125 Q in parallel with X = 250 Q.",
+          "B) R = 20 Q in parallel with X = 40 Q.",
+          "C) R = 40 Q in parallel with X = 20 Q.",
+          "D) R = 250 Q in parall with X, = 125 Q."
+        ]
+      },
+      {
+        "question_number": 29,
+        "filename": "Screenshot 2026-03-17 174614.png",
+        "line_count": 9,
+        "kind": "multiple_choice",
+        "prompt": "2000 6V Figure 15.1 See Figure 15.1. Which one of the following statements is true? \uff09The circuit has no reactive component, since the voltage phasor is not in a +j quadrant.",
+        "choices": [
+          {
+            "id": "B",
+            "text": "Voltage leads current by 90."
+          },
+          {
+            "id": "C",
+            "text": "The equivalent circuit is capacitive."
+          }
+        ],
+        "raw_lines": [
+          "Question29 (1point)",
+          "2000",
+          "6V",
+          "Figure 15.1",
+          "See Figure 15.1. Which one of the following statements is true?",
+          "\uff09The circuit has no reactive component, since the voltage phasor is not in a +j",
+          "quadrant.",
+          "B) Voltage leads current by 90.",
+          "C) The equivalent circuit is capacitive."
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 30,
+    "best_candidate": {
+      "question_number": 30,
+      "filename": "Screenshot 2026-03-16 234744.png",
+      "line_count": 5,
+      "kind": "true_false",
+      "prompt": "Inductive elements are storage devices and, unlike resistors, do not dissipate energy.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "raw_lines": [
+        "Question 30 (1 point)",
+        "Inductive elements are storage devices and, unlike resistors, do not dissipate",
+        "energy.",
+        "True",
+        "False"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 30,
+        "filename": "Screenshot 2026-03-16 234744.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Inductive elements are storage devices and, unlike resistors, do not dissipate energy.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 30 (1 point)",
+          "Inductive elements are storage devices and, unlike resistors, do not dissipate",
+          "energy.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 30,
+        "filename": "Screenshot 2026-03-17 170204.png",
+        "line_count": 8,
+        "kind": "multiple_choice",
+        "prompt": "Figure 15.2 See Figure 15.2. Increasing R while keeping X constant",
+        "choices": [
+          {
+            "id": "A",
+            "text": "decreases power factor."
+          },
+          {
+            "id": "B",
+            "text": "increases Z but not 0. C causes no change in power factor. increases power factor."
+          }
+        ],
+        "raw_lines": [
+          "Question30(1point)",
+          "Figure 15.2",
+          "See Figure 15.2. Increasing R while keeping X constant",
+          "A) decreases power factor.",
+          "B) increases Z but not 0.",
+          "C",
+          "causes no change in power factor.",
+          "increases power factor."
+        ]
+      },
+      {
+        "question_number": 30,
+        "filename": "Screenshot 2026-03-17 174614.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "Total impedance of a system is the reciprocal of the sum of the individual impedances.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question30(1point)",
+          "Total impedance of a system is the reciprocal of the sum of the individual",
+          "impedances.",
+          "True",
+          "False"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 31,
+    "best_candidate": {
+      "question_number": 31,
+      "filename": "Screenshot 2026-03-17 170204.png",
+      "line_count": 5,
+      "kind": "true_false",
+      "prompt": "In analysis of a parallel RLC networks,inductive reactance would predominate at low frequencies and capacitive reactance at high frequencies.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "raw_lines": [
+        "Question 31(1point)",
+        "In analysis of a parallel RLC networks,inductive reactance would predominate at",
+        "low frequencies and capacitive reactance at high frequencies.",
+        "True",
+        "False"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 31,
+        "filename": "Screenshot 2026-03-16 234755.png",
+        "line_count": 10,
+        "kind": "multiple_choice",
+        "prompt": "R=100QXL=50\u03a9 ZT\u2014 Figure 15.6 See Figure 15.6. Which one of the following combinations is equivalent to the g series circuit?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "R = 125 Q in parallel with X = 250 Q."
+          },
+          {
+            "id": "B",
+            "text": "R = 250 Q in parallel with X = 125 Q."
+          },
+          {
+            "id": "C",
+            "text": "R = 40 Q in parallel with X = 20 Q."
+          },
+          {
+            "id": "D",
+            "text": "R = 20 Q in parallel with X = 40 Q."
+          }
+        ],
+        "raw_lines": [
+          "Question 31 (1 point)",
+          "R=100QXL=50\u03a9",
+          "ZT\u2014",
+          "Figure 15.6",
+          "See Figure 15.6. Which one of the following combinations is equivalent to the g",
+          "series circuit?",
+          "O A) R = 125 Q in parallel with X = 250 Q.",
+          "B) R = 250 Q in parallel with X = 125 Q.",
+          "C) R = 40 Q in parallel with X = 20 Q.",
+          "D) R = 20 Q in parallel with X = 40 Q."
+        ]
+      },
+      {
+        "question_number": 31,
+        "filename": "Screenshot 2026-03-17 170204.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "In analysis of a parallel RLC networks,inductive reactance would predominate at low frequencies and capacitive reactance at high frequencies.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 31(1point)",
+          "In analysis of a parallel RLC networks,inductive reactance would predominate at",
+          "low frequencies and capacitive reactance at high frequencies.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 31,
+        "filename": "Screenshot 2026-03-17 174637.png",
+        "line_count": 8,
+        "kind": "multiple_choice",
+        "prompt": "Figure 15.2 SeeFigure 15.2.IncreasingRwhile keepingX constant",
+        "choices": [
+          {
+            "id": "A",
+            "text": "causesnochangeinpowerfactor."
+          },
+          {
+            "id": "B",
+            "text": "decreases power factor. increases Z but not 0. increases power factor."
+          }
+        ],
+        "raw_lines": [
+          "Question 31(1 point)",
+          "Figure 15.2",
+          "SeeFigure 15.2.IncreasingRwhile keepingX constant",
+          "A)",
+          "causesnochangeinpowerfactor.",
+          "B) decreases power factor.",
+          "increases Z but not 0.",
+          "increases power factor."
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 32,
+    "best_candidate": {
+      "question_number": 32,
+      "filename": "Screenshot 2026-03-16 234755.png",
+      "line_count": 8,
+      "kind": "multiple_choice",
+      "prompt": "In a series R-C circuit, at low frequencies, the total reactance of the capacitor wi high and the total impedance will be capacitive in nature, at high frequencies tl circuit will become",
+      "choices": [
+        {
+          "id": "A",
+          "text": "More inductive"
+        },
+        {
+          "id": "B",
+          "text": "Purely resistive"
+        },
+        {
+          "id": "C",
+          "text": "Balanced"
+        },
+        {
+          "id": "D",
+          "text": "Purely capacitive"
+        }
+      ],
+      "raw_lines": [
+        "Question 32(1 point)",
+        "In a series R-C circuit, at low frequencies, the total reactance of the capacitor wi",
+        "high and the total impedance will be capacitive in nature, at high frequencies tl",
+        "circuit will become",
+        "A)More inductive",
+        "B) Purely resistive",
+        "C) Balanced",
+        "D) Purely capacitive"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 32,
+        "filename": "Screenshot 2026-03-16 234755.png",
+        "line_count": 8,
+        "kind": "multiple_choice",
+        "prompt": "In a series R-C circuit, at low frequencies, the total reactance of the capacitor wi high and the total impedance will be capacitive in nature, at high frequencies tl circuit will become",
+        "choices": [
+          {
+            "id": "A",
+            "text": "More inductive"
+          },
+          {
+            "id": "B",
+            "text": "Purely resistive"
+          },
+          {
+            "id": "C",
+            "text": "Balanced"
+          },
+          {
+            "id": "D",
+            "text": "Purely capacitive"
+          }
+        ],
+        "raw_lines": [
+          "Question 32(1 point)",
+          "In a series R-C circuit, at low frequencies, the total reactance of the capacitor wi",
+          "high and the total impedance will be capacitive in nature, at high frequencies tl",
+          "circuit will become",
+          "A)More inductive",
+          "B) Purely resistive",
+          "C) Balanced",
+          "D) Purely capacitive"
+        ]
+      },
+      {
+        "question_number": 32,
+        "filename": "Screenshot 2026-03-17 170011.png",
+        "line_count": 10,
+        "kind": "multiple_choice",
+        "prompt": "Which one of the following is true of ac circuits with reactive elements? to unity.",
+        "choices": [
+          {
+            "id": "B",
+            "text": "The impedance of any one element can never exceed the total network impedance. Depending on the frequency applied, the circuit can look either inductive or capacitive. The magnitude of the voltage across any one element can never exceed the appliedvoltage."
+          }
+        ],
+        "raw_lines": [
+          "Question32(1point)",
+          "Which one of the following is true of ac circuits with reactive elements?",
+          "to unity.",
+          "B)",
+          "The impedance of any one element can never exceed the total network",
+          "impedance.",
+          "Depending on the frequency applied, the circuit can look either inductive or",
+          "capacitive.",
+          "The magnitude of the voltage across any one element can never exceed the",
+          "appliedvoltage."
+        ]
+      },
+      {
+        "question_number": 32,
+        "filename": "Screenshot 2026-03-17 174637.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "The angle associated with the total impedance is the angle by which the applied voltageleads the source current.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question32(1point)",
+          "The angle associated with the total impedance is the angle by which the applied",
+          "voltageleads the source current.",
+          "True",
+          "False"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 33,
+    "best_candidate": {
+      "question_number": 33,
+      "filename": "Screenshot 2026-03-17 170011.png",
+      "line_count": 6,
+      "kind": "multiple_choice",
+      "prompt": "The reactance of a 25 millihenry coil at 5000 hertz is which of the following?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "785,000ohms"
+        },
+        {
+          "id": "B",
+          "text": "13 ohms"
+        },
+        {
+          "id": "C",
+          "text": "0.0013ohms"
+        },
+        {
+          "id": "D",
+          "text": "785 ohms"
+        }
+      ],
+      "raw_lines": [
+        "Question33(1point)",
+        "The reactance of a 25 millihenry coil at 5000 hertz is which of the following?",
+        "A)785,000ohms",
+        "B)13 ohms",
+        "C)0.0013ohms",
+        "D) 785 ohms"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 33,
+        "filename": "Screenshot 2026-03-16 234808.png",
+        "line_count": 4,
+        "kind": "true_false",
+        "prompt": "Admittance is the reciprocal of impedance.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question33(1point)",
+          "Admittance is the reciprocal of impedance.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 33,
+        "filename": "Screenshot 2026-03-17 170011.png",
+        "line_count": 6,
+        "kind": "multiple_choice",
+        "prompt": "The reactance of a 25 millihenry coil at 5000 hertz is which of the following?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "785,000ohms"
+          },
+          {
+            "id": "B",
+            "text": "13 ohms"
+          },
+          {
+            "id": "C",
+            "text": "0.0013ohms"
+          },
+          {
+            "id": "D",
+            "text": "785 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question33(1point)",
+          "The reactance of a 25 millihenry coil at 5000 hertz is which of the following?",
+          "A)785,000ohms",
+          "B)13 ohms",
+          "C)0.0013ohms",
+          "D) 785 ohms"
+        ]
+      },
+      {
+        "question_number": 33,
+        "filename": "Screenshot 2026-03-17 174637.png",
+        "line_count": 4,
+        "kind": "true_false",
+        "prompt": "Admittance is the reciprocal of impedance.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question33(1point)",
+          "Admittance is the reciprocal of impedance.",
+          "True",
+          "False"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 34,
+    "best_candidate": {
+      "question_number": 34,
+      "filename": "Screenshot 2026-03-17 174655.png",
+      "line_count": 7,
+      "kind": "multiple_choice",
+      "prompt": "Ignoring capacitive effects, what is the impedance of a 100 mH coil with an internal resistance of 45 ohms in parallel with a 4700 olhm resistor at a frequency of 500 Hz?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "317 ohms"
+        },
+        {
+          "id": "B",
+          "text": "314 ohms"
+        },
+        {
+          "id": "C",
+          "text": "5014ohms"
+        },
+        {
+          "id": "D",
+          "text": "237 ohms"
+        }
+      ],
+      "raw_lines": [
+        "Question34(1point)",
+        "Ignoring capacitive effects, what is the impedance of a 100 mH coil with an internal",
+        "resistance of 45 ohms in parallel with a 4700 olhm resistor at a frequency of 500 Hz?",
+        "A) 317 ohms",
+        "B) 314 ohms",
+        "C)5014ohms",
+        "D) 237 ohms"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 34,
+        "filename": "Screenshot 2026-03-16 234808.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "For parallel elements, the element with the smallest impedance will have the least impact on the total impedance at that frequency.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question34 (1 point)",
+          "For parallel elements, the element with the smallest impedance will have the least",
+          "impact on the total impedance at that frequency.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 34,
+        "filename": "Screenshot 2026-03-17 170029.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring capacitive effects, what is the impedance of a 250 mH coil with an internal resistance of 55 ohms at 60 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "10,900 ohms"
+          },
+          {
+            "id": "B",
+            "text": "109 ohms"
+          },
+          {
+            "id": "C",
+            "text": "94.2 ohms"
+          },
+          {
+            "id": "D",
+            "text": "149.2 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question34(1point)",
+          "Ignoring capacitive effects, what is the impedance of a 250 mH coil with an internal",
+          "resistance of 55 ohms at 60 Hz?",
+          "A)10,900 ohms",
+          "B)109 ohms",
+          "C) 94.2 ohms",
+          "D) 149.2 ohms"
+        ]
+      },
+      {
+        "question_number": 34,
+        "filename": "Screenshot 2026-03-17 174655.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring capacitive effects, what is the impedance of a 100 mH coil with an internal resistance of 45 ohms in parallel with a 4700 olhm resistor at a frequency of 500 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "317 ohms"
+          },
+          {
+            "id": "B",
+            "text": "314 ohms"
+          },
+          {
+            "id": "C",
+            "text": "5014ohms"
+          },
+          {
+            "id": "D",
+            "text": "237 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question34(1point)",
+          "Ignoring capacitive effects, what is the impedance of a 100 mH coil with an internal",
+          "resistance of 45 ohms in parallel with a 4700 olhm resistor at a frequency of 500 Hz?",
+          "A) 317 ohms",
+          "B) 314 ohms",
+          "C)5014ohms",
+          "D) 237 ohms"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 35,
+    "best_candidate": {
+      "question_number": 35,
+      "filename": "Screenshot 2026-03-17 174655.png",
+      "line_count": 7,
+      "kind": "multiple_choice",
+      "prompt": "In a series R-C circuit, at low frequencies, the total reactance of the capacitor will be circuitwillbecome",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Purelyresistive"
+        },
+        {
+          "id": "B",
+          "text": "More inductive"
+        },
+        {
+          "id": "C",
+          "text": "Balanced"
+        },
+        {
+          "id": "D",
+          "text": "Purelycapacitive"
+        }
+      ],
+      "raw_lines": [
+        "Question35(1point)",
+        "In a series R-C circuit, at low frequencies, the total reactance of the capacitor will be",
+        "circuitwillbecome",
+        "OA)Purelyresistive",
+        "B)More inductive",
+        "C) Balanced",
+        "D)Purelycapacitive"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 35,
+        "filename": "Screenshot 2026-03-16 234808.png",
+        "line_count": 6,
+        "kind": "multiple_choice",
+        "prompt": "Express the impedance of a 10 \u03bcF capacitor at 60 Hz in rectangular form.",
+        "choices": [
+          {
+            "id": "A",
+            "text": "265.3Q-j0Q"
+          },
+          {
+            "id": "B",
+            "text": "0Q-j265.3Q"
+          },
+          {
+            "id": "C",
+            "text": "oQ+j265.3Q"
+          },
+          {
+            "id": "D",
+            "text": "0Q-j0.00377Q"
+          }
+        ],
+        "raw_lines": [
+          "Question 35(1 point)",
+          "Express the impedance of a 10 \u03bcF capacitor at 60 Hz in rectangular form.",
+          "A)265.3Q-j0Q",
+          "B)0Q-j265.3Q",
+          "C)oQ+j265.3Q",
+          "OD)0Q-j0.00377Q"
+        ]
+      },
+      {
+        "question_number": 35,
+        "filename": "Screenshot 2026-03-17 170029.png",
+        "line_count": 5,
+        "kind": "true_false",
+        "prompt": "The basic format for the voltage divider rule in ac circuits is unlike that for dc circuits.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 35 (1 point)",
+          "The basic format for the voltage divider rule in ac circuits is unlike that for dc",
+          "circuits.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 35,
+        "filename": "Screenshot 2026-03-17 174655.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "In a series R-C circuit, at low frequencies, the total reactance of the capacitor will be circuitwillbecome",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Purelyresistive"
+          },
+          {
+            "id": "B",
+            "text": "More inductive"
+          },
+          {
+            "id": "C",
+            "text": "Balanced"
+          },
+          {
+            "id": "D",
+            "text": "Purelycapacitive"
+          }
+        ],
+        "raw_lines": [
+          "Question35(1point)",
+          "In a series R-C circuit, at low frequencies, the total reactance of the capacitor will be",
+          "circuitwillbecome",
+          "OA)Purelyresistive",
+          "B)More inductive",
+          "C) Balanced",
+          "D)Purelycapacitive"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 36,
+    "best_candidate": {
+      "question_number": 36,
+      "filename": "Screenshot 2026-03-17 174713.png",
+      "line_count": 8,
+      "kind": "multiple_choice",
+      "prompt": "Ignoring any effects of dc resistance,what is the totalreactance of a 250 mH coil in series with a 4.7 microfarad capacitor at a signal frequency of 450 Hz?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "706 ohns"
+        },
+        {
+          "id": "B",
+          "text": "97ohms"
+        },
+        {
+          "id": "C",
+          "text": "781 ohms D 0632ohms"
+        }
+      ],
+      "raw_lines": [
+        "Question36(1point)",
+        "Ignoring any effects of dc resistance,what is the totalreactance of a 250 mH coil in",
+        "series with a 4.7 microfarad capacitor at a signal frequency of 450 Hz?",
+        "A) 706 ohns",
+        "B)97ohms",
+        "C) 781 ohms",
+        "D",
+        "0632ohms"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 36,
+        "filename": "Screenshot 2026-03-16 234808.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "What is the total impedance Z of a series network consisting of a 5 Q resistor, an inductor having 1o0 reactance, and a capacitor with 15Q reactance?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "5Q+j25Q"
+          },
+          {
+            "id": "B",
+            "text": "5Q-j5Q"
+          },
+          {
+            "id": "C",
+            "text": "5Q+j5Q"
+          },
+          {
+            "id": "D",
+            "text": "5Q-i25.0"
+          }
+        ],
+        "raw_lines": [
+          "Question 36(1point)",
+          "What is the total impedance Z of a series network consisting of a 5 Q resistor, an",
+          "inductor having 1o0 reactance, and a capacitor with 15Q reactance?",
+          "OA)5Q+j25Q",
+          "B)5Q-j5Q",
+          "C)5Q+j5Q",
+          "D)5Q-i25.0"
+        ]
+      },
+      {
+        "question_number": 36,
+        "filename": "Screenshot 2026-03-17 170029.png",
+        "line_count": 6,
+        "kind": "multiple_choice",
+        "prompt": "What is the reactance of a 25 millihenry coil at 600 hertz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "94 ohms"
+          },
+          {
+            "id": "B",
+            "text": "94,000 ohms"
+          },
+          {
+            "id": "C",
+            "text": "785 ohms"
+          },
+          {
+            "id": "D",
+            "text": "0.011 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question36(1point)",
+          "What is the reactance of a 25 millihenry coil at 600 hertz?",
+          "A) 94 ohms",
+          "B) 94,000 ohms",
+          "C) 785 ohms",
+          "D) 0.011 ohms"
+        ]
+      },
+      {
+        "question_number": 36,
+        "filename": "Screenshot 2026-03-17 174713.png",
+        "line_count": 8,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring any effects of dc resistance,what is the totalreactance of a 250 mH coil in series with a 4.7 microfarad capacitor at a signal frequency of 450 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "706 ohns"
+          },
+          {
+            "id": "B",
+            "text": "97ohms"
+          },
+          {
+            "id": "C",
+            "text": "781 ohms D 0632ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question36(1point)",
+          "Ignoring any effects of dc resistance,what is the totalreactance of a 250 mH coil in",
+          "series with a 4.7 microfarad capacitor at a signal frequency of 450 Hz?",
+          "A) 706 ohns",
+          "B)97ohms",
+          "C) 781 ohms",
+          "D",
+          "0632ohms"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 37,
+    "best_candidate": {
+      "question_number": 37,
+      "filename": "Screenshot 2026-03-17 174713.png",
+      "line_count": 10,
+      "kind": "multiple_choice",
+      "prompt": "R=100QXL=50Q mm ZT Figure 15.6 See Figure 15.6. What is the total impedance Zr for this circuit?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "112Q-26.6\u00b0"
+        },
+        {
+          "id": "B",
+          "text": "112 Q -63.49"
+        },
+        {
+          "id": "C",
+          "text": "112 Q 263.4\u00b0"
+        },
+        {
+          "id": "D",
+          "text": "112 Q 26.6\u00b0"
+        }
+      ],
+      "raw_lines": [
+        "Question37(1point)",
+        "R=100QXL=50Q",
+        "mm",
+        "ZT",
+        "Figure 15.6",
+        "See Figure 15.6. What is the total impedance Zr for this circuit?",
+        "A)112Q-26.6\u00b0",
+        "B) 112 Q -63.49",
+        "C) 112 Q 263.4\u00b0",
+        "D) 112 Q 26.6\u00b0"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 37,
+        "filename": "Screenshot 2026-03-16 234820.png",
+        "line_count": 4,
+        "kind": "true_false",
+        "prompt": "The heavier the current flow for a given voltage, the larger the value for admittance.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question37(1point)",
+          "The heavier the current flow for a given voltage, the larger the value for admittance.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 37,
+        "filename": "Screenshot 2026-03-17 170059.png",
+        "line_count": 4,
+        "kind": "true_false",
+        "prompt": "The heavier the current flow for a given voltage, the larger the value for admittance.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 37(1 point)",
+          "The heavier the current flow for a given voltage, the larger the value for admittance.",
+          "True",
+          "False"
+        ]
+      },
+      {
+        "question_number": 37,
+        "filename": "Screenshot 2026-03-17 174713.png",
+        "line_count": 10,
+        "kind": "multiple_choice",
+        "prompt": "R=100QXL=50Q mm ZT Figure 15.6 See Figure 15.6. What is the total impedance Zr for this circuit?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "112Q-26.6\u00b0"
+          },
+          {
+            "id": "B",
+            "text": "112 Q -63.49"
+          },
+          {
+            "id": "C",
+            "text": "112 Q 263.4\u00b0"
+          },
+          {
+            "id": "D",
+            "text": "112 Q 26.6\u00b0"
+          }
+        ],
+        "raw_lines": [
+          "Question37(1point)",
+          "R=100QXL=50Q",
+          "mm",
+          "ZT",
+          "Figure 15.6",
+          "See Figure 15.6. What is the total impedance Zr for this circuit?",
+          "A)112Q-26.6\u00b0",
+          "B) 112 Q -63.49",
+          "C) 112 Q 263.4\u00b0",
+          "D) 112 Q 26.6\u00b0"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 38,
+    "best_candidate": {
+      "question_number": 38,
+      "filename": "Screenshot 2026-03-17 170059.png",
+      "line_count": 4,
+      "kind": "true_false",
+      "prompt": "The advantage of an impedance diagram is that it will reflect all impedance on the positive real axis.",
+      "choices": [
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "raw_lines": [
+        "Question 38 (1 point)",
+        "The advantage of an impedance diagram is that it will reflect all impedance on the",
+        "positive real axis.",
+        "False"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 38,
+        "filename": "Screenshot 2026-03-16 234820.png",
+        "line_count": 6,
+        "kind": "multiple_choice",
+        "prompt": "What is the susceptance of a 100 \u03bcF capacitor at 1000 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "0.63 S"
+          },
+          {
+            "id": "B",
+            "text": "104 S"
+          },
+          {
+            "id": "C",
+            "text": "10-4 S"
+          },
+          {
+            "id": "D",
+            "text": "1.59 S"
+          }
+        ],
+        "raw_lines": [
+          "Question38(1point)",
+          "What is the susceptance of a 100 \u03bcF capacitor at 1000 Hz?",
+          "A) 0.63 S",
+          "B) 104 S",
+          "C) 10-4 S",
+          "D) 1.59 S"
+        ]
+      },
+      {
+        "question_number": 38,
+        "filename": "Screenshot 2026-03-17 170059.png",
+        "line_count": 4,
+        "kind": "true_false",
+        "prompt": "The advantage of an impedance diagram is that it will reflect all impedance on the positive real axis.",
+        "choices": [
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "raw_lines": [
+          "Question 38 (1 point)",
+          "The advantage of an impedance diagram is that it will reflect all impedance on the",
+          "positive real axis.",
+          "False"
+        ]
+      },
+      {
+        "question_number": 38,
+        "filename": "Screenshot 2026-03-17 174731.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "A measure of how well an ac circuit will admit, or allow current to flow in the circuit is",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Inductance"
+          },
+          {
+            "id": "B",
+            "text": "Admittance"
+          },
+          {
+            "id": "C",
+            "text": "Resistance"
+          },
+          {
+            "id": "D",
+            "text": "Capacitance"
+          }
+        ],
+        "raw_lines": [
+          "Question38(1point)",
+          "A measure of how well an ac circuit will admit, or allow current to flow in the",
+          "circuit is",
+          "A) Inductance",
+          "B)Admittance",
+          "C) Resistance",
+          "OD)Capacitance"
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 39,
+    "best_candidate": {
+      "question_number": 39,
+      "filename": "Screenshot 2026-03-17 170059.png",
+      "line_count": 13,
+      "kind": "multiple_choice",
+      "prompt": "R=10\u03a9 X=20\u03a9 E= Xc 100V 15Q L 300 Figure 15.3 See Figure 15.3. The total impedance of this circuit may be made purely resistive by",
+      "choices": [
+        {
+          "id": "A",
+          "text": "increasing the signal frequency."
+        },
+        {
+          "id": "B",
+          "text": "decreasing the signal frequency."
+        },
+        {
+          "id": "C",
+          "text": "increasing R to 35 Q."
+        }
+      ],
+      "raw_lines": [
+        "Question39(1point)",
+        "R=10\u03a9",
+        "X=20\u03a9",
+        "E=",
+        "Xc",
+        "100V",
+        "15Q",
+        "L 300",
+        "Figure 15.3",
+        "See Figure 15.3. The total impedance of this circuit may be made purely resistive by",
+        "A) increasing the signal frequency.",
+        "B) decreasing the signal frequency.",
+        "C) increasing R to 35 Q."
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 39,
+        "filename": "Screenshot 2026-03-16 234830.png",
+        "line_count": 11,
+        "kind": "multiple_choice",
+        "prompt": "2000 6V 4A Figure 15.1 See Figure 15.1. Which one of the following statements is true?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The equivalent circuit is capacitive."
+          },
+          {
+            "id": "B",
+            "text": "The equivalent circuit is inductive."
+          },
+          {
+            "id": "C",
+            "text": "Voltage leads current by 90\u00b0."
+          },
+          {
+            "id": "D",
+            "text": "The circuit has no reactive component, since the voltage phasor is not in a +j quadrant."
+          }
+        ],
+        "raw_lines": [
+          "Question 39 (1 point)",
+          "2000",
+          "6V",
+          "4A",
+          "Figure 15.1",
+          "See Figure 15.1. Which one of the following statements is true?",
+          "A) The equivalent circuit is capacitive.",
+          "B) The equivalent circuit is inductive.",
+          "C) Voltage leads current by 90\u00b0.",
+          "D) The circuit has no reactive component, since the voltage phasor is not in a",
+          "+j quadrant."
+        ]
+      },
+      {
+        "question_number": 39,
+        "filename": "Screenshot 2026-03-17 170059.png",
+        "line_count": 13,
+        "kind": "multiple_choice",
+        "prompt": "R=10\u03a9 X=20\u03a9 E= Xc 100V 15Q L 300 Figure 15.3 See Figure 15.3. The total impedance of this circuit may be made purely resistive by",
+        "choices": [
+          {
+            "id": "A",
+            "text": "increasing the signal frequency."
+          },
+          {
+            "id": "B",
+            "text": "decreasing the signal frequency."
+          },
+          {
+            "id": "C",
+            "text": "increasing R to 35 Q."
+          }
+        ],
+        "raw_lines": [
+          "Question39(1point)",
+          "R=10\u03a9",
+          "X=20\u03a9",
+          "E=",
+          "Xc",
+          "100V",
+          "15Q",
+          "L 300",
+          "Figure 15.3",
+          "See Figure 15.3. The total impedance of this circuit may be made purely resistive by",
+          "A) increasing the signal frequency.",
+          "B) decreasing the signal frequency.",
+          "C) increasing R to 35 Q."
+        ]
+      },
+      {
+        "question_number": 39,
+        "filename": "Screenshot 2026-03-17 174731.png",
+        "line_count": 10,
+        "kind": "multiple_choice",
+        "prompt": "Which one of the following is true of ac circuits with reactive elements?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The magnitude of the voltage across any one element can never exceed the appliedvoltage."
+          },
+          {
+            "id": "B",
+            "text": "The impedance of any one element can never exceed the total network impedance. The smaller the resistive element of a circuit, the closer the power factor is to unity."
+          },
+          {
+            "id": "D",
+            "text": "Depending on the frequency applied, the circuit can look either inductive or capacitive."
+          }
+        ],
+        "raw_lines": [
+          "Question 39 (1point)",
+          "Which one of the following is true of ac circuits with reactive elements?",
+          "A)The magnitude of the voltage across any one element can never exceed the",
+          "appliedvoltage.",
+          "B)The impedance of any one element can never exceed the total network",
+          "impedance.",
+          "The smaller the resistive element of a circuit, the closer the power factor is",
+          "to unity.",
+          "D) Depending on the frequency applied, the circuit can look either inductive",
+          "or capacitive."
+        ]
+      }
+    ]
+  },
+  {
+    "question_number": 40,
+    "best_candidate": {
+      "question_number": 40,
+      "filename": "Screenshot 2026-03-17 170119.png",
+      "line_count": 7,
+      "kind": "multiple_choice",
+      "prompt": "Ignoring capacitive effects,what is the impedance of a 100mH coil with an internal resistance of 45 ohms in parallel with a 4700 ohm resistor at a frequency of 500 Hz?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "5014 ohms"
+        },
+        {
+          "id": "B",
+          "text": "237 ohms"
+        },
+        {
+          "id": "C",
+          "text": "317 ohms"
+        },
+        {
+          "id": "D",
+          "text": "314 ohms"
+        }
+      ],
+      "raw_lines": [
+        "Question40(1point)",
+        "Ignoring capacitive effects,what is the impedance of a 100mH coil with an internal",
+        "resistance of 45 ohms in parallel with a 4700 ohm resistor at a frequency of 500 Hz?",
+        "A) 5014 ohms",
+        "B) 237 ohms",
+        "C) 317 ohms",
+        "D) 314 ohms"
+      ]
+    },
+    "alternates": [
+      {
+        "question_number": 40,
+        "filename": "Screenshot 2026-03-16 234830.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in series with a 4.7 microfarad capacitor at a signal frequency of 60 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "113 ohms"
+          },
+          {
+            "id": "B",
+            "text": "659 ohms"
+          },
+          {
+            "id": "C",
+            "text": "470 ohms"
+          },
+          {
+            "id": "D",
+            "text": "111 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question 40 (1 point)",
+          "Ignoring any effects of dc resistance, what is the total reactance of a 250 mH coil in",
+          "series with a 4.7 microfarad capacitor at a signal frequency of 60 Hz?",
+          "A) 113 ohms",
+          "B) 659 ohms",
+          "C) 470 ohms",
+          "D) 111 ohms"
+        ]
+      },
+      {
+        "question_number": 40,
+        "filename": "Screenshot 2026-03-17 170119.png",
+        "line_count": 7,
+        "kind": "multiple_choice",
+        "prompt": "Ignoring capacitive effects,what is the impedance of a 100mH coil with an internal resistance of 45 ohms in parallel with a 4700 ohm resistor at a frequency of 500 Hz?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "5014 ohms"
+          },
+          {
+            "id": "B",
+            "text": "237 ohms"
+          },
+          {
+            "id": "C",
+            "text": "317 ohms"
+          },
+          {
+            "id": "D",
+            "text": "314 ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question40(1point)",
+          "Ignoring capacitive effects,what is the impedance of a 100mH coil with an internal",
+          "resistance of 45 ohms in parallel with a 4700 ohm resistor at a frequency of 500 Hz?",
+          "A) 5014 ohms",
+          "B) 237 ohms",
+          "C) 317 ohms",
+          "D) 314 ohms"
+        ]
+      },
+      {
+        "question_number": 40,
+        "filename": "Screenshot 2026-03-17 174749.png",
+        "line_count": 6,
+        "kind": "multiple_choice",
+        "prompt": "The reactance of a 25 millihenry coil at 5000 hertz is which of the following?",
+        "choices": [
+          {
+            "id": "A",
+            "text": "0.0013ohms"
+          },
+          {
+            "id": "B",
+            "text": "785,000ohms"
+          },
+          {
+            "id": "C",
+            "text": "13ohms"
+          },
+          {
+            "id": "D",
+            "text": "785ohms"
+          }
+        ],
+        "raw_lines": [
+          "Question40(1point)",
+          "The reactance of a 25 millihenry coil at 5000 hertz is which of the following?",
+          "A)0.0013ohms",
+          "B)785,000ohms",
+          "C)13ohms",
+          "D)785ohms"
+        ]
+      }
+    ]
+  }
+]
