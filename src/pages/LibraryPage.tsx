@@ -12,6 +12,27 @@ interface LibraryPageProps {
 
 type LibraryFilter = 'all' | 'documents' | 'screenshots'
 
+interface ScreenshotQuizCollection {
+  label: string
+  folders: string[]
+  detail: string
+}
+
+const screenshotQuizCollections: ScreenshotQuizCollection[] = [
+  {
+    label: 'Chapters 15-16 quiz',
+    folders: ['Ch 15-16 screen shots', 'Test 2 study guide'],
+    detail:
+      'Combined quiz and study-guide material for Chapters 15 and 16. The study-guide folder is mostly duplicate and recapture support for the same question set.',
+  },
+  {
+    label: 'Chapter 17 quiz',
+    folders: ['test 2 no 2', 'test 2 no 3'],
+    detail:
+      'Separate Chapter 17 quiz material grouped across two raw screenshot batches. Several captures still reference Figure 16.x, but the question text is series-parallel AC-network content.',
+  },
+]
+
 function formatBytes(value: number) {
   if (value >= 1024 * 1024) {
     return `${(value / (1024 * 1024)).toFixed(1)} MB`
@@ -54,6 +75,74 @@ function duplicateCopy(asset: StudyAsset) {
     : `${asset.duplicateCount} exact duplicates removed`
 }
 
+function sourceFolderMatches(sourceFolder: string, candidate: string) {
+  return sourceFolder.trim().toLowerCase() === candidate.trim().toLowerCase()
+}
+
+function describeDocumentCollection(asset: StudyAsset) {
+  const labelText = `${asset.title} ${asset.originalFileName}`.toLowerCase()
+
+  if (/\b17\b/.test(labelText)) {
+    return 'Chapter 17 homework'
+  }
+
+  if (/\b16\b/.test(labelText)) {
+    return 'Chapter 16 homework'
+  }
+
+  if (/\b15\b/.test(labelText)) {
+    return 'Chapter 15 homework'
+  }
+
+  return 'Homework document'
+}
+
+function describeScreenshotCollection(asset: StudyAsset) {
+  const collection = screenshotQuizCollections.find((item) =>
+    item.folders.some((folder) => sourceFolderMatches(asset.sourceFolder, folder)),
+  )
+
+  if (!collection) {
+    return {
+      quizLabel: 'Unmapped screenshot set',
+      sourceLabel: asset.sourceFolder,
+    }
+  }
+
+  if (sourceFolderMatches(asset.sourceFolder, 'Ch 15-16 screen shots')) {
+    return {
+      quizLabel: collection.label,
+      sourceLabel: 'Original capture set',
+    }
+  }
+
+  if (sourceFolderMatches(asset.sourceFolder, 'Test 2 study guide')) {
+    return {
+      quizLabel: collection.label,
+      sourceLabel: 'Study-guide recaptures',
+    }
+  }
+
+  if (sourceFolderMatches(asset.sourceFolder, 'test 2 no 2')) {
+    return {
+      quizLabel: collection.label,
+      sourceLabel: 'Attempt set no. 2',
+    }
+  }
+
+  if (sourceFolderMatches(asset.sourceFolder, 'test 2 no 3')) {
+    return {
+      quizLabel: collection.label,
+      sourceLabel: 'Attempt set no. 3',
+    }
+  }
+
+  return {
+    quizLabel: collection.label,
+    sourceLabel: asset.sourceFolder,
+  }
+}
+
 export function LibraryPage({ assets, stats, onBackHome, onOpenSolver, onStartQuiz }: LibraryPageProps) {
   const [query, setQuery] = useState('')
   const [filter, setFilter] = useState<LibraryFilter>('all')
@@ -88,15 +177,22 @@ export function LibraryPage({ assets, stats, onBackHome, onOpenSolver, onStartQu
 
   const documentAssets = filteredAssets.filter((asset) => asset.kind === 'document')
   const screenshotAssets = filteredAssets.filter((asset) => asset.kind === 'screenshot')
+  const totalScreenshotAssets = assets.filter((asset) => asset.kind === 'screenshot')
+  const screenshotCollectionSummary = screenshotQuizCollections.map((collection) => ({
+    ...collection,
+    count: totalScreenshotAssets.filter((asset) =>
+      collection.folders.some((folder) => sourceFolderMatches(asset.sourceFolder, folder)),
+    ).length,
+  }))
 
   return (
     <div className="panel-stack">
       <section className="panel-section">
         <div className="library-toolbar">
           <div>
-            <h2>Tracked study assets</h2>
+            <h2>Study source library</h2>
             <p className="muted-copy">
-              Every retained file is committed into the repo, deduped by SHA-256, and searchable from extracted text or OCR.
+              Raw homework files and screenshot captures stay here for audit support, while the main app now surfaces only the canonical study sets.
             </p>
           </div>
 
@@ -108,7 +204,7 @@ export function LibraryPage({ assets, stats, onBackHome, onOpenSolver, onStartQu
               Open solver
             </button>
             <button type="button" className="primary-action" onClick={onStartQuiz}>
-              Start full quiz
+              Start Chapters 15-16 quiz
             </button>
           </div>
         </div>
@@ -187,7 +283,7 @@ export function LibraryPage({ assets, stats, onBackHome, onOpenSolver, onStartQu
                 </div>
 
                 <div className="library-card__chips">
-                  <span className="status-chip status-chip--correct">{asset.sourceFolder}</span>
+                  <span className="status-chip status-chip--correct">{describeDocumentCollection(asset)}</span>
                   <span className="status-chip status-chip--neutral">{asset.extension.toUpperCase()}</span>
                 </div>
 
@@ -212,6 +308,36 @@ export function LibraryPage({ assets, stats, onBackHome, onOpenSolver, onStartQu
         </section>
       ) : null}
 
+      {filter !== 'documents' && totalScreenshotAssets.length ? (
+        <section className="panel-section">
+          <div className="library-section-header">
+            <h2>Quiz set map</h2>
+            <p className="muted-copy">
+              Raw screenshot folders grouped into the two quiz buckets you described.
+            </p>
+          </div>
+
+          <div className="library-document-grid">
+            {screenshotCollectionSummary.map((collection) => (
+              <article key={collection.label} className="library-card library-card--document">
+                <div className="library-card__meta">
+                  <span className="eyebrow">Screenshot set</span>
+                  <h3>{collection.label}</h3>
+                  <p className="muted-copy">{collection.count} captures currently mapped into this quiz set.</p>
+                </div>
+
+                <div className="library-card__chips">
+                  <span className="status-chip status-chip--correct">{collection.label}</span>
+                </div>
+
+                <p className="library-card__preview">{collection.detail}</p>
+                <p className="library-card__duplicates">Raw folders: {collection.folders.join(' | ')}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       {screenshotAssets.length ? (
         <section className="panel-section">
           <div className="library-section-header">
@@ -220,41 +346,48 @@ export function LibraryPage({ assets, stats, onBackHome, onOpenSolver, onStartQu
           </div>
 
           <div className="library-screenshot-grid">
-            {screenshotAssets.map((asset) => (
-              <article key={asset.id} className="library-card library-card--screenshot">
-                <a href={asset.publicPath} target="_blank" rel="noreferrer" className="library-card__image-link">
-                  <img src={asset.publicPath} alt={asset.title} loading="lazy" />
-                </a>
+            {screenshotAssets.map((asset) => {
+              const screenshotCollection = describeScreenshotCollection(asset)
 
-                <div className="library-card__body">
-                  <div className="library-card__meta">
-                    <h3>{asset.title}</h3>
-                    <p className="muted-copy">
-                      {describeTextSource(asset)}. {duplicateCopy(asset)}.
-                    </p>
+              return (
+                <article key={asset.id} className="library-card library-card--screenshot">
+                  <a href={asset.publicPath} target="_blank" rel="noreferrer" className="library-card__image-link">
+                    <img src={asset.publicPath} alt={asset.title} loading="lazy" />
+                  </a>
+
+                  <div className="library-card__body">
+                    <div className="library-card__meta">
+                      <h3>{asset.title}</h3>
+                      <p className="muted-copy">
+                        {describeTextSource(asset)}. {duplicateCopy(asset)}.
+                      </p>
+                    </div>
+
+                    <div className="library-card__chips">
+                      <span className="status-chip status-chip--correct">{screenshotCollection.quizLabel}</span>
+                      <span className="status-chip status-chip--neutral">{screenshotCollection.sourceLabel}</span>
+                      <span className="status-chip status-chip--neutral">{formatBytes(asset.sizeBytes)}</span>
+                    </div>
+
+                    <p className="library-card__preview">{asset.textPreview || 'No OCR text was extracted.'}</p>
+
+                    <p className="library-card__duplicates">Raw folder: {asset.sourceFolder}</p>
+
+                    {asset.duplicateArchivePaths.length ? (
+                      <p className="library-card__duplicates">
+                        Duplicate aliases: {asset.duplicateArchivePaths.join(' | ')}
+                      </p>
+                    ) : null}
+
+                    <div className="action-row">
+                      <a className="ghost-action" href={asset.publicPath} target="_blank" rel="noreferrer">
+                        Open full image
+                      </a>
+                    </div>
                   </div>
-
-                  <div className="library-card__chips">
-                    <span className="status-chip status-chip--correct">{asset.sourceFolder}</span>
-                    <span className="status-chip status-chip--neutral">{formatBytes(asset.sizeBytes)}</span>
-                  </div>
-
-                  <p className="library-card__preview">{asset.textPreview || 'No OCR text was extracted.'}</p>
-
-                  {asset.duplicateArchivePaths.length ? (
-                    <p className="library-card__duplicates">
-                      Duplicate aliases: {asset.duplicateArchivePaths.join(' | ')}
-                    </p>
-                  ) : null}
-
-                  <div className="action-row">
-                    <a className="ghost-action" href={asset.publicPath} target="_blank" rel="noreferrer">
-                      Open full image
-                    </a>
-                  </div>
-                </div>
-              </article>
-            ))}
+                </article>
+              )
+            })}
           </div>
         </section>
       ) : null}

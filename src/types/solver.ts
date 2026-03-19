@@ -17,6 +17,10 @@ export type SolverGoalId =
   | 'series_rlc_impedance_polar'
   | 'series_rlc_impedance_rectangular'
   | 'capacitive_susceptance'
+  | 'source_current_from_voltage_impedance'
+  | 'current_divider_two_branch'
+  | 'voltage_divider_impedance'
+  | 'average_power_from_voltage_current_pf'
 
 export type SolverUnitDimension =
   | 'resistance'
@@ -53,6 +57,7 @@ export type SolverUnitId =
   | 'millivolt'
   | 'amp'
   | 'milliamp'
+  | 'microamp'
   | 'watt'
   | 'kilowatt'
   | 'unitless'

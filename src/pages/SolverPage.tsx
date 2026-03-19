@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 
 import { createDefaultSolverFormState, defaultSolverGoalId, solverGoalLookup, solverGoals } from '../data/solverGoals'
 import { solveGoal } from '../lib/solverEngine'
@@ -166,22 +167,48 @@ function ChoiceMatchPanel({ match }: { match: AnswerChoiceMatchResult }) {
 }
 
 export function SolverPage({ onBackHome }: { onBackHome: () => void }) {
-  const [goalId, setGoalId] = useState<SolverGoalId>(defaultSolverGoalId)
-  const [formState, setFormState] = useState(() => createDefaultSolverFormState(defaultSolverGoalId))
+  const [searchParams] = useSearchParams()
+  const requestedGoalId = searchParams.get('goal') as SolverGoalId | null
+  const initialGoalId = requestedGoalId && solverGoalLookup[requestedGoalId] ? requestedGoalId : defaultSolverGoalId
+
+  return <SolverWorkspace key={initialGoalId} onBackHome={onBackHome} initialGoalId={initialGoalId} />
+}
+
+function SolverWorkspace({
+  onBackHome,
+  initialGoalId,
+}: {
+  onBackHome: () => void
+  initialGoalId: SolverGoalId
+}) {
+  const [goalId, setGoalId] = useState<SolverGoalId>(initialGoalId)
+  const [formState, setFormState] = useState(() => createDefaultSolverFormState(initialGoalId))
   const [requestedOutputUnitId, setRequestedOutputUnitId] = useState<SolverUnitId>(
-    createRequestedOutputUnit(solverGoalLookup[defaultSolverGoalId]),
+    createRequestedOutputUnit(solverGoalLookup[initialGoalId]),
   )
   const [requestedAngleUnitId, setRequestedAngleUnitId] = useState<SolverUnitId>(
-    createRequestedAngleUnit(solverGoalLookup[defaultSolverGoalId]),
+    createRequestedAngleUnit(solverGoalLookup[initialGoalId]),
   )
   const [roundingMode, setRoundingMode] = useState<SolverRoundingMode>(
-    solverGoalLookup[defaultSolverGoalId].output.preferredRounding,
+    solverGoalLookup[initialGoalId].output.preferredRounding,
   )
   const [answerChoicesText, setAnswerChoicesText] = useState('')
   const [hasSolved, setHasSolved] = useState(false)
 
   const goal = solverGoalLookup[goalId]
   const groupedUnits = groupUnitsForSelector()
+
+  function updateGoal(nextGoalId: SolverGoalId) {
+    const nextGoal = solverGoalLookup[nextGoalId]
+
+    setGoalId(nextGoalId)
+    setFormState(createDefaultSolverFormState(nextGoalId))
+    setRequestedOutputUnitId(createRequestedOutputUnit(nextGoal))
+    setRequestedAngleUnitId(createRequestedAngleUnit(nextGoal))
+    setRoundingMode(nextGoal.output.preferredRounding)
+    setAnswerChoicesText('')
+    setHasSolved(false)
+  }
 
   let solvedView:
     | ReturnType<typeof buildSolverPresentation> & {
@@ -209,18 +236,6 @@ export function SolverPage({ onBackHome }: { onBackHome: () => void }) {
     } catch (error) {
       solveError = error instanceof Error ? error.message : 'Could not solve this problem.'
     }
-  }
-
-  function updateGoal(nextGoalId: SolverGoalId) {
-    const nextGoal = solverGoalLookup[nextGoalId]
-
-    setGoalId(nextGoalId)
-    setFormState(createDefaultSolverFormState(nextGoalId))
-    setRequestedOutputUnitId(createRequestedOutputUnit(nextGoal))
-    setRequestedAngleUnitId(createRequestedAngleUnit(nextGoal))
-    setRoundingMode(nextGoal.output.preferredRounding)
-    setAnswerChoicesText('')
-    setHasSolved(false)
   }
 
   function updateField(fieldId: string, nextState: SolverFieldInputState) {

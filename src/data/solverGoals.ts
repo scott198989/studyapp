@@ -57,7 +57,7 @@ const frequencyUnits: SolverUnitId[] = ['hertz', 'kilohertz', 'megahertz']
 const inductanceUnits: SolverUnitId[] = ['henry', 'millihenry', 'microhenry']
 const capacitanceUnits: SolverUnitId[] = ['farad', 'millifarad', 'microfarad', 'nanofarad']
 const voltageUnits: SolverUnitId[] = ['volt', 'millivolt']
-const currentUnits: SolverUnitId[] = ['amp', 'milliamp']
+const currentUnits: SolverUnitId[] = ['amp', 'milliamp', 'microamp']
 const powerUnits: SolverUnitId[] = ['watt', 'kilowatt']
 
 export const solverGoals: SolverGoalDefinition[] = [
@@ -513,6 +513,115 @@ export const solverGoals: SolverGoalDefinition[] = [
       canonicalUnit: 'ohm',
       allowedAlternateUnits: ['kiloohm', 'milliohm'],
       preferredOutputUnit: 'ohm',
+      preferredRounding: '2dp',
+    },
+  },
+  {
+    id: 'source_current_from_voltage_impedance',
+    name: 'Source current from source voltage and total impedance',
+    shortName: 'Source current from E and Z',
+    description: 'Use phasor Ohm’s law to compute source or branch current from a voltage phasor and an impedance phasor.',
+    formulaPath: ['I = E / Z', '|I| = |E| / |Z|', 'θ_I = θ_E - θ_Z'],
+    fields: [
+      measurementField('voltageMagnitude', 'Voltage magnitude', '|E|', 'Enter the voltage magnitude.', '50', 'volt', voltageUnits),
+      measurementField('voltageAngle', 'Voltage angle', 'θ_E', 'Enter the voltage angle.', '0', 'degrees', angleUnits, {
+        allowNegative: true,
+      }),
+      measurementField('impedanceMagnitude', 'Impedance magnitude', '|Z|', 'Enter the impedance magnitude.', '25', 'ohm', resistanceUnits),
+      measurementField('impedanceAngle', 'Impedance angle', 'θ_Z', 'Enter the impedance angle.', '20', 'degrees', angleUnits, {
+        allowNegative: true,
+      }),
+    ],
+    output: {
+      format: 'polar',
+      quantityType: 'current',
+      canonicalUnit: 'amp',
+      allowedAlternateUnits: ['milliamp'],
+      preferredOutputUnit: 'amp',
+      preferredRounding: '2dp',
+      allowedAngleUnits: angleUnits,
+      preferredAngleUnit: 'degrees',
+    },
+  },
+  {
+    id: 'current_divider_two_branch',
+    name: 'Current divider for two impedances',
+    shortName: 'Current divider',
+    description: 'Solve the current through one branch of a two-branch parallel network using the opposite branch impedance in the numerator.',
+    formulaPath: ['I_target = I_source × Z_other / (Z_target + Z_other)'],
+    fields: [
+      measurementField('sourceCurrentMagnitude', 'Source current magnitude', '|I_S|', 'Enter the source current magnitude.', '2', 'amp', currentUnits),
+      measurementField('sourceCurrentAngle', 'Source current angle', 'θ_IS', 'Enter the source current angle.', '0', 'degrees', angleUnits, {
+        allowNegative: true,
+      }),
+      measurementField('targetImpedanceMagnitude', 'Target branch |Z|', '|Z_target|', 'Enter the target branch impedance magnitude.', '10', 'ohm', resistanceUnits),
+      measurementField('targetImpedanceAngle', 'Target branch angle', 'θ_target', 'Enter the target branch impedance angle.', '0', 'degrees', angleUnits, {
+        allowNegative: true,
+      }),
+      measurementField('otherImpedanceMagnitude', 'Other branch |Z|', '|Z_other|', 'Enter the opposite branch impedance magnitude.', '20', 'ohm', resistanceUnits),
+      measurementField('otherImpedanceAngle', 'Other branch angle', 'θ_other', 'Enter the opposite branch impedance angle.', '-30', 'degrees', angleUnits, {
+        allowNegative: true,
+      }),
+    ],
+    output: {
+      format: 'polar',
+      quantityType: 'current',
+      canonicalUnit: 'amp',
+      allowedAlternateUnits: ['milliamp'],
+      preferredOutputUnit: 'amp',
+      preferredRounding: '2dp',
+      allowedAngleUnits: angleUnits,
+      preferredAngleUnit: 'degrees',
+    },
+  },
+  {
+    id: 'voltage_divider_impedance',
+    name: 'Voltage divider with impedance phasors',
+    shortName: 'Voltage divider',
+    description: 'Solve the phasor voltage across an element or section using the impedance divider rule.',
+    formulaPath: ['V_x = E × Z_x / Z_T'],
+    fields: [
+      measurementField('sourceVoltageMagnitude', 'Source voltage magnitude', '|E|', 'Enter the source-voltage magnitude.', '120', 'volt', voltageUnits),
+      measurementField('sourceVoltageAngle', 'Source voltage angle', 'θ_E', 'Enter the source-voltage angle.', '0', 'degrees', angleUnits, {
+        allowNegative: true,
+      }),
+      measurementField('targetImpedanceMagnitude', 'Target impedance magnitude', '|Z_x|', 'Enter the target impedance magnitude.', '15', 'ohm', resistanceUnits),
+      measurementField('targetImpedanceAngle', 'Target impedance angle', 'θ_x', 'Enter the target impedance angle.', '-20', 'degrees', angleUnits, {
+        allowNegative: true,
+      }),
+      measurementField('totalImpedanceMagnitude', 'Total impedance magnitude', '|Z_T|', 'Enter the total impedance magnitude.', '40', 'ohm', resistanceUnits),
+      measurementField('totalImpedanceAngle', 'Total impedance angle', 'θ_T', 'Enter the total impedance angle.', '10', 'degrees', angleUnits, {
+        allowNegative: true,
+      }),
+    ],
+    output: {
+      format: 'polar',
+      quantityType: 'voltage',
+      canonicalUnit: 'volt',
+      allowedAlternateUnits: ['millivolt'],
+      preferredOutputUnit: 'volt',
+      preferredRounding: '2dp',
+      allowedAngleUnits: angleUnits,
+      preferredAngleUnit: 'degrees',
+    },
+  },
+  {
+    id: 'average_power_from_voltage_current_pf',
+    name: 'Average power from voltage, current, and power factor',
+    shortName: 'Average power',
+    description: 'Compute average power from rms voltage, rms current, and power factor.',
+    formulaPath: ['P = VI cos θ', 'P = VI × PF'],
+    fields: [
+      measurementField('voltage', 'RMS voltage', 'V', 'Enter the rms voltage.', '120', 'volt', voltageUnits),
+      measurementField('current', 'RMS current', 'I', 'Enter the rms current.', '2', 'amp', currentUnits),
+      measurementField('powerFactor', 'Power factor', 'PF', 'Enter the power-factor magnitude.', '0.8', 'unitless', ['unitless']),
+    ],
+    output: {
+      format: 'scalar',
+      quantityType: 'power',
+      canonicalUnit: 'watt',
+      allowedAlternateUnits: ['kilowatt'],
+      preferredOutputUnit: 'watt',
       preferredRounding: '2dp',
     },
   },

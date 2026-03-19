@@ -1,5 +1,5 @@
 import { getChoiceLabel } from '../lib/quizEngine'
-import type { Choice } from '../types/quiz'
+import type { Choice } from '../types/study'
 
 interface ChoiceListProps {
   choices: Choice[]

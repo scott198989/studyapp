@@ -408,7 +408,8 @@ h3 {
 .solver-empty-state,
 .solver-warning-panel,
 .solver-result-section,
-.solver-highlight-strip {
+.solver-highlight-strip,
+.formula-card {
   padding: 1.2rem;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
@@ -953,6 +954,54 @@ a.ghost-action {
 .rationale-card {
   margin-top: 1rem;
   padding: 1rem;
+}
+
+.manual-check-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.quiz-feedback-card {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.quiz-feedback-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.formula-card {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.formula-card__header {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.formula-card__expressions,
+.formula-card__list {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--text);
+}
+
+.formula-card__variables,
+.formula-card__section {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.formula-card__variables p,
+.formula-card__section strong {
+  margin: 0;
 }
 
 .rationale-card p + p {

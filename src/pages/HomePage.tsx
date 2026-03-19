@@ -1,16 +1,16 @@
-import type { AttemptRecord, QuizSettings, TopicBreakdownEntry } from '../types/quiz'
+import type { AttemptRecord, QuizSettings, StudySet, StudySetId } from '../types/study'
 
 interface HomePageProps {
-  totalQuestions: number
   settings: QuizSettings
+  studySets: StudySet[]
+  latestAttemptBySet: Partial<Record<StudySetId, AttemptRecord>>
   hasActiveSession: boolean
-  latestAttempt?: AttemptRecord
-  topicBreakdown: TopicBreakdownEntry[]
-  onStartQuiz: () => void
+  activeSessionSetId?: StudySetId
+  onStartSet: (setId: StudySetId) => void
   onOpenSolver: () => void
   onOpenLibrary: () => void
   onResumeQuiz: () => void
-  onRetryMissed: () => void
+  onRetrySet: (setId: StudySetId) => void
   onToggleShuffleChoices: () => void
 }
 
@@ -26,35 +26,30 @@ function formatDate(value?: string) {
 }
 
 export function HomePage({
-  totalQuestions,
   settings,
+  studySets,
+  latestAttemptBySet,
   hasActiveSession,
-  latestAttempt,
-  topicBreakdown,
-  onStartQuiz,
+  activeSessionSetId,
+  onStartSet,
   onOpenSolver,
   onOpenLibrary,
   onResumeQuiz,
-  onRetryMissed,
+  onRetrySet,
   onToggleShuffleChoices,
 }: HomePageProps) {
-  const accuracy = latestAttempt?.summary.percent ?? 0
-
   return (
     <div className="home-layout">
       <section className="panel-stack">
         <div className="panel-section">
           <h2>Study flow</h2>
           <p className="muted-copy">
-            Every new run uses the full deduped question bank once, with a fresh question order and
-            a fresh answer order.
+            The app is now organized around five surfaced study sets: one combined Chapters 15-16 quiz,
+            one separate Chapter 17 quiz, and three chapter-specific homework sets.
           </p>
         </div>
 
         <div className="action-grid">
-          <button type="button" className="primary-action" onClick={onStartQuiz}>
-            Start full quiz
-          </button>
           <button type="button" className="secondary-action" onClick={onOpenSolver}>
             Open quiz solver
           </button>
@@ -62,63 +57,68 @@ export function HomePage({
             Open study library
           </button>
           <button type="button" className="secondary-action" onClick={onResumeQuiz} disabled={!hasActiveSession}>
-            Resume quiz
-          </button>
-          <button
-            type="button"
-            className="secondary-action"
-            onClick={onRetryMissed}
-            disabled={!latestAttempt || latestAttempt.summary.missedIds.length === 0}
-          >
-            Retry missed questions
+            Resume active set
           </button>
         </div>
 
         <label className="toggle-row">
-          <input
-            type="checkbox"
-            checked={settings.shuffleChoices}
-            onChange={onToggleShuffleChoices}
-          />
+          <input type="checkbox" checked={settings.shuffleChoices} onChange={onToggleShuffleChoices} />
           <span>Shuffle answer order between attempts</span>
         </label>
+
+        {hasActiveSession && activeSessionSetId ? (
+          <p className="muted-copy">Active session: {studySets.find((set) => set.id === activeSessionSetId)?.title}</p>
+        ) : null}
       </section>
 
       <section className="panel-stack">
-        <div className="metric-grid">
-          <article className="metric-card">
-            <span>Question bank</span>
-            <strong>{totalQuestions}</strong>
-            <small>deduped questions</small>
-          </article>
-          <article className="metric-card">
-            <span>Last score</span>
-            <strong>{latestAttempt ? `${latestAttempt.summary.score}/${latestAttempt.summary.questionIds.length}` : '--'}</strong>
-            <small>{latestAttempt ? `${accuracy}% accuracy` : 'Take the first quiz'}</small>
-          </article>
-          <article className="metric-card">
-            <span>Last attempt</span>
-            <strong>{formatDate(latestAttempt?.summary.completedAt)}</strong>
-            <small>{latestAttempt ? latestAttempt.summary.mode.replace('_', ' ') : 'No history yet'}</small>
-          </article>
-        </div>
+        <div className="library-document-grid">
+          {studySets.map((set) => {
+            const latestAttempt = latestAttemptBySet[set.id]
 
-        <div className="panel-section">
-          <h2>Topic snapshot</h2>
-          <div className="tag-grid">
-            {topicBreakdown.length ? (
-              topicBreakdown.map((entry) => (
-                <article key={entry.tag} className="tag-card">
-                  <span>{entry.tag.replace('_', ' ')}</span>
-                  <strong>
-                    {entry.correct}/{entry.total}
-                  </strong>
-                </article>
-              ))
-            ) : (
-              <p className="muted-copy">Topic accuracy appears here after the first completed attempt.</p>
-            )}
-          </div>
+            return (
+              <article key={set.id} className="library-card library-card--document">
+                <div className="library-card__meta">
+                  <span className="eyebrow">{set.category === 'quiz' ? 'Quiz set' : 'Homework set'}</span>
+                  <h3>{set.title}</h3>
+                  <p className="muted-copy">{set.description}</p>
+                </div>
+
+                <div className="library-card__chips">
+                  <span className="status-chip status-chip--correct">{set.itemIds.length} surfaced items</span>
+                  <span className="status-chip status-chip--neutral">Chapters {set.chapters.join(', ')}</span>
+                  <span className="status-chip status-chip--neutral">{set.answerMix.join(', ')}</span>
+                </div>
+
+                <p className="library-card__preview">
+                  Last attempt: {formatDate(latestAttempt?.summary.completedAt)}
+                </p>
+
+                {latestAttempt ? (
+                  <p className="library-card__duplicates">
+                    Score: {latestAttempt.summary.score}/{latestAttempt.summary.gradableCount} graded correct,{' '}
+                    {latestAttempt.summary.manualCompleted}/{latestAttempt.summary.manualTotal} manual items checked.
+                  </p>
+                ) : (
+                  <p className="library-card__duplicates">No history yet for this set.</p>
+                )}
+
+                <div className="action-row">
+                  <button type="button" className="primary-action" onClick={() => onStartSet(set.id)}>
+                    Start {set.shortTitle}
+                  </button>
+                  <button
+                    type="button"
+                    className="secondary-action"
+                    onClick={() => onRetrySet(set.id)}
+                    disabled={!latestAttempt || latestAttempt.summary.missedIds.length === 0}
+                  >
+                    Retry missed
+                  </button>
+                </div>
+              </article>
+            )
+          })}
         </div>
       </section>
     </div>

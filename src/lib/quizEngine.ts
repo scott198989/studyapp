@@ -1,12 +1,15 @@
+import { evaluateStudyItemResponse } from './answerEvaluation'
 import type {
   AttemptSummary,
   Choice,
-  Question,
-  QuizSession,
+  ChoiceStudyItem,
   ReviewItem,
   SessionMode,
+  StudyItem,
+  StudyItemResponse,
+  StudySession,
   TopicBreakdownEntry,
-} from '../types/quiz'
+} from '../types/study'
 
 const MAX_SIGNATURE_ATTEMPTS = 100
 
@@ -29,62 +32,75 @@ function createSessionId() {
   return crypto.randomUUID()
 }
 
-export function createSignature(questionIds: string[], choiceOrderByQuestion: Record<string, string[]>) {
-  const order = questionIds.join('>')
-  const choices = questionIds
-    .map((questionId) => `${questionId}:${choiceOrderByQuestion[questionId].join(',')}`)
+function hasChoices(item: StudyItem): item is ChoiceStudyItem {
+  return item.kind === 'multiple_choice' || item.kind === 'true_false'
+}
+
+export function createSignature(itemIds: string[], choiceOrderByItem: Record<string, string[]>) {
+  const order = itemIds.join('>')
+  const choices = itemIds
+    .map((itemId) => `${itemId}:${(choiceOrderByItem[itemId] ?? []).join(',')}`)
     .join('|')
 
   return `${order}::${choices}`
 }
 
 export function createQuizSession({
-  questions,
+  items,
   usedSignatures,
+  setId,
   mode,
-  sourceQuestionIds,
+  sourceItemIds,
   shuffleChoices,
   random = Math.random,
 }: {
-  questions: Question[]
+  items: StudyItem[]
   usedSignatures: string[]
+  setId: StudySession['setId']
   mode: SessionMode
-  sourceQuestionIds?: string[]
+  sourceItemIds?: string[]
   shuffleChoices: boolean
   random?: () => number
-}): QuizSession {
-  const questionLookup = new Map(questions.map((question) => [question.id, question]))
-  const candidateIds = sourceQuestionIds ?? questions.map((question) => question.id)
+}): StudySession {
+  const itemLookup = new Map(items.map((item) => [item.id, item]))
+  const candidateIds = sourceItemIds ?? items.map((item) => item.id)
 
   if (!candidateIds.length) {
-    throw new Error('Cannot build a quiz session with zero questions.')
+    throw new Error('Cannot build a study session with zero items.')
   }
 
   for (let attempt = 0; attempt < MAX_SIGNATURE_ATTEMPTS; attempt += 1) {
-    const questionIds = shuffleValues(candidateIds, random)
-    const choiceOrderByQuestion: Record<string, string[]> = {}
+    const itemIds = shuffleValues(candidateIds, random)
+    const choiceOrderByItem: Record<string, string[]> = {}
 
-    for (const questionId of questionIds) {
-      const question = questionLookup.get(questionId)
-      if (!question) {
-        throw new Error(`Question ${questionId} is not present in the current bank.`)
+    for (const itemId of itemIds) {
+      const item = itemLookup.get(itemId)
+      if (!item) {
+        throw new Error(`Item ${itemId} is not present in the current set.`)
       }
 
-      const orderedChoiceIds = question.choices.map((choice) => choice.id)
-      choiceOrderByQuestion[questionId] = shuffleChoices
+      if (!hasChoices(item)) {
+        choiceOrderByItem[itemId] = []
+        continue
+      }
+
+      const orderedChoiceIds = item.choices.map((choice) => choice.id)
+      choiceOrderByItem[itemId] = shuffleChoices
         ? shuffleValues(orderedChoiceIds, random)
         : orderedChoiceIds
     }
 
-    const signature = createSignature(questionIds, choiceOrderByQuestion)
+    const signature = `${setId}::${createSignature(itemIds, choiceOrderByItem)}`
 
     if (!usedSignatures.includes(signature)) {
       return {
         sessionId: createSessionId(),
+        setId,
         mode,
-        questionIds,
-        choiceOrderByQuestion,
-        answers: {} as Record<string, string>,
+        itemIds,
+        choiceOrderByItem,
+        responses: {},
+        submittedItemIds: [],
         flaggedIds: [],
         currentIndex: 0,
         startedAt: new Date().toISOString(),
@@ -93,40 +109,48 @@ export function createQuizSession({
     }
   }
 
-  throw new Error('Unable to generate a unique quiz signature after repeated attempts.')
+  throw new Error('Unable to generate a unique study-session signature after repeated attempts.')
 }
 
-export function getDisplayedChoices(question: Question, session: QuizSession) {
-  const order = session.choiceOrderByQuestion[question.id]
-  const choiceLookup = new Map(question.choices.map((choice) => [choice.id, choice]))
+export function getDisplayedChoices(item: StudyItem, session: StudySession) {
+  if (!hasChoices(item)) {
+    return []
+  }
+
+  const order = session.choiceOrderByItem[item.id] ?? item.choices.map((choice) => choice.id)
+  const choiceLookup = new Map(item.choices.map((choice) => [choice.id, choice]))
 
   return order.map((choiceId) => {
     const choice = choiceLookup.get(choiceId)
     if (!choice) {
-      throw new Error(`Missing choice ${choiceId} for question ${question.id}.`)
+      throw new Error(`Missing choice ${choiceId} for item ${item.id}.`)
     }
 
     return choice
   })
 }
 
-export function toggleFlagged(flaggedIds: string[], questionId: string) {
-  return flaggedIds.includes(questionId)
-    ? flaggedIds.filter((item) => item !== questionId)
-    : [...flaggedIds, questionId]
+export function toggleFlagged(flaggedIds: string[], itemId: string) {
+  return flaggedIds.includes(itemId)
+    ? flaggedIds.filter((candidate) => candidate !== itemId)
+    : [...flaggedIds, itemId]
 }
 
-export function buildTopicBreakdown(questions: Question[], answers: Record<string, string>) {
+export function buildTopicBreakdown(items: StudyItem[], responses: Record<string, StudyItemResponse>) {
   const aggregate = new Map<string, TopicBreakdownEntry>()
 
-  for (const question of questions) {
-    for (const tag of question.tags) {
+  for (const item of items) {
+    const evaluation = evaluateStudyItemResponse(item, responses[item.id])
+    if (!evaluation.isGradable) {
+      continue
+    }
+
+    for (const tag of item.tags) {
       const current = aggregate.get(tag) ?? { tag, correct: 0, total: 0 }
       current.total += 1
-      if (answers[question.id] === question.correctChoiceId) {
+      if (evaluation.isCorrect) {
         current.correct += 1
       }
-
       aggregate.set(tag, current)
     }
   }
@@ -139,31 +163,41 @@ export function buildTopicBreakdown(questions: Question[], answers: Record<strin
   })
 }
 
-export function buildAttemptSummary(session: QuizSession, questions: Question[]): AttemptSummary {
-  const score = questions.filter((question) => session.answers[question.id] === question.correctChoiceId).length
-  const missedIds = questions
-    .filter((question) => session.answers[question.id] !== question.correctChoiceId)
-    .map((question) => question.id)
+export function buildAttemptSummary(session: StudySession, items: StudyItem[]): AttemptSummary {
+  const evaluations = items.map((item) => ({
+    item,
+    evaluation: evaluateStudyItemResponse(item, session.responses[item.id]),
+  }))
+  const gradableItems = evaluations.filter(({ evaluation }) => evaluation.isGradable)
+  const manualItems = evaluations.filter(({ evaluation }) => !evaluation.isGradable)
+  const score = gradableItems.filter(({ evaluation }) => evaluation.isCorrect).length
+  const missedIds = gradableItems
+    .filter(({ evaluation }) => evaluation.status !== 'correct')
+    .map(({ item }) => item.id)
 
   return {
     sessionId: session.sessionId,
+    setId: session.setId,
     mode: session.mode,
     score,
-    percent: Math.round((score / questions.length) * 100),
+    percent: gradableItems.length ? Math.round((score / gradableItems.length) * 100) : 100,
+    gradableCount: gradableItems.length,
+    manualTotal: manualItems.length,
+    manualCompleted: manualItems.filter(({ evaluation }) => evaluation.status === 'manual_complete').length,
     missedIds,
     completedAt: session.completedAt ?? new Date().toISOString(),
-    topicBreakdown: buildTopicBreakdown(questions, session.answers),
+    topicBreakdown: buildTopicBreakdown(items, session.responses),
     signature: session.signature,
-    questionIds: session.questionIds,
+    itemIds: session.itemIds,
   }
 }
 
-export function buildReviewItems(session: QuizSession, questions: Question[]): ReviewItem[] {
-  return questions.map((question) => ({
-    question,
-    displayedChoices: getDisplayedChoices(question, session),
-    selectedChoiceId: session.answers[question.id],
-    isCorrect: session.answers[question.id] === question.correctChoiceId,
+export function buildReviewItems(session: StudySession, items: StudyItem[]): ReviewItem[] {
+  return items.map((item) => ({
+    item,
+    displayedChoices: getDisplayedChoices(item, session),
+    response: session.responses[item.id],
+    evaluation: evaluateStudyItemResponse(item, session.responses[item.id]),
   }))
 }
 
@@ -171,10 +205,10 @@ export function getChoiceLabel(index: number) {
   return String.fromCharCode(65 + index)
 }
 
-export function findChoiceById(question: Question, choiceId?: string): Choice | undefined {
-  if (!choiceId) {
+export function findChoiceById(item: StudyItem, choiceId?: string): Choice | undefined {
+  if (!choiceId || !hasChoices(item)) {
     return undefined
   }
 
-  return question.choices.find((choice) => choice.id === choiceId)
+  return item.choices.find((choice) => choice.id === choiceId)
 }

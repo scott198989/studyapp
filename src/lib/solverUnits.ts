@@ -28,6 +28,7 @@ export const solverUnits: SolverUnitDefinition[] = [
   { id: 'millivolt', label: 'mV', symbol: 'mV', dimension: 'voltage', toBaseFactor: 0.001 },
   { id: 'amp', label: 'A', symbol: 'A', dimension: 'current', toBaseFactor: 1 },
   { id: 'milliamp', label: 'mA', symbol: 'mA', dimension: 'current', toBaseFactor: 0.001 },
+  { id: 'microamp', label: 'uA', symbol: 'μA', dimension: 'current', toBaseFactor: 0.000001 },
   { id: 'watt', label: 'W', symbol: 'W', dimension: 'power', toBaseFactor: 1 },
   { id: 'kilowatt', label: 'kW', symbol: 'kW', dimension: 'power', toBaseFactor: 1_000 },
   { id: 'unitless', label: 'unitless', symbol: '', dimension: 'unitless', toBaseFactor: 1 },

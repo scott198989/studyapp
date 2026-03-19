@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-import type { ThemeMode } from '../types/quiz'
+import type { ThemeMode } from '../types/study'
 
 interface ShellProps {
   eyebrow: string

@@ -43,6 +43,8 @@ const unitTokenMap: Record<string, SolverUnitId> = {
   mv: 'millivolt',
   a: 'amp',
   ma: 'milliamp',
+  ua: 'microamp',
+  'μa': 'microamp',
   w: 'watt',
   kw: 'kilowatt',
 }

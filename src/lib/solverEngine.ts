@@ -140,6 +140,48 @@ function buildRectangularResult(
   }
 }
 
+function complexFromPolar(magnitude: number, angleRadians: number) {
+  return {
+    real: magnitude * Math.cos(angleRadians),
+    imaginary: magnitude * Math.sin(angleRadians),
+  }
+}
+
+function complexAdd(
+  left: { real: number; imaginary: number },
+  right: { real: number; imaginary: number },
+) {
+  return {
+    real: left.real + right.real,
+    imaginary: left.imaginary + right.imaginary,
+  }
+}
+
+function complexMultiply(
+  left: { real: number; imaginary: number },
+  right: { real: number; imaginary: number },
+) {
+  return {
+    real: left.real * right.real - left.imaginary * right.imaginary,
+    imaginary: left.real * right.imaginary + left.imaginary * right.real,
+  }
+}
+
+function complexDivide(
+  numerator: { real: number; imaginary: number },
+  denominator: { real: number; imaginary: number },
+) {
+  const scale = denominator.real ** 2 + denominator.imaginary ** 2
+  return {
+    real:
+      (numerator.real * denominator.real + numerator.imaginary * denominator.imaginary) /
+      scale,
+    imaginary:
+      (numerator.imaginary * denominator.real - numerator.real * denominator.imaginary) /
+      scale,
+  }
+}
+
 export function solveGoal(goal: SolverGoalDefinition, formState: SolverFormState): SolverComputationResult {
   const fieldLookup = buildFieldLookup(goal)
 
@@ -464,6 +506,114 @@ export function solveGoal(goal: SolverGoalDefinition, formState: SolverFormState
             : 'Negative imaginary impedance means the network is capacitive.',
         ],
       )
+    }
+    case 'source_current_from_voltage_impedance': {
+      const voltageMagnitude = readMeasurement(formState, 'voltageMagnitude', fieldLookup)
+      const voltageAngle = readMeasurement(formState, 'voltageAngle', fieldLookup)
+      const impedanceMagnitude = readMeasurement(formState, 'impedanceMagnitude', fieldLookup)
+      const impedanceAngle = readMeasurement(formState, 'impedanceAngle', fieldLookup)
+      const currentMagnitude = voltageMagnitude.baseValue / impedanceMagnitude.baseValue
+      const currentAngle = voltageAngle.baseValue - impedanceAngle.baseValue
+
+      return {
+        goalId: goal.id,
+        computation: {
+          kind: 'polar',
+          magnitudeBase: currentMagnitude,
+          angleRadians: currentAngle,
+          dimension: 'current',
+        },
+        formulaPath: goal.formulaPath,
+        substitutionDetails: [
+          `|I| = |E| / |Z| = ${formatBaseQuantity(currentMagnitude, 'current')}`,
+          `θ_I = θ_E - θ_Z = ${formatAngleRadians(currentAngle)}`,
+        ],
+        notes: ['Use this same phasor division pattern for source current or any branch current where V and Z are known.'],
+      }
+    }
+    case 'current_divider_two_branch': {
+      const sourceCurrentMagnitude = readMeasurement(formState, 'sourceCurrentMagnitude', fieldLookup)
+      const sourceCurrentAngle = readMeasurement(formState, 'sourceCurrentAngle', fieldLookup)
+      const targetImpedanceMagnitude = readMeasurement(formState, 'targetImpedanceMagnitude', fieldLookup)
+      const targetImpedanceAngle = readMeasurement(formState, 'targetImpedanceAngle', fieldLookup)
+      const otherImpedanceMagnitude = readMeasurement(formState, 'otherImpedanceMagnitude', fieldLookup)
+      const otherImpedanceAngle = readMeasurement(formState, 'otherImpedanceAngle', fieldLookup)
+
+      const sourceCurrent = complexFromPolar(sourceCurrentMagnitude.baseValue, sourceCurrentAngle.baseValue)
+      const targetImpedance = complexFromPolar(targetImpedanceMagnitude.baseValue, targetImpedanceAngle.baseValue)
+      const otherImpedance = complexFromPolar(otherImpedanceMagnitude.baseValue, otherImpedanceAngle.baseValue)
+      const currentRatio = complexDivide(otherImpedance, complexAdd(targetImpedance, otherImpedance))
+      const branchCurrent = complexMultiply(sourceCurrent, currentRatio)
+      const magnitude = Math.hypot(branchCurrent.real, branchCurrent.imaginary)
+      const angle = Math.atan2(branchCurrent.imaginary, branchCurrent.real)
+
+      return {
+        goalId: goal.id,
+        computation: {
+          kind: 'polar',
+          magnitudeBase: magnitude,
+          angleRadians: angle,
+          dimension: 'current',
+        },
+        formulaPath: goal.formulaPath,
+        substitutionDetails: [
+          `Current-divider factor = Z_other / (Z_target + Z_other)`,
+          `|I_target| = ${formatBaseQuantity(magnitude, 'current')}`,
+          `θ_target = ${formatAngleRadians(angle)}`,
+        ],
+        notes: ['In the current divider rule, the opposite branch impedance appears in the numerator.'],
+      }
+    }
+    case 'voltage_divider_impedance': {
+      const sourceVoltageMagnitude = readMeasurement(formState, 'sourceVoltageMagnitude', fieldLookup)
+      const sourceVoltageAngle = readMeasurement(formState, 'sourceVoltageAngle', fieldLookup)
+      const targetImpedanceMagnitude = readMeasurement(formState, 'targetImpedanceMagnitude', fieldLookup)
+      const targetImpedanceAngle = readMeasurement(formState, 'targetImpedanceAngle', fieldLookup)
+      const totalImpedanceMagnitude = readMeasurement(formState, 'totalImpedanceMagnitude', fieldLookup)
+      const totalImpedanceAngle = readMeasurement(formState, 'totalImpedanceAngle', fieldLookup)
+
+      const sourceVoltage = complexFromPolar(sourceVoltageMagnitude.baseValue, sourceVoltageAngle.baseValue)
+      const targetImpedance = complexFromPolar(targetImpedanceMagnitude.baseValue, targetImpedanceAngle.baseValue)
+      const totalImpedance = complexFromPolar(totalImpedanceMagnitude.baseValue, totalImpedanceAngle.baseValue)
+      const dividerRatio = complexDivide(targetImpedance, totalImpedance)
+      const targetVoltage = complexMultiply(sourceVoltage, dividerRatio)
+      const magnitude = Math.hypot(targetVoltage.real, targetVoltage.imaginary)
+      const angle = Math.atan2(targetVoltage.imaginary, targetVoltage.real)
+
+      return {
+        goalId: goal.id,
+        computation: {
+          kind: 'polar',
+          magnitudeBase: magnitude,
+          angleRadians: angle,
+          dimension: 'voltage',
+        },
+        formulaPath: goal.formulaPath,
+        substitutionDetails: [
+          `Divider ratio = Z_x / Z_T`,
+          `|V_x| = ${formatBaseQuantity(magnitude, 'voltage')}`,
+          `θ_x = ${formatAngleRadians(angle)}`,
+        ],
+        notes: ['This goal works with full impedance phasors rather than only real-valued resistances.'],
+      }
+    }
+    case 'average_power_from_voltage_current_pf': {
+      const voltage = readMeasurement(formState, 'voltage', fieldLookup)
+      const current = readMeasurement(formState, 'current', fieldLookup)
+      const powerFactor = readMeasurement(formState, 'powerFactor', fieldLookup)
+
+      if (powerFactor.baseValue <= 0 || powerFactor.baseValue > 1) {
+        throw new Error('Power factor must be greater than 0 and no more than 1.')
+      }
+
+      const power = voltage.baseValue * current.baseValue * powerFactor.baseValue
+
+      return buildScalarResult(goal, power, 'power', [
+        `${voltage.field.shortLabel} = ${formatScalarValue(voltage.value, voltage.unitId, 'exact')}`,
+        `${current.field.shortLabel} = ${formatScalarValue(current.value, current.unitId, 'exact')}`,
+        `${powerFactor.field.shortLabel} = ${formatScalarValue(powerFactor.value, powerFactor.unitId, 'exact')}`,
+        `P = VI × PF = ${formatBaseQuantity(power, 'power')}`,
+      ])
     }
     default:
       throw new Error(`Unsupported solver goal: ${goal.id}`)

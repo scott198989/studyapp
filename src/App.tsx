@@ -2,11 +2,20 @@ import { startTransition, useEffect, useMemo } from 'react'
 import { HashRouter, Navigate, Route, Routes, useNavigate } from 'react-router-dom'
 
 import { Shell } from './components/Shell'
-import { figureLookup, questionBank } from './data/questionBank'
+import { formulaCatalog } from './data/formulaCatalog'
 import { solverGoals } from './data/solverGoals'
+import {
+  figureLookup,
+  studyFormulaLookup,
+  studyItemLookup,
+  studyItems,
+  studySetLookup,
+  studySets,
+} from './data/studyContent'
 import { studyLibraryAssets, studyLibraryStats } from './data/studyLibrary.generated'
-import { sourceAudit } from './data/sourceAudit'
+import { studySourceAudit } from './data/studySourceAudit'
 import { usePersistentAppState } from './hooks/usePersistentAppState'
+import { evaluateStudyItemResponse } from './lib/answerEvaluation'
 import {
   buildAttemptSummary,
   buildReviewItems,
@@ -19,102 +28,119 @@ import { LibraryPage } from './pages/LibraryPage'
 import { QuizPage } from './pages/QuizPage'
 import { ResultsPage } from './pages/ResultsPage'
 import { SolverPage } from './pages/SolverPage'
-import type { Question, QuizSession, SessionMode } from './types/quiz'
+import type { StudyItem, StudyItemResponse, StudySession, StudySetId } from './types/study'
 
-const MAX_ATTEMPTS = 12
+const MAX_ATTEMPTS = 20
 
-function findQuestionsById(ids: string[]) {
-  const lookup = new Map(questionBank.map((question) => [question.id, question]))
-
+function findItemsById(ids: string[]) {
   return ids
-    .map((questionId) => lookup.get(questionId))
-    .filter((question): question is Question => Boolean(question))
+    .map((itemId) => studyItemLookup[itemId])
+    .filter((item): item is StudyItem => Boolean(item))
 }
 
-function HomeAside({
-  auditedCaptureCount,
-  canonicalCount,
-  duplicateCount,
-  libraryAssetCount,
-}: {
-  auditedCaptureCount: number
-  canonicalCount: number
-  duplicateCount: number
-  libraryAssetCount: number
-}) {
+function hasMeaningfulResponse(response?: StudyItemResponse) {
+  if (!response) {
+    return false
+  }
+
+  switch (response.kind) {
+    case 'choice':
+      return Boolean(response.value)
+    case 'text':
+      return Boolean(response.value.trim())
+    case 'manual':
+      return response.completed || Boolean(response.notes.trim())
+  }
+}
+
+function HomeAside() {
   return (
     <div className="aside-stack">
       <div className="aside-panel">
-        <span className="aside-panel__eyebrow">Corpus audit</span>
-        <strong>{auditedCaptureCount}</strong>
-        <p>screenshots mapped</p>
+        <span className="aside-panel__eyebrow">Surfaced sets</span>
+        <strong>{studySets.length}</strong>
+        <p>canonical study entry points</p>
       </div>
       <div className="aside-panel">
-        <span className="aside-panel__eyebrow">Canonical bank</span>
-        <strong>{canonicalCount}</strong>
-        <p>deduped questions</p>
+        <span className="aside-panel__eyebrow">Surfaced items</span>
+        <strong>{studyItems.length}</strong>
+        <p>deduped quiz and homework items</p>
       </div>
       <div className="aside-panel">
-        <span className="aside-panel__eyebrow">Support evidence</span>
-        <strong>{duplicateCount}</strong>
-        <p>duplicate or overlap captures</p>
+        <span className="aside-panel__eyebrow">Formula cards</span>
+        <strong>{formulaCatalog.length}</strong>
+        <p>structured review formulas and solver links</p>
       </div>
       <div className="aside-panel">
-        <span className="aside-panel__eyebrow">Study library</span>
-        <strong>{libraryAssetCount}</strong>
-        <p>repo-tracked documents and screenshots</p>
+        <span className="aside-panel__eyebrow">Audited sources</span>
+        <strong>{studySourceAudit.length}</strong>
+        <p>captures and homework docs mapped into surfaced content</p>
       </div>
     </div>
   )
 }
 
-function QuizAside({ session }: { session: QuizSession }) {
+function QuizAside({ session }: { session: StudySession }) {
+  const set = studySetLookup[session.setId]
+  const submittedCount = session.submittedItemIds?.length ?? 0
+
   return (
     <div className="aside-stack">
       <div className="aside-panel">
-        <span className="aside-panel__eyebrow">Mode</span>
-        <strong>{session.mode === 'retry_missed' ? 'Retry missed' : 'Full bank'}</strong>
-        <p>{session.questionIds.length} questions in this run</p>
+        <span className="aside-panel__eyebrow">Study set</span>
+        <strong>{set.title}</strong>
+        <p>
+          {session.mode === 'retry_missed' ? 'Retry missed' : 'Full run'} with {session.itemIds.length} items
+        </p>
       </div>
       <div className="aside-panel">
         <span className="aside-panel__eyebrow">Flags</span>
         <strong>{session.flaggedIds.length}</strong>
-        <p>marked for extra review</p>
+        <p>marked for review during the live attempt</p>
       </div>
       <div className="aside-panel">
-        <span className="aside-panel__eyebrow">Rule</span>
-        <strong>Unique signature</strong>
-        <p>Question order and answer order are tracked to avoid repeating prior runs.</p>
+        <span className="aside-panel__eyebrow">Checked</span>
+        <strong>
+          {submittedCount}/{session.itemIds.length}
+        </strong>
+        <p>items already graded live inside the run</p>
+      </div>
+      <div className="aside-panel">
+        <span className="aside-panel__eyebrow">Reveal rule</span>
+        <strong>Instant grading</strong>
+        <p>Correct or incorrect shows after submit, while formulas stay hidden until review.</p>
       </div>
     </div>
   )
 }
 
 function ResultsAside({
-  flaggedCount,
   missedCount,
-  perfectTopics,
+  manualCompleted,
+  manualTotal,
 }: {
-  flaggedCount: number
   missedCount: number
-  perfectTopics: string[]
+  manualCompleted: number
+  manualTotal: number
 }) {
   return (
     <div className="aside-stack">
       <div className="aside-panel">
         <span className="aside-panel__eyebrow">Missed</span>
         <strong>{missedCount}</strong>
-        <p>questions to revisit</p>
+        <p>gradable items to retry</p>
       </div>
       <div className="aside-panel">
-        <span className="aside-panel__eyebrow">Flagged</span>
-        <strong>{flaggedCount}</strong>
-        <p>marked during the live run</p>
+        <span className="aside-panel__eyebrow">Manual checks</span>
+        <strong>
+          {manualCompleted}/{manualTotal}
+        </strong>
+        <p>self-check homework or OCR-guarded items completed</p>
       </div>
       <div className="aside-panel">
-        <span className="aside-panel__eyebrow">Perfect topics</span>
-        <strong>{perfectTopics.length || '0'}</strong>
-        <p>{perfectTopics.length ? perfectTopics.join(', ') : 'None on the latest attempt'}</p>
+        <span className="aside-panel__eyebrow">Formula cards</span>
+        <strong>Review ready</strong>
+        <p>Each item now shows formulas, rationale, and solver links when supported.</p>
       </div>
     </div>
   )
@@ -126,17 +152,17 @@ function SolverAside() {
       <div className="aside-panel">
         <span className="aside-panel__eyebrow">Solver goals</span>
         <strong>{solverGoals.length}</strong>
-        <p>deterministic problem types</p>
+        <p>deterministic problem types with formula paths</p>
       </div>
       <div className="aside-panel">
-        <span className="aside-panel__eyebrow">Top priority</span>
-        <strong>Final answer first</strong>
-        <p>The quiz-ready answer stays pinned at the top in the requested output unit.</p>
+        <span className="aside-panel__eyebrow">Coverage</span>
+        <strong>Quiz + homework</strong>
+        <p>The solver now supports the reusable formulas surfaced in review.</p>
       </div>
       <div className="aside-panel">
-        <span className="aside-panel__eyebrow">Helper mode</span>
+        <span className="aside-panel__eyebrow">Answer helper</span>
         <strong>Choice matching</strong>
-        <p>Paste answer choices to normalize units and spotlight the closest match automatically.</p>
+        <p>Paste answer choices to compare units and highlight the closest match.</p>
       </div>
     </div>
   )
@@ -148,7 +174,9 @@ function LibraryAside() {
       <div className="aside-panel">
         <span className="aside-panel__eyebrow">Unique assets</span>
         <strong>{studyLibraryStats.uniqueFiles}</strong>
-        <p>{studyLibraryStats.documentCount} documents and {studyLibraryStats.screenshotCount} screenshots</p>
+        <p>
+          {studyLibraryStats.documentCount} documents and {studyLibraryStats.screenshotCount} screenshots
+        </p>
       </div>
       <div className="aside-panel">
         <span className="aside-panel__eyebrow">Exact dedupe</span>
@@ -156,9 +184,9 @@ function LibraryAside() {
         <p>byte-identical files removed during import</p>
       </div>
       <div className="aside-panel">
-        <span className="aside-panel__eyebrow">Cloud ready</span>
-        <strong>Git tracked</strong>
-        <p>Every retained asset now lives inside the repo for pull and push workflows.</p>
+        <span className="aside-panel__eyebrow">Canonical UI</span>
+        <strong>One surfaced copy</strong>
+        <p>Raw screenshots stay in the repo, but the home screen now surfaces only the canonical study sets.</p>
       </div>
     </div>
   )
@@ -169,30 +197,37 @@ function AppRoutes() {
   const [state, setState] = usePersistentAppState()
 
   const latestAttempt = state.attempts[0]
-  const activeSession = state.activeSession
-  const activeQuestions = activeSession ? findQuestionsById(activeSession.questionIds) : []
-  const activeQuestion = activeSession ? activeQuestions[activeSession.currentIndex] : undefined
-  const activeDisplayedChoices =
-    activeQuestion && activeSession ? getDisplayedChoices(activeQuestion, activeSession) : []
-  const latestReviewItems = latestAttempt
-    ? buildReviewItems(latestAttempt.session, findQuestionsById(latestAttempt.session.questionIds))
-    : []
-
-  const perfectTopics = useMemo(
+  const latestAttemptBySet = useMemo(
     () =>
-      (latestAttempt?.summary.topicBreakdown ?? [])
-        .filter((entry) => entry.total > 0 && entry.correct === entry.total)
-        .map((entry) => entry.tag.replaceAll('_', ' ')),
-    [latestAttempt],
+      Object.fromEntries(
+        studySets
+          .map((set) => [set.id, state.attempts.find((attempt) => attempt.summary.setId === set.id)])
+          .filter((entry) => Boolean(entry[1])),
+      ) as Partial<Record<StudySetId, (typeof state.attempts)[number]>>,
+    [state],
   )
-  const duplicateCount = sourceAudit.filter((record) => record.resolution !== 'canonical').length
+
+  const activeSession = state.activeSession
+  const activeItems = activeSession ? findItemsById(activeSession.itemIds) : []
+  const activeItem = activeSession ? activeItems[activeSession.currentIndex] : undefined
+  const activeSubmittedItemIds = activeSession?.submittedItemIds ?? []
+  const activeItemIsSubmitted = Boolean(activeItem && activeSubmittedItemIds.includes(activeItem.id))
+  const activeDisplayedChoices =
+    activeItem && activeSession ? getDisplayedChoices(activeItem, activeSession) : []
+  const activeEvaluation =
+    activeItem && activeItemIsSubmitted && activeSession
+      ? evaluateStudyItemResponse(activeItem, activeSession.responses[activeItem.id])
+      : undefined
+  const latestReviewItems = latestAttempt
+    ? buildReviewItems(latestAttempt.session, findItemsById(latestAttempt.session.itemIds))
+    : []
 
   useEffect(() => {
     document.documentElement.dataset.theme = state.settings.theme
     document.documentElement.style.colorScheme = state.settings.theme
   }, [state.settings.theme])
 
-  function updateSession(mutator: (session: QuizSession) => QuizSession) {
+  function updateSession(mutator: (session: StudySession) => StudySession) {
     setState((current) => ({
       ...current,
       activeSession: current.activeSession ? mutator(current.activeSession) : current.activeSession,
@@ -209,19 +244,22 @@ function AppRoutes() {
     }))
   }
 
-  function beginQuiz(mode: SessionMode) {
-    const retryQuestionIds = latestAttempt?.summary.missedIds ?? []
+  function beginSet(setId: StudySetId, mode: 'full' | 'retry_missed' = 'full') {
+    const set = studySetLookup[setId]
+    const latestSetAttempt = latestAttemptBySet[setId]
+    const retryItemIds = latestSetAttempt?.summary.missedIds ?? []
 
-    if (mode === 'retry_missed' && retryQuestionIds.length === 0) {
+    if (mode === 'retry_missed' && retryItemIds.length === 0) {
       return
     }
 
     startTransition(() => {
       const session = createQuizSession({
-        questions: questionBank,
+        items: findItemsById(set.itemIds),
         usedSignatures: state.usedSignatures,
+        setId,
         mode,
-        sourceQuestionIds: mode === 'retry_missed' ? retryQuestionIds : undefined,
+        sourceItemIds: mode === 'retry_missed' ? retryItemIds : undefined,
         shuffleChoices: state.settings.shuffleChoices,
       })
 
@@ -239,11 +277,11 @@ function AppRoutes() {
       return
     }
 
-    const completedSession: QuizSession = {
+    const completedSession: StudySession = {
       ...activeSession,
       completedAt: new Date().toISOString(),
     }
-    const summary = buildAttemptSummary(completedSession, activeQuestions)
+    const summary = buildAttemptSummary(completedSession, activeItems)
 
     startTransition(() => {
       setState((current) => ({
@@ -255,6 +293,29 @@ function AppRoutes() {
     })
   }
 
+  function submitActiveItem() {
+    if (!activeSession || !activeItem) {
+      return
+    }
+
+    const response = activeSession.responses[activeItem.id]
+    if (!hasMeaningfulResponse(response)) {
+      return
+    }
+
+    updateSession((session) => {
+      const submittedItemIds = session.submittedItemIds ?? []
+      if (submittedItemIds.includes(activeItem.id)) {
+        return session
+      }
+
+      return {
+        ...session,
+        submittedItemIds: [...submittedItemIds, activeItem.id],
+      }
+    })
+  }
+
   return (
     <Routes>
       <Route
@@ -262,30 +323,23 @@ function AppRoutes() {
         element={
           <Shell
             eyebrow="AC Circuits Study App"
-            title="A deduped, local-first quiz built from the screenshot pool."
-            subtitle="The bank is solved, rationalized, and audited. The same repo now also tracks the homework documents and deduped screenshot library for cloud sync."
+            title="Canonical study sets, cleaner flow, and formula-backed review."
+            subtitle="The app now surfaces one combined Chapters 15-16 quiz, one Chapter 17 quiz, and three chapter-specific homework sets with formula cards, solver links, and hybrid grading."
             theme={state.settings.theme}
             onToggleTheme={toggleTheme}
-            aside={
-              <HomeAside
-                auditedCaptureCount={sourceAudit.length}
-                canonicalCount={questionBank.length}
-                duplicateCount={duplicateCount}
-                libraryAssetCount={studyLibraryStats.uniqueFiles}
-              />
-            }
+            aside={<HomeAside />}
           >
             <HomePage
-              totalQuestions={questionBank.length}
               settings={state.settings}
+              studySets={studySets}
+              latestAttemptBySet={latestAttemptBySet}
               hasActiveSession={Boolean(activeSession)}
-              latestAttempt={latestAttempt}
-              topicBreakdown={latestAttempt?.summary.topicBreakdown ?? []}
-              onStartQuiz={() => beginQuiz('full')}
+              activeSessionSetId={activeSession?.setId}
+              onStartSet={(setId) => beginSet(setId, 'full')}
               onOpenSolver={() => navigate('/solver')}
               onOpenLibrary={() => navigate('/library')}
               onResumeQuiz={() => navigate('/quiz')}
-              onRetryMissed={() => beginQuiz('retry_missed')}
+              onRetrySet={(setId) => beginSet(setId, 'retry_missed')}
               onToggleShuffleChoices={() =>
                 setState((current) => ({
                   ...current,
@@ -305,7 +359,7 @@ function AppRoutes() {
           <Shell
             eyebrow="Study library"
             title="Homework files and screenshots, deduped and tracked."
-            subtitle="Every retained file lives inside the repo, keeps its source path history, and exposes searchable text from document parsing or OCR."
+            subtitle="Raw captures stay available for audit, but the main app experience now points at the canonical study sets and one surfaced copy of each item."
             theme={state.settings.theme}
             onToggleTheme={toggleTheme}
             aside={<LibraryAside />}
@@ -315,7 +369,7 @@ function AppRoutes() {
               stats={studyLibraryStats}
               onBackHome={() => navigate('/')}
               onOpenSolver={() => navigate('/solver')}
-              onStartQuiz={() => beginQuiz('full')}
+              onStartQuiz={() => beginSet('quiz_15_16', 'full')}
             />
           </Shell>
         }
@@ -324,9 +378,9 @@ function AppRoutes() {
         path="/solver"
         element={
           <Shell
-            eyebrow="Quiz solver"
+            eyebrow="Formula solver"
             title="Solve the circuit, then show the answer in the exact quiz unit."
-            subtitle="The solver keeps the math deterministic, converts only at the presentation layer, and makes the final test answer impossible to miss."
+            subtitle="The solver now backs the surfaced formula cards in review and can be opened directly from supported quiz or homework items."
             theme={state.settings.theme}
             onToggleTheme={toggleTheme}
             aside={<SolverAside />}
@@ -338,33 +392,63 @@ function AppRoutes() {
       <Route
         path="/quiz"
         element={
-          activeSession && activeQuestion ? (
+          activeSession && activeItem ? (
             <Shell
-              eyebrow={activeSession.mode === 'retry_missed' ? 'Retry missed' : 'Full-bank run'}
-              title="Focused attempt mode"
-              subtitle="Work straight through, flag uncertain items, and review short rationales after submission."
+              eyebrow={activeSession.mode === 'retry_missed' ? 'Retry missed' : 'Study set run'}
+              title={studySetLookup[activeSession.setId].title}
+              subtitle="Work through the set, flag anything uncertain, and reveal the formula cards only after you submit."
               theme={state.settings.theme}
               onToggleTheme={toggleTheme}
               aside={<QuizAside session={activeSession} />}
             >
               <QuizPage
-                question={activeQuestion}
-                questionNumber={activeSession.currentIndex + 1}
-                totalQuestions={activeSession.questionIds.length}
+                item={activeItem}
+                itemNumber={activeSession.currentIndex + 1}
+                totalItems={activeSession.itemIds.length}
                 displayedChoices={activeDisplayedChoices}
-                selectedChoiceId={activeSession.answers[activeQuestion.id]}
-                isFlagged={activeSession.flaggedIds.includes(activeQuestion.id)}
-                figure={activeQuestion.figureId ? figureLookup[activeQuestion.figureId] : undefined}
-                answeredCount={Object.values(activeSession.answers).filter(Boolean).length}
+                response={activeSession.responses[activeItem.id]}
+                isSubmitted={activeItemIsSubmitted}
+                liveEvaluation={activeEvaluation}
+                isFlagged={activeSession.flaggedIds.includes(activeItem.id)}
+                figure={activeItem.figureId ? figureLookup[activeItem.figureId] : undefined}
+                answeredCount={Object.values(activeSession.responses).filter((response) => hasMeaningfulResponse(response)).length}
                 onSelectChoice={(choiceId) =>
                   updateSession((session) => ({
                     ...session,
-                    answers: {
-                      ...session.answers,
-                      [activeQuestion.id]: choiceId,
+                    responses: {
+                      ...session.responses,
+                      [activeItem.id]: {
+                        kind: 'choice',
+                        value: choiceId,
+                      },
                     },
+                    submittedItemIds: (session.submittedItemIds ?? []).filter((itemId) => itemId !== activeItem.id),
                   }))
                 }
+                onChangeText={(value) =>
+                  updateSession((session) => ({
+                    ...session,
+                    responses: {
+                      ...session.responses,
+                      [activeItem.id]: {
+                        kind: 'text',
+                        value,
+                      },
+                    },
+                    submittedItemIds: (session.submittedItemIds ?? []).filter((itemId) => itemId !== activeItem.id),
+                  }))
+                }
+                onChangeManual={(response) =>
+                  updateSession((session) => ({
+                    ...session,
+                    responses: {
+                      ...session.responses,
+                      [activeItem.id]: response,
+                    },
+                    submittedItemIds: (session.submittedItemIds ?? []).filter((itemId) => itemId !== activeItem.id),
+                  }))
+                }
+                onSubmitAnswer={submitActiveItem}
                 onPrevious={() =>
                   updateSession((session) => ({
                     ...session,
@@ -374,13 +458,13 @@ function AppRoutes() {
                 onNext={() =>
                   updateSession((session) => ({
                     ...session,
-                    currentIndex: Math.min(session.questionIds.length - 1, session.currentIndex + 1),
+                    currentIndex: Math.min(session.itemIds.length - 1, session.currentIndex + 1),
                   }))
                 }
                 onToggleFlag={() =>
                   updateSession((session) => ({
                     ...session,
-                    flaggedIds: toggleFlagged(session.flaggedIds, activeQuestion.id),
+                    flaggedIds: toggleFlagged(session.flaggedIds, activeItem.id),
                   }))
                 }
                 onSubmit={completeQuiz}
@@ -397,15 +481,15 @@ function AppRoutes() {
           latestAttempt ? (
             <Shell
               eyebrow="Latest review"
-              title="Scored, filtered, and ready to study"
-              subtitle="Review missed and flagged questions, keep the exact answer text, and use the rationale bank to tighten the weak spots."
+              title={studySetLookup[latestAttempt.summary.setId].title}
+              subtitle="Review the keyed answer, surface the formula card, and open the solver directly from any supported item."
               theme={state.settings.theme}
               onToggleTheme={toggleTheme}
               aside={
                 <ResultsAside
-                  flaggedCount={latestAttempt.session.flaggedIds.length}
                   missedCount={latestAttempt.summary.missedIds.length}
-                  perfectTopics={perfectTopics}
+                  manualCompleted={latestAttempt.summary.manualCompleted}
+                  manualTotal={latestAttempt.summary.manualTotal}
                 />
               }
             >
@@ -413,11 +497,17 @@ function AppRoutes() {
                 reviewItems={latestReviewItems}
                 score={latestAttempt.summary.score}
                 percent={latestAttempt.summary.percent}
+                gradableCount={latestAttempt.summary.gradableCount}
+                manualCompleted={latestAttempt.summary.manualCompleted}
+                manualTotal={latestAttempt.summary.manualTotal}
                 flaggedIds={latestAttempt.session.flaggedIds}
                 figureLookup={figureLookup}
-                onStartNewQuiz={() => beginQuiz('full')}
-                onRetryMissed={() => beginQuiz('retry_missed')}
+                formulaLookup={studyFormulaLookup}
+                setTitle={studySetLookup[latestAttempt.summary.setId].title}
+                onStartNewSet={() => beginSet(latestAttempt.summary.setId, 'full')}
+                onRetryMissed={() => beginSet(latestAttempt.summary.setId, 'retry_missed')}
                 canRetryMissed={latestAttempt.summary.missedIds.length > 0}
+                onOpenSolver={(goalId) => navigate(goalId ? `/solver?goal=${goalId}` : '/solver')}
               />
             </Shell>
           ) : (

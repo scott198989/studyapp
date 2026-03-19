@@ -1,4 +1,4 @@
-import type { FigureAsset } from '../types/quiz'
+import type { FigureAsset } from '../types/study'
 
 interface FigureCardProps {
   figure: FigureAsset
