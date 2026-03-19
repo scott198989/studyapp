@@ -182,3 +182,96 @@ That means quiz progress, recent attempts, and theme state are still per-device 
 - The textbook PDF used for chapter confirmation is still not included in this repo
 - If homework problems should live inside the same quiz flow, the data model must be extended first
 - If homework problems should live in a separate study mode, implement that mode before loading the chapter 15 to 17 homework prompts into the interactive experience
+
+## Desktop and laptop setup checklist
+
+If you want the laptop to behave like the desktop, use this as the standard setup.
+
+Working desktop toolchain at the time this was written:
+
+- Git `2.53.0.windows.1`
+- Node `24.14.0`
+- npm `11.9.0`
+- Python `3.12.10`
+- GitHub CLI `2.87.3`
+
+Recommended laptop setup steps:
+
+1. Install Git, Node 24, Python 3.12, and GitHub CLI on the laptop.
+2. Sign into GitHub on the laptop:
+
+```powershell
+gh auth login
+gh auth status
+```
+
+3. Clone the repo to the laptop. If you want the same shape as the desktop, use the same folder name:
+
+```powershell
+cd C:\Users\<your-user>\OneDrive\Desktop
+git clone https://github.com/scott198989/studyapp.git StudyApp
+cd StudyApp
+```
+
+4. Install the Node dependencies:
+
+```powershell
+npm ci
+```
+
+5. Install the Python packages used by the OCR and asset-import scripts:
+
+```powershell
+python -m pip install python-docx pypdf pymupdf rapidocr_onnxruntime pillow
+```
+
+6. Start the app locally:
+
+```powershell
+npm run dev
+```
+
+7. If you are using Codex or the ChatGPT desktop app on the laptop, open this repo folder as the workspace. Because the homework files, screenshots, and generated library are now in Git, the same project context will be available there after pull or clone.
+
+Daily sync workflow on either machine:
+
+```powershell
+git pull --ff-only
+npm ci
+npm run dev
+```
+
+Standard save-and-sync workflow after changes:
+
+```powershell
+git add .
+git commit -m "Describe what changed"
+git push
+```
+
+If you add a new homework or screenshot archive later:
+
+1. Put `Homeworks and Screenshots.zip` one folder above the repo root.
+2. Run:
+
+```powershell
+python scripts/import_study_assets.py
+```
+
+3. Commit and push the updated files.
+
+What will sync automatically through GitHub:
+
+- app code
+- README and project files
+- homework documents tracked in the repo
+- screenshots tracked in the repo
+- generated OCR and library manifest files
+
+What will not sync automatically yet:
+
+- quiz history
+- in-progress session state
+- theme and other browser `localStorage` values
+
+If you want those last items shared between desktop and laptop too, the next project step is adding a backend or cloud database.
