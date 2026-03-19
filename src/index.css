@@ -108,6 +108,7 @@ body {
 }
 
 button,
+a,
 input,
 select,
 textarea {
@@ -604,6 +605,15 @@ h3 {
   padding: 0.9rem 1.2rem;
 }
 
+a.primary-action,
+a.secondary-action,
+a.ghost-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .primary-action {
   background: var(--accent);
   color: #f7f7f4;
@@ -837,6 +847,109 @@ h3 {
   color: var(--danger);
 }
 
+.status-chip--neutral {
+  background: var(--secondary-bg);
+  color: var(--heading);
+}
+
+.library-toolbar,
+.library-section-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.library-controls,
+.library-search {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.library-controls {
+  margin-top: 1rem;
+}
+
+.library-search__label {
+  color: var(--heading);
+  font-weight: 700;
+}
+
+.library-stat-grid,
+.library-document-grid,
+.library-screenshot-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.library-stat-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.library-document-grid,
+.library-screenshot-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.library-card {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--surface-strong);
+  box-shadow: var(--shadow);
+}
+
+.library-card--document {
+  align-content: start;
+}
+
+.library-card--screenshot {
+  overflow: hidden;
+  padding: 0;
+}
+
+.library-card__image-link {
+  display: block;
+  background:
+    linear-gradient(135deg, rgba(10, 92, 87, 0.14), rgba(165, 107, 53, 0.1)),
+    var(--surface-alt);
+}
+
+.library-card__image-link img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.library-card__body,
+.library-card__meta {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.library-card__body {
+  padding: 0 1rem 1rem;
+}
+
+.library-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.library-card__preview,
+.library-card__duplicates {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.library-card__duplicates {
+  font-size: 0.88rem;
+}
+
 .rationale-card {
   margin-top: 1rem;
   padding: 1rem;
@@ -882,7 +995,8 @@ body,
 
 @media (max-width: 980px) {
   .content-grid,
-  .metric-grid {
+  .metric-grid,
+  .library-stat-grid {
     grid-template-columns: 1fr;
   }
 
@@ -905,7 +1019,9 @@ body,
   .hero-panel__top,
   .solver-section-heading,
   .solver-result-section__header,
-  .solver-highlight-strip {
+  .solver-highlight-strip,
+  .library-toolbar,
+  .library-section-header {
     flex-direction: column;
     align-items: stretch;
   }

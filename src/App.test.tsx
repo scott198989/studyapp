@@ -43,6 +43,18 @@ describe('App', () => {
     expect(window.localStorage.getItem('ac-study-lab-state')).toContain('"theme":"dark"')
   })
 
+  it('opens the study library and surfaces imported homework assets', async () => {
+    const user = userEvent.setup()
+
+    render(<App />)
+
+    await user.click(screen.getByRole('button', { name: /open study library/i }))
+
+    expect(screen.getByRole('heading', { name: /tracked study assets/i })).toBeInTheDocument()
+    expect(screen.getByText(/scott tuschl ch 16 hw/i)).toBeInTheDocument()
+    expect(screen.getByText(/homework documents/i)).toBeInTheDocument()
+  })
+
   it('solves a quiz problem with unit conversion and highlights the closest answer choice', async () => {
     const user = userEvent.setup()
 

@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SCREENSHOT_DIR = Path(r'C:\Users\stusc\OneDrive\Desktop\New folder (2)')
+SCREENSHOT_DIR = ROOT / 'public' / 'study-library' / 'screenshots'
 FIGURE_DIR = ROOT / 'public' / 'figures'
 ICON_DIR = ROOT / 'public' / 'icons'
 

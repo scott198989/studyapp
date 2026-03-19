@@ -4,6 +4,7 @@ import { HashRouter, Navigate, Route, Routes, useNavigate } from 'react-router-d
 import { Shell } from './components/Shell'
 import { figureLookup, questionBank } from './data/questionBank'
 import { solverGoals } from './data/solverGoals'
+import { studyLibraryAssets, studyLibraryStats } from './data/studyLibrary.generated'
 import { sourceAudit } from './data/sourceAudit'
 import { usePersistentAppState } from './hooks/usePersistentAppState'
 import {
@@ -14,6 +15,7 @@ import {
   toggleFlagged,
 } from './lib/quizEngine'
 import { HomePage } from './pages/HomePage'
+import { LibraryPage } from './pages/LibraryPage'
 import { QuizPage } from './pages/QuizPage'
 import { ResultsPage } from './pages/ResultsPage'
 import { SolverPage } from './pages/SolverPage'
@@ -33,10 +35,12 @@ function HomeAside({
   auditedCaptureCount,
   canonicalCount,
   duplicateCount,
+  libraryAssetCount,
 }: {
   auditedCaptureCount: number
   canonicalCount: number
   duplicateCount: number
+  libraryAssetCount: number
 }) {
   return (
     <div className="aside-stack">
@@ -54,6 +58,11 @@ function HomeAside({
         <span className="aside-panel__eyebrow">Support evidence</span>
         <strong>{duplicateCount}</strong>
         <p>duplicate or overlap captures</p>
+      </div>
+      <div className="aside-panel">
+        <span className="aside-panel__eyebrow">Study library</span>
+        <strong>{libraryAssetCount}</strong>
+        <p>repo-tracked documents and screenshots</p>
       </div>
     </div>
   )
@@ -128,6 +137,28 @@ function SolverAside() {
         <span className="aside-panel__eyebrow">Helper mode</span>
         <strong>Choice matching</strong>
         <p>Paste answer choices to normalize units and spotlight the closest match automatically.</p>
+      </div>
+    </div>
+  )
+}
+
+function LibraryAside() {
+  return (
+    <div className="aside-stack">
+      <div className="aside-panel">
+        <span className="aside-panel__eyebrow">Unique assets</span>
+        <strong>{studyLibraryStats.uniqueFiles}</strong>
+        <p>{studyLibraryStats.documentCount} documents and {studyLibraryStats.screenshotCount} screenshots</p>
+      </div>
+      <div className="aside-panel">
+        <span className="aside-panel__eyebrow">Exact dedupe</span>
+        <strong>{studyLibraryStats.exactDuplicateFilesRemoved}</strong>
+        <p>byte-identical files removed during import</p>
+      </div>
+      <div className="aside-panel">
+        <span className="aside-panel__eyebrow">Cloud ready</span>
+        <strong>Git tracked</strong>
+        <p>Every retained asset now lives inside the repo for pull and push workflows.</p>
       </div>
     </div>
   )
@@ -232,7 +263,7 @@ function AppRoutes() {
           <Shell
             eyebrow="AC Circuits Study App"
             title="A deduped, local-first quiz built from the screenshot pool."
-            subtitle="The bank is solved, rationalized, and audited. Every run uses each canonical question once, with a fresh order and preserved answer wording."
+            subtitle="The bank is solved, rationalized, and audited. The same repo now also tracks the homework documents and deduped screenshot library for cloud sync."
             theme={state.settings.theme}
             onToggleTheme={toggleTheme}
             aside={
@@ -240,6 +271,7 @@ function AppRoutes() {
                 auditedCaptureCount={sourceAudit.length}
                 canonicalCount={questionBank.length}
                 duplicateCount={duplicateCount}
+                libraryAssetCount={studyLibraryStats.uniqueFiles}
               />
             }
           >
@@ -251,6 +283,7 @@ function AppRoutes() {
               topicBreakdown={latestAttempt?.summary.topicBreakdown ?? []}
               onStartQuiz={() => beginQuiz('full')}
               onOpenSolver={() => navigate('/solver')}
+              onOpenLibrary={() => navigate('/library')}
               onResumeQuiz={() => navigate('/quiz')}
               onRetryMissed={() => beginQuiz('retry_missed')}
               onToggleShuffleChoices={() =>
@@ -262,6 +295,27 @@ function AppRoutes() {
                   },
                 }))
               }
+            />
+          </Shell>
+        }
+      />
+      <Route
+        path="/library"
+        element={
+          <Shell
+            eyebrow="Study library"
+            title="Homework files and screenshots, deduped and tracked."
+            subtitle="Every retained file lives inside the repo, keeps its source path history, and exposes searchable text from document parsing or OCR."
+            theme={state.settings.theme}
+            onToggleTheme={toggleTheme}
+            aside={<LibraryAside />}
+          >
+            <LibraryPage
+              assets={studyLibraryAssets}
+              stats={studyLibraryStats}
+              onBackHome={() => navigate('/')}
+              onOpenSolver={() => navigate('/solver')}
+              onStartQuiz={() => beginQuiz('full')}
             />
           </Shell>
         }

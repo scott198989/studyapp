@@ -8,6 +8,7 @@ interface HomePageProps {
   topicBreakdown: TopicBreakdownEntry[]
   onStartQuiz: () => void
   onOpenSolver: () => void
+  onOpenLibrary: () => void
   onResumeQuiz: () => void
   onRetryMissed: () => void
   onToggleShuffleChoices: () => void
@@ -32,6 +33,7 @@ export function HomePage({
   topicBreakdown,
   onStartQuiz,
   onOpenSolver,
+  onOpenLibrary,
   onResumeQuiz,
   onRetryMissed,
   onToggleShuffleChoices,
@@ -55,6 +57,9 @@ export function HomePage({
           </button>
           <button type="button" className="secondary-action" onClick={onOpenSolver}>
             Open quiz solver
+          </button>
+          <button type="button" className="secondary-action" onClick={onOpenLibrary}>
+            Open study library
           </button>
           <button type="button" className="secondary-action" onClick={onResumeQuiz} disabled={!hasActiveSession}>
             Resume quiz
